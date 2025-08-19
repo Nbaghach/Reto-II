@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Generated outputs
+Dashboard/HTML/
+Informe/PDF/
+Presentacion/PDF_HTML/
+
+# Large derived data (optional)
+Datos/Base_de_datos_depurada/*.csv
