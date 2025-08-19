@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+<<<<<<< HEAD
 
 # Generated outputs
 Dashboard/HTML/
@@ -10,3 +11,5 @@ Presentacion/PDF_HTML/
 
 # Large derived data (optional)
 Datos/Base_de_datos_depurada/*.csv
+=======
+>>>>>>> 9735b6cbc9f44d70033cb8cc2961556b87cbd718
