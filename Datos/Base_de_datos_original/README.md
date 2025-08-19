@@ -1,24 +1,29 @@
-# Datos originales y procesados
+ Datos originales (documentación de fuente)
 
-Esta carpeta contiene los archivos utilizados para la construcción de la base final de migración neta.
+Para garantizar **reproducibilidad** sin subir archivos pesados, aquí se documenta la
+**fuente oficial** de los datos usados para construir las bases de **inmigración**, **emigración** y **migración neta**.
 
-## Estructura
+## Fuente oficial
+- **UN DESA – International Migrant Stock (vía Gapminder / open-numbers)**
+  - Repositorio DDF: https://github.com/open-numbers/ddf--unpop--international_migrant_stock
 
-- **archivos originales/**  
-  Contiene el dataset bruto descargado de Gapminder, que sirve como fuente principal.
+### Archivos relevantes del repositorio DDF
+- `ddf--datapoints--immigrant_stock--by--geo--year.csv` (stock de inmigrantes por país y año)
+- `ddf--datapoints--emigrant_stock--by--geo--year.csv` (stock de emigrantes por país y año)
+- (Opcional) `ddf--datapoints--migrant_stock--by--destination--origin--year.csv` (matriz destino–origen)
+- Entidades auxiliares: `ddf--entities--geo.csv`, `ddf--entities--geo--world_4region.csv`,
+  `ddf--entities--geo--income_groups.csv`, etc.
 
-- **inmigracion/**  
-  Aquí se integran y procesan los datos originales relacionados con la inmigración.  
-  Resultado: `inmigracion_total.csv`.
+> **Nota:** anota el commit/fecha de descarga para trazabilidad.
 
-- **emigracion/**  
-  Aquí se integran y procesan los datos originales relacionados con la emigración.  
-  Resultado: `emigracion_total.csv`.
+## Flujo reproducible
+1. Descargar los CSV originales desde el repositorio DDF anterior.
+2. Ejecutar los scripts de `Datos/Codigo_depuracion/` para:
+   - limpiar y estandarizar nombres/campos,
+   - construir **inmigración** y **emigración** por país–año,
+   - generar **migración neta = inmigrantes – emigrantes**.
+3. Guardar los resultados en `Datos/Base_de_datos_depurada/`.
 
-- **migracion neta/**  
-  Contiene el dataset final generado a partir de la diferencia entre inmigración y emigración.  
-  Resultado: `migracion_neta_por_pais_ano.csv`.
-
-## Notas
-- Todos los datos provienen de **Gapminder** (https://www.gapminder.org/).  
-- La base final de **migración neta** será utilizada en el resto del proyecto (depuración, análisis y visualización).
+## Por qué no subimos los originales
+- GitHub limita archivos > 100 MB.
+- Mantener el repositorio ligero y 100% reproducible con enlaces a la fuente oficial.

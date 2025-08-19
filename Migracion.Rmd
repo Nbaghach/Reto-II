@@ -1,0 +1,72 @@
+---
+title: "Informe técnico - Migración neta internacional"
+author: "Nabel Baghach"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+#Introducción
+
+Este informe presenta un análisis reproducible de la migración neta internacional por país y año a partir de datos abiertos.
+Se documenta la estructura del proyecto, los objetivos, la metodología y un primer resumen de resultados.
+
+#Objetivos del proyecto
+###Objetivo principal
+
+Analizar la evolución y las diferencias en la migración neta internacional por país y año, a partir de datos abiertos procedentes de Gapminder/UN DESA, con el fin de identificar patrones regionales y socioeconómicos relevantes en los flujos migratorios y contribuir a una mejor comprensión de las dinámicas poblacionales a nivel global.
+
+#Objetivos específicos
+
+Construir una base de datos reproducible que integre los indicadores de inmigración y emigración, generando el indicador de migración neta por país y año.
+
+Realizar un análisis descriptivo multivariante de la migración neta, incorporando dimensiones geográficas y socioeconómicas (por ejemplo, regiones mundiales y niveles de ingresos).
+
+Implementar visualizaciones dinámicas que permitan explorar de manera interactiva la evolución temporal y regional de la migración neta.
+
+Elaborar un informe técnico reproducible que resuma los principales hallazgos y tendencias, integrando texto y resultados generados con R.
+
+Diseñar una presentación académica reproducible que comunique de forma clara y sintética los resultados obtenidos, incluyendo tablas, gráficos y explicaciones fundamentadas.
+
+#Metodología (resumen)
+
+Datos originales documentados en Datos/Base_de_datos_original/.
+
+Datasets intermedios y final en Datos/Base_de_datos_depurada/:
+
+inmigracion.csv, emigracion.csv, migracion_neta.csv.
+
+#Análisis con R (rutas relativas, código comentado, resultados reproducibles).
+
+Carga de datos (placeholder)
+# Descomenta y ajusta cuando tengas los CSV depurados listos:
+
+# library(readr); library(dplyr)
+# migr_neta <- readr::read_csv("Datos/Base_de_datos_depurada/migracion_neta.csv",
+#                              show_col_types = FALSE)
+# dplyr::glimpse(migr_neta)
+
+Resultados iniciales (placeholder)
+# Ejemplo de tabla/resumen cuando cargues los datos:
+
+# migr_neta %>%
+#   group_by(anio) %>%
+#   summarise(migracion_neta_total = sum(migracion_neta, na.rm = TRUE))
+
+#Conclusiones (provisionales)
+
+Se han definido los objetivos de investigación y la estructura reproducible del proyecto.
+
+En próximas iteraciones se incorporarán tablas y gráficos generados directamente desde los datos depurados.
+
+#Referencias
+
+UN DESA / Gapminder (open-numbers).
+Ver documentación de fuente en Datos/Base_de_datos_original/.
