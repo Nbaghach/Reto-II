@@ -6,7 +6,7 @@ aplicando buenas prácticas de reproducibilidad (GitHub, RMarkdown, flexdashboard
 
 ---
 
-## ???? Estructura del repositorio
+##  Estructura del repositorio
 
 - **Datos/**
   - `Base_de_datos_original/` ??? contiene el archivo original `migracion_neta_por_pais_ano.csv`.
@@ -27,7 +27,7 @@ aplicando buenas prácticas de reproducibilidad (GitHub, RMarkdown, flexdashboard
 
 ---
 
-## ???? Reproducibilidad
+##  Reproducibilidad
 
 - Los datos originales **no se modifican**.  
 - Todos los análisis usan **rutas relativas** (ej. `here::here()` en R).  
@@ -36,7 +36,7 @@ aplicando buenas prácticas de reproducibilidad (GitHub, RMarkdown, flexdashboard
 
 ---
 
-## ???? Paquetes necesarios
+##  Paquetes necesarios
 
 Para ejecutar el proyecto se necesitan los siguientes paquetes de R:
 
@@ -47,8 +47,7 @@ install.packages(c(
   "shiny", "leaflet", "plotly"
 ))
 
+## Autoría
 
-## ??? Autoría
-
-Proyecto desarrollado por **[Nabel Baghach]**  
-Repositorio GitHub: [enlace a tu repo](https://github.com/Nbaghach/Reto-II)
+Proyecto desarrollado por **Nabel Baghach**  
+Repositorio GitHub: [Reto-II](https://github.com/Nbaghach/Reto-II)
