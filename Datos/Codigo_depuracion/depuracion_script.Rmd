@@ -1,0 +1,87 @@
+---
+title: "Reto 1 modulo 8"
+output: html_document
+date: "2025-08-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+
+
+setwd("C:\\Users\\nabee\\Desktop\\MASTER BEHAVIOURAL DATA SCIENCE\\MODULO VIII\\ddf--unpop--international_migrant_stock-master")
+
+getwd()
+```
+
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+
+# ??? Ruta correcta (incluye "bases de datos")
+base <- "C:/Users/nabee/Desktop/MASTER BEHAVIOURAL DATA SCIENCE/MODULO VIII/bases de datos/ddf--unpop--international_migrant_stock-master"
+
+# (opcional) comprueba que existen:
+stopifnot(file.exists(file.path(base, "ddf--entities--geo--country.csv")))
+stopifnot(file.exists(file.path(base, "ddf--datapoints--immigrant_stock--by--geo--year.csv")))
+stopifnot(file.exists(file.path(base, "ddf--datapoints--emigrant_stock--by--geo--year.csv")))
+
+entities_geo <- read_csv(file.path(base, "ddf--entities--geo--country.csv"))
+immigrant_df <- read_csv(file.path(base, "ddf--datapoints--immigrant_stock--by--geo--year.csv"))
+emigrant_df  <- read_csv(file.path(base, "ddf--datapoints--emigrant_stock--by--geo--year.csv"))
+
+imm <- immigrant_df %>%
+  left_join(entities_geo, by = c("geo" = "country")) %>%
+  rename(country_name = name, immigrant_stock_value = immigrant_stock) %>%
+  mutate(year = as.integer(year))
+
+emi <- emigrant_df %>%
+  left_join(entities_geo, by = c("geo" = "country")) %>%
+  rename(country_name = name, emigrant_stock_value = emigrant_stock) %>%
+  mutate(year = as.integer(year))
+
+out_dir <- dirname(base)
+write_csv(imm, file.path(out_dir, "immigrant_stock_by_country_year.csv"))
+write_csv(emi, file.path(out_dir, "emigrant_stock_by_country_year.csv"))
+
+net_mig <- full_join(imm, emi, by = c("geo", "year", "country_name")) %>%
+  mutate(
+    immigrant_stock_value = as.numeric(immigrant_stock_value),
+    emigrant_stock_value  = as.numeric(emigrant_stock_value),
+    net_migration = immigrant_stock_value - emigrant_stock_value
+  )
+write_csv(net_mig, file.path(out_dir, "migracion_neta_por_pais_ano.csv"))
+
+message("??? Archivos creados en: ", out_dir)
+```
+```{r}
+library(readr)
+library(dplyr)
+
+# Ajusta esta ruta a donde guardaste los CSV limpios
+out_dir <- "C:/Users/nabee/Desktop/MASTER BEHAVIOURAL DATA SCIENCE/MODULO VIII/bases de datos"
+
+# Leer las tres bases generadas
+imm_clean <- read_csv(file.path(out_dir, "immigrant_stock_by_country_year.csv"))
+emi_clean <- read_csv(file.path(out_dir, "emigrant_stock_by_country_year.csv"))
+net_clean <- read_csv(file.path(out_dir, "migracion_neta_por_pais_ano.csv"))
+
+# Revisar estructura
+glimpse(imm_clean)
+glimpse(emi_clean)
+glimpse(net_clean)
+
+# Comprobar primeras filas
+head(imm_clean)
+head(emi_clean)
+head(net_clean)
+```
+
+
