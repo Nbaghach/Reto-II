@@ -1,0 +1,250 @@
+---
+title: "reto 1 modulo 8"
+output: html_document
+date: "2025-08-16"
+---
+```{r}
+# ==== 0) Paquetes ====
+# Instala si hace falta:
+# install.packages(c("tidyverse", "readr", "scales"))
+
+library(tidyverse)
+library(readr)
+library(scales)
+
+# ==== 1) Lectura ====
+# Cambia la ruta si es necesario
+df_raw <- read_csv("migracion_neta_por_pais_ano.csv")
+
+# ==== 2) Limpieza de columnas duplicadas (.x / .y) ====
+coalesce_cols <- function(data, name) {
+  # Devuelve la primera columna existente entre ...x / ...y / base
+  candidates <- c(paste0(name, ".x"), paste0(name, ".y"), name)
+  candidates <- candidates[candidates %in% names(data)]
+  if (length(candidates) == 0) return(NULL)
+  # Reduce haciendo coalesce secuencial
+  out <- data[[candidates[1]]]
+  if (length(candidates) > 1) {
+    for (i in 2:length(candidates)) {
+      out <- dplyr::coalesce(out, data[[candidates[i]]])
+    }
+  }
+  out
+}
+
+# Construir dataset limpio
+df <- tibble(
+  geo        = coalesce_cols(df_raw, "geo"),
+  year       = coalesce_cols(df_raw, "year"),
+  country    = coalesce_cols(df_raw, "country_name"),
+  immigrants = coalesce_cols(df_raw, "immigrant_stock_value"),
+  emigrants  = coalesce_cols(df_raw, "emigrant_stock_value"),
+  net        = coalesce_cols(df_raw, "net_migration"),
+  region4    = coalesce_cols(df_raw, "world_4region"),
+  region6    = coalesce_cols(df_raw, "world_6region"),
+  income     = coalesce_cols(df_raw, "income_groups")
+) %>%
+  mutate(
+    year = as.integer(year),
+    immigrants = as.numeric(immigrants),
+    emigrants  = as.numeric(emigrants),
+    net        = as.numeric(net),
+    region     = coalesce(region6, region4)
+  ) %>%
+  select(geo, year, country, region, income, immigrants, emigrants, net)
+
+# Chequeo rápido
+glimpse(df)
+
+# ==== 3) Helpers ====
+library(scales)
+fmt_si <- label_number(accuracy = 1, scale_cut = cut_short_scale())
+
+# ==== 4) Evolución global (líneas) ====
+evol_global <- df %>%
+  group_by(year) %>%
+  summarise(immigrants = sum(immigrants, na.rm = TRUE),
+            emigrants  = sum(emigrants,  na.rm = TRUE)) %>%
+  pivot_longer(c(immigrants, emigrants), names_to = "tipo", values_to = "valor")
+
+p_evol <- ggplot(evol_global, aes(year, valor, linetype = tipo)) +
+  geom_line() +
+  geom_point() +
+  scale_y_continuous(labels = fmt_si) +
+  labs(title = "Evolución global de migrantes internacionales (1990–2019)",
+       x = "Año", y = "Personas", linetype = "") +
+  theme_minimal()
+p_evol
+# ggsave("evolucion_migrantes.png", p_evol, width = 8, height = 5, dpi = 150)
+
+# ==== 5) Histogramas (escala log) ====
+p_hist_imm <- ggplot(df, aes(immigrants)) +
+  geom_histogram(bins = 50) +
+  scale_x_log10(labels = fmt_si) +
+  labs(title = "Distribución de inmigrantes por país-año (log10)",
+       x = "Inmigrantes", y = "Frecuencia") +
+  theme_minimal()
+p_hist_imm
+# ggsave("hist_inmigrantes.png", p_hist_imm, width = 8, height = 5, dpi = 150)
+
+p_hist_emi <- ggplot(df, aes(emigrants)) +
+  geom_histogram(bins = 50) +
+  scale_x_log10(labels = fmt_si) +
+  labs(title = "Distribución de emigrantes por país-año (log10)",
+       x = "Emigrantes", y = "Frecuencia") +
+  theme_minimal()
+p_hist_emi
+# ggsave("hist_emigrantes.png", p_hist_emi, width = 8, height = 5, dpi = 150)
+
+# ==== 6) Dispersión inmigrantes vs emigrantes (log-log) ====
+df_scatter <- df %>% filter(immigrants > 0, emigrants > 0)
+p_scatter <- ggplot(df_scatter, aes(immigrants, emigrants)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10(labels = fmt_si) +
+  scale_y_log10(labels = fmt_si) +
+  labs(title = "Relación inmigrantes vs emigrantes por país-año",
+       x = "Inmigrantes (log10)", y = "Emigrantes (log10)") +
+  theme_minimal()
+p_scatter
+# ggsave("scatter_inmigrantes_emigrantes.png", p_scatter, width = 6.5, height = 6.5, dpi = 150)
+
+# ==== 7) Top 10 países por inmigrantes / emigrantes (último año disponible) ====
+ultimo_anio <- max(df$year, na.rm = TRUE)
+
+top_inm <- df %>%
+  filter(year == ultimo_anio) %>%
+  arrange(desc(immigrants)) %>%
+  slice_head(n = 10) %>%
+  mutate(country = fct_reorder(country, immigrants))
+
+p_top_inm <- ggplot(top_inm, aes(x = country, y = immigrants)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_continuous(labels = fmt_si) +
+  labs(title = paste0("Top 10 países por inmigrantes (", ultimo_anio, ")"),
+       x = "", y = "Inmigrantes") +
+  theme_minimal()
+p_top_inm
+# ggsave("top10_inmigrantes.png", p_top_inm, width = 7, height = 5, dpi = 150)
+
+top_emi <- df %>%
+  filter(year == ultimo_anio) %>%
+  arrange(desc(emigrants)) %>%
+  slice_head(n = 10) %>%
+  mutate(country = fct_reorder(country, emigrants))
+
+p_top_emi <- ggplot(top_emi, aes(x = country, y = emigrants)) +
+  geom_col() +
+  coord_flip() +
+  scale_y_continuous(labels = fmt_si) +
+  labs(title = paste0("Top 10 países por emigrantes (", ultimo_anio, ")"),
+       x = "", y = "Emigrantes") +
+  theme_minimal()
+p_top_emi
+# ggsave("top10_emigrantes.png", p_top_emi, width = 7, height = 5, dpi = 150)
+
+# ==== 8) Migración neta: gráfico divergente top/bottom 10 (último año) ====
+net_last <- df %>%
+  filter(year == ultimo_anio, !is.na(net)) %>%
+  arrange(desc(net))
+
+top_pos <- net_last %>% slice_head(n = 10)
+top_neg <- net_last %>% slice_tail(n = 10) %>% arrange(net)
+net_div <- bind_rows(top_neg, top_pos) %>%
+  mutate(country = fct_reorder(country, net))
+
+p_net <- ggplot(net_div, aes(x = country, y = net)) +
+  geom_col() +
+  coord_flip() +
+  geom_hline(yintercept = 0) +
+  scale_y_continuous(labels = fmt_si) +
+  labs(title = paste0("Migración neta (Top + / Bottom -) en ", ultimo_anio),
+       x = "", y = "Saldo migratorio (neto)") +
+  theme_minimal()
+p_net
+# ggsave("net_migration_divergente.png", p_net, width = 7, height = 6, dpi = 150)
+
+# ==== 9) Comparación por nivel de ingresos (boxplot) ====
+df_income <- df %>%
+  filter(!is.na(income), !is.na(immigrants), immigrants > 0)
+
+p_box_income <- ggplot(df_income, aes(x = income, y = immigrants)) +
+  geom_boxplot(outlier.alpha = 0.4) +
+  scale_y_log10(labels = fmt_si) +
+  labs(title = "Inmigrantes por nivel de ingresos (log10)",
+       x = "Nivel de ingresos", y = "Inmigrantes") +
+  theme_minimal()
+p_box_income
+# ggsave("box_inmigrantes_income.png", p_box_income, width = 7, height = 5, dpi = 150)
+
+# ==== 10) (Opcional) Evolución por región (pequeños múltiples) ====
+evol_region <- df %>%
+  filter(!is.na(region)) %>%
+  group_by(region, year) %>%
+  summarise(immigrants = sum(immigrants, na.rm = TRUE), .groups = "drop")
+
+p_evol_reg <- ggplot(evol_region, aes(year, immigrants)) +
+  geom_line() +
+  facet_wrap(~ region, scales = "free_y") +
+  scale_y_continuous(labels = fmt_si) +
+  labs(title = "Evolución de inmigrantes por región",
+       x = "Año", y = "Inmigrantes") +
+  theme_minimal()
+p_evol_reg
+# ggsave("evolucion_inmigrantes_por_region.png", p_evol_reg, width = 9, height = 6, dpi = 150)
+```
+
+
+```{r}
+install.packages("rnaturalearth")
+install.packages("rnaturalearthdata")
+install.packages("sf")         # puede tardar un poco en instalarse
+install.packages("scales")
+install.packages("tidyverse")
+```
+
+```{r}
+# Paquetes
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(scales)
+
+# Leer tu dataset de migración neta
+migracion <- read_csv("migracion_neta_por_pais_ano.csv")
+
+# Mapa base con países y códigos ISO3
+world <- ne_countries(scale = "medium", returnclass = "sf") %>%
+  mutate(iso3 = tolower(iso_a3))
+
+# Filtrar datos para un año (ejemplo: 2019)
+dat2019 <- migracion %>%
+  filter(year == 2019) %>%
+  select(geo, country_name, net_migration)
+
+# Descargar mapa base
+world <- ne_countries(scale = "medium", returnclass = "sf") %>%
+  mutate(geo = tolower(iso_a3))   # iso3 en minúsculas
+
+# Unir datos al mapa
+mapa2019 <- world %>%
+  left_join(dat2019, by = "geo")
+
+# Dibujar mapa coroplético
+abs_val <- abs(mapa2019$net_migration)
+q <- quantile(abs_val, 0.95, na.rm = TRUE)  # prueba 0.95 o 0.9
+
+ggplot(mapa2019) +
+  geom_sf(aes(fill = net_migration), color = "white", size = 0.1) +
+  scale_fill_gradient2(
+    low = "#b2182b", mid = "white", high = "#2166ac",
+    midpoint = 0, limits = c(-q, q), oob = scales::squish,
+    labels = scales::label_number(scale_cut = scales::cut_short_scale()),
+    name = "Migración neta", na.value = "grey90"
+  ) +
+  theme_minimal()
+```
+
+
+

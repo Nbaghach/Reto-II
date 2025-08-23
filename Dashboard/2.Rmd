@@ -1,0 +1,337 @@
+---
+title: "Dashboard - Migración Internacional"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+runtime: shiny
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(encoding = "UTF-8")
+```
+
+```{r global, include=FALSE}
+# Paquetes requeridos
+req <- c("shiny","flexdashboard","readr","dplyr","tidyr","ggplot2","scales",
+         "forcats","here","sf","rnaturalearth","rnaturalearthdata","stringr",
+         "leaflet","plotly","htmltools")
+to_install <- req[!sapply(req, requireNamespace, quietly=TRUE)]
+if (length(to_install)) install.packages(to_install, dependencies=TRUE)
+
+library(shiny); library(flexdashboard)
+library(readr); library(dplyr); library(tidyr)
+library(ggplot2); library(scales); library(forcats)
+library(here); library(stringr)
+library(sf); library(rnaturalearth); library(rnaturalearthdata)
+library(leaflet); library(plotly); library(htmltools)
+fmt_si <- label_number(accuracy = 1, scale_cut = cut_short_scale())
+
+# Carga de datos
+ruta <- here("Datos","Base_de_datos_depurada","migracion_neta_limpio.csv")
+stopifnot(file.exists(ruta))
+df_raw <- read_csv(ruta, show_col_types = FALSE)
+
+df <- df_raw %>%
+  transmute(
+    geo        = tolower(geo),
+    year       = as.integer(year),
+    country    = country_name,
+    immigrants = as.numeric(immigrant_stock_value),
+    emigrants  = as.numeric(emigrant_stock_value),
+    net        = as.numeric(net_migration),
+    region4    = dplyr::coalesce(.data[["world_4region"]], NA_character_),
+    region6    = dplyr::coalesce(.data[["world_6region"]], NA_character_),
+    income     = dplyr::coalesce(.data[["income_groups"]], NA_character_)
+  ) %>% mutate(region = coalesce(region6, region4))
+
+# Geometría de países
+world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") %>%
+  mutate(geo = tolower(iso_a3)) %>% select(geo, geometry)
+label_si_str <- function(x) scales::label_number_si(accuracy = 0.1)(x)
+world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") %>%
+  mutate(geo = tolower(iso_a3)) %>%
+  select(geo, geometry)
+
+# reparar y filtrar a polígonos válidos
+world <- suppressWarnings(sf::st_make_valid(world))
+world <- sf::st_transform(world, 4326)
+world <- sf::st_collection_extract(world, "POLYGON")
+world <- world[!sf::st_is_empty(world), ]
+```
+
+Inputs {.sidebar data-width=180}
+=====================================
+
+```{r}
+selectInput("year", "Año:",
+            choices = sort(unique(df$year)),
+            selected = max(df$year))
+
+radioButtons("metric", "Métrica:",
+             choices = c("Inmigrantes" = "immigrants",
+                        "Emigrantes"  = "emigrants",
+                        "Neto"        = "net"),
+             selected = "immigrants")
+
+selectInput("region", "Región:",
+            choices = c("Todas", sort(unique(na.omit(df$region)))),
+            selected = "Todas")
+
+selectInput("income", "Ingreso:",
+            choices = c("Todos", sort(unique(na.omit(df$income)))),
+            selected = "Todos")
+```
+
+Main
+=====================================
+
+Column {data-width=75%}
+-------------------------------------
+
+### Gráfico de líneas: Evolución global y por región (1990-2019) {data-height=38}
+
+```{r}
+renderPlotly({
+  req(input$metric)
+  metric <- input$metric
+
+  d <- df
+  if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+  if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+
+  reg <- d %>%
+    group_by(region, year) %>%
+    summarise(valor = sum(.data[[metric]], na.rm = TRUE), .groups = "drop") %>%
+    filter(!is.na(region)) %>%
+    mutate(region = as.character(region)) %>%
+    arrange(region, year) %>%
+    as.data.frame()
+
+  glob <- d %>%
+    group_by(year) %>%
+    summarise(valor = sum(.data[[metric]], na.rm = TRUE), .groups = "drop") %>%
+    arrange(year) %>%
+    mutate(region = "GLOBAL") %>%
+    as.data.frame()
+
+  titulo <- switch(metric, immigrants = "inmigrantes", emigrants = "emigrantes", net = "migración neta")
+
+  plot_ly() %>%
+    # Todas las regiones en una sola llamada (color por región)
+    add_trace(
+      data = reg,
+      type = "scatter", mode = "lines+markers",
+      x = ~year, y = ~valor, color = ~region, legendgroup = ~region,
+      hovertemplate = "Región: %{legendgroup}<br>Año: %{x}<br>Valor: %{y:.3s}<extra></extra>",
+      line = list(width = 2), marker = list(size = 5, opacity = 0.9)
+    ) %>%
+    # GLOBAL en otra traza más gruesa
+    add_trace(
+      data = glob,
+      type = "scatter", mode = "lines+markers",
+      x = ~year, y = ~valor, name = "GLOBAL", legendgroup = "GLOBAL",
+      hovertemplate = "Serie: GLOBAL<br>Año: %{x}<br>Valor: %{y:.3s}<extra></extra>",
+      line = list(width = 4), marker = list(size = 7, opacity = 0.95)
+    ) %>%
+    layout(
+      title = list(text = paste0("Evolución de ", titulo)),
+      xaxis = list(title = "Año", tickmode = "array", tickvals = seq(1990, 2020, 5)),
+      yaxis = list(title = "Personas", tickformat = "~s"),
+      legend = list(orientation = "h", y = -0.2)
+    )
+})
+
+```
+
+### Mapa mundial: Migrantes internacionales por país {data-height=62}
+
+```{r}
+### Mapa mundial con Plotly (choropleth) {data-height=62}
+renderPlotly({
+  req(input$metric, input$year)
+
+  d <- df %>% filter(year == input$year)
+  if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+  if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+
+  metric <- input$metric
+  md <- d %>%
+    transmute(
+      geo3 = toupper(geo),                 # <-- MAYÚSCULAS
+      country,
+      valor = .data[[metric]]
+    ) %>%
+    filter(is.finite(valor),
+           grepl("^[A-Z]{3}$", geo3))     # <-- solo ISO-3 válidos (evita -99, etc.)
+
+  validate(need(nrow(md) > 0, "Sin datos para los filtros actuales"))
+
+  titulo <- switch(metric,
+                   immigrants = "Inmigrantes",
+                   emigrants  = "Emigrantes",
+                   net        = "Migración neta")
+
+  # Escala y límites
+  if (metric == "net") {
+    q <- quantile(abs(md$valor), 0.95, na.rm = TRUE); if (!is.finite(q) || q == 0) q <- 1e3
+    zmin <- -q; zmax <- q
+    colorscale <- "RdBu"; reverse <- TRUE
+  } else {
+    zmin <- 0; zmax <- max(md$valor, na.rm = TRUE); if (!is.finite(zmax) || zmax == 0) zmax <- 1e3
+    colorscale <- "Blues"; reverse <- FALSE
+  }
+
+  plot_ly(
+    data = md,
+    type = "choropleth",
+    locations = ~geo3,
+    locationmode = "ISO-3",               # <-- decirle a plotly qué son
+    z = ~valor,
+    zmin = zmin, zmax = zmax,
+    text = ~country,
+    colorscale = colorscale,
+    reversescale = reverse,
+    marker = list(line = list(color = "gray", width = 0.3)),
+    hovertemplate = paste("%{text}<br>", titulo, ": %{z:.3s}<extra></extra>"),
+    colorbar = list(title = titulo)
+  ) %>%
+    layout(
+      title = paste0("Mapa mundial: ", titulo, " (", input$year, ")"),
+      geo = list(showframe = FALSE, showcoastlines = FALSE,
+                 projection = list(type = "equirectangular"))
+    )
+})
+```
+Column {data-width=25%}
+-------------------------------------
+
+### Rankings {data-height=100}
+
+```{r}
+div(style = "height: 100%; overflow-y: auto; padding: 10px;",
+
+  # Top 5 Inmigrantes
+  div(style = "margin-bottom: 30px;",
+    h4("Top 5 Inmigrantes", style = "text-align: center; margin-bottom: 15px; color: #2166ac; font-size: 14px;"),
+    renderPlot({
+      req(input$year)
+      d <- df %>% filter(year == as.numeric(input$year))
+      if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+      if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+      
+      top_data <- d %>% filter(!is.na(immigrants), immigrants > 0) %>% slice_max(immigrants, n = 5) %>%
+        mutate(country = reorder(country, immigrants))
+      if(nrow(top_data) == 0) return(ggplot() + theme_void() + labs(title = "No hay datos"))
+      
+      ggplot(top_data, aes(x = country, y = immigrants)) +
+        geom_col(fill = "#2166ac", width = 0.8, alpha = 0.8) +
+        geom_text(aes(label = paste0(round(immigrants/1e6, 1), "M")), 
+                 hjust = -0.1, size = 2.5, color = "black") +
+        coord_flip() +
+        scale_y_continuous(expand = expansion(mult = c(0, 0.25))) +
+        labs(x = "", y = "") +
+        theme_minimal() +
+ theme(
+  axis.text.y = element_text(size = 12, face = "bold"),
+  axis.text.x = element_blank(),
+  axis.ticks = element_blank(),
+  panel.grid = element_blank(),
+  plot.margin = margin(2, 2, 2, 2)
+)
+    }, height = 180)
+  ),
+  
+  # Top 5 Emigrantes
+  div(style = "margin-bottom: 30px;",
+    h4("Top 5 Emigrantes", style = "text-align: center; margin-bottom: 15px; color: #d73027; font-size: 14px;"),
+    renderPlot({
+      req(input$year)
+      d <- df %>% filter(year == as.numeric(input$year))
+      if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+      if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+      
+      top_data <- d %>% filter(!is.na(emigrants), emigrants > 0) %>% slice_max(emigrants, n = 5) %>%
+        mutate(country = reorder(country, emigrants))
+      if(nrow(top_data) == 0) return(ggplot() + theme_void() + labs(title = "No hay datos"))
+      
+      ggplot(top_data, aes(x = country, y = emigrants)) +
+        geom_col(fill = "#d73027", width = 0.8, alpha = 0.8) +
+        geom_text(aes(label = paste0(round(emigrants/1e6, 1), "M")), 
+                 hjust = -0.1, size = 2.5, color = "black") +
+        coord_flip() +
+        scale_y_continuous(expand = expansion(mult = c(0, 0.25))) +
+        labs(x = "", y = "") +
+        theme_minimal() +
+theme(
+  axis.text.y = element_text(size = 12, face = "bold"),
+  axis.text.x = element_blank(),
+  axis.ticks = element_blank(),
+  panel.grid = element_blank(),
+  plot.margin = margin(2, 2, 2, 2)
+)
+    }, height = 180)
+  ),
+  
+  # Top 5 Migración neta
+  div(style = "margin-bottom: 20px;",
+    h4("Top 5 Migración Neta", style = "text-align: center; margin-bottom: 15px; color: #333; font-size: 14px;"),
+    renderPlot({
+      req(input$year)
+      d <- df %>% filter(year == as.numeric(input$year))
+      if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+      if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+      
+      top_positive <- d %>% filter(!is.na(net), net > 0) %>% slice_max(net, n = 5)
+      top_negative <- d %>% filter(!is.na(net), net < 0) %>% slice_min(net, n = 5)
+      net_data <- bind_rows(top_positive, top_negative) %>% arrange(net) %>%
+        mutate(country = reorder(country, net), color_type = ifelse(net >= 0, "Positiva", "Negativa"))
+      if(nrow(net_data) == 0) return(ggplot() + theme_void() + labs(title = "No hay datos"))
+      
+      ggplot(net_data, aes(x = country, y = net, fill = color_type)) +
+        geom_col(width = 0.8, alpha = 0.8) +
+        geom_text(aes(label = paste0(ifelse(net >= 0, "+", ""), round(net/1e6, 1), "M")),
+                 hjust = ifelse(net_data$net >= 0, -0.1, 1.1), size = 2.5, color = "black") +
+        coord_flip() +
+        scale_fill_manual(values = c("Positiva" = "#2166ac", "Negativa" = "#d73027")) +
+        scale_y_continuous(expand = expansion(mult = c(0.25, 0.25))) +
+        labs(x = "", y = "") +
+        theme_minimal() +
+theme(
+  axis.text.y = element_text(size = 12, face = "bold"),
+  axis.text.x = element_blank(),
+  axis.ticks = element_blank(),
+  panel.grid = element_blank(),
+  legend.position = "none",
+  plot.margin = margin(2, 2, 2, 2)
+)
+    }, height = 220)
+  ),
+  
+  # Estadísticas globales
+  div(style = "margin-top: 20px; text-align: center; padding: 10px; background-color: #f8f9fa; border-radius: 5px;",
+    h5("Estadísticas Globales", style = "color: #333; margin-bottom: 10px; font-size: 13px;"),
+    renderText({
+      req(input$year, input$metric)
+      d <- df %>% filter(year == as.numeric(input$year))
+      if (!is.null(input$region) && input$region != "Todas") d <- d %>% filter(region == input$region)
+      if (!is.null(input$income) && input$income != "Todos") d <- d %>% filter(income == input$income)
+      
+      if(input$metric == "immigrants") {
+        total <- sum(d$immigrants, na.rm = TRUE)
+        paste0("Total Inmigrantes: ", scales::number(total, scale = 1e-6, accuracy = 0.1, suffix = "M"))
+      } else if(input$metric == "emigrants") {
+        total <- sum(d$emigrants, na.rm = TRUE)
+        paste0("Total Emigrantes: ", scales::number(total, scale = 1e-6, accuracy = 0.1, suffix = "M"))
+      } else {
+        total <- sum(d$net, na.rm = TRUE)
+        paste0("Migración Neta Global: ", scales::number(total, scale = 1e-6, accuracy = 0.1, suffix = "M"))
+      }
+    })
+  )
+)
+
+```
+

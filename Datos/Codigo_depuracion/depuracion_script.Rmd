@@ -58,27 +58,25 @@ dplyr::glimpse(emigrant_df)
 key_col  <- if ("country" %in% names(entities_geo)) "country" else "geo"
 name_col <- if ("name" %in% names(entities_geo)) "name" else if ("name:en" %in% names(entities_geo)) "name:en" else NA_character_
 
-entities_geo_clean <- entities_geo %>%
-  transmute(
-    geo_key = .data[[key_col]],
-    country_name = dplyr::coalesce(.data[[name_col]], as.character(.data[[key_col]]))
-  )
+# 2) Crear versión de entidades conservando *todas* las columnas originales,
+#    añadiendo 'country_name' y una clave unificada 'geo_key' para el join
+entities_geo_full <- entities_geo %>%
+  mutate(country_name = dplyr::coalesce(.data[[name_col]], as.character(.data[[key_col]]))) %>%
+  rename(geo_key = !!key_col)
 
-# 2) Preparar inmigración (stock por país-año) y añadir nombre de país
+# 3) Preparar inmigración (conservar todas las columnas originales)
 imm <- immigrant_df %>%
   mutate(year = as.integer(year)) %>%
-  left_join(entities_geo_clean, by = c("geo" = "geo_key")) %>%
-  rename(immigrant_stock_value = immigrant_stock) %>%
-  select(geo, year, country_name, immigrant_stock_value)
+  left_join(entities_geo_full, by = c("geo" = "geo_key")) %>%
+  rename(immigrant_stock_value = immigrant_stock)
 
-# 3) Preparar emigración (stock por país-año) y añadir nombre de país
+# 4) Preparar emigración (conservar todas las columnas originales)
 emi <- emigrant_df %>%
   mutate(year = as.integer(year)) %>%
-  left_join(entities_geo_clean, by = c("geo" = "geo_key")) %>%
-  rename(emigrant_stock_value = emigrant_stock) %>%
-  select(geo, year, country_name, emigrant_stock_value)
+  left_join(entities_geo_full, by = c("geo" = "geo_key")) %>%
+  rename(emigrant_stock_value = emigrant_stock)
 
-# 4) Guardar intermedios
+# 5) Guardar intermedios completos (sin perder variables)
 readr::write_csv(imm, file.path(out_dir, "immigrant_stock_by_country_year.csv"))
 readr::write_csv(emi, file.path(out_dir, "emigrant_stock_by_country_year.csv"))
 
@@ -86,29 +84,25 @@ readr::write_csv(emi, file.path(out_dir, "emigrant_stock_by_country_year.csv"))
 
 3.4 Cálculo de migración neta y depuración de duplicadas
 ```{r}
-# 5) Unir inmigración y emigración y calcular migración neta
-net_mig <- full_join(imm, emi, by = c("geo", "year", "country_name")) %>%
+# 6) Unir por geo y year (no unimos por country_name para evitar duplicados innecesarios)
+net_mig <- full_join(imm, emi, by = c("geo", "year")) %>%
   mutate(
     immigrant_stock_value = as.numeric(immigrant_stock_value),
     emigrant_stock_value  = as.numeric(emigrant_stock_value),
     net_migration = immigrant_stock_value - emigrant_stock_value
   )
 
-# Guardar versión base (antes de limpiar duplicadas derivadas de otros metadatos)
+# Guardar versión base (antes de limpiar duplicadas)
 readr::write_csv(net_mig, file.path(out_dir, "migracion_neta_por_pais_ano.csv"))
 
-# 6) Si el join arrastró columnas duplicadas tipo *.x / *.y (por meter metadatos),
-#    las limpiamos y removemos iso3166_2, que viene vacío.
+# 7) Eliminar columnas duplicadas *.y, quitar sufijo .x, y eliminar iso3166_2 (si aparece)
 net_mig_clean <- net_mig %>%
-  # eliminar todas las columnas que terminan en .y (duplicadas)
-  select(-matches("\\.y$")) %>%
-  # quitar el sufijo .x del resto de columnas duplicadas
-  rename_with(~ sub("\\.x$", "", .x), ends_with(".x")) %>%
-  # eliminar iso3166_2 si está presente (vacía habitualmente)
-  select(-any_of(c("iso3166_2", "iso3166_2.x", "iso3166_2.y"))) %>%
+  select(-matches("\\.y$")) %>%                                   # elimina duplicadas .y
+  rename_with(~ sub("\\.x$", "", .x), ends_with(".x")) %>%        # quita sufijo .x en resto
+  select(-any_of(c("iso3166_2", "iso3166_2.x", "iso3166_2.y"))) %>% # elimina iso3166_2
   arrange(geo, year)
 
-# Guardar versión limpia definitiva para análisis
+# Guardar versión limpia definitiva
 readr::write_csv(net_mig_clean, file.path(out_dir, "migracion_neta_limpio.csv"))
 
 ```
