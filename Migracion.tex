@@ -1,0 +1,232 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Informe t?cnico - Migraci?n neta internacional},
+  pdfauthor={Nabel Baghach},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Informe t?cnico - Migraci?n neta internacional}
+\author{Nabel Baghach}
+\date{23 agosto 2025}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\section{Introducci?n}\label{introduccin}
+
+Este informe presenta un an?lisis reproducible de la migraci?n neta
+internacional por pa?s y a?o a partir de datos abiertos. Se documenta la
+estructura del proyecto, los objetivos, la metodolog?a y un primer
+resumen de resultados.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.8070}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0351}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0526}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0526}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0526}}@{}}
+\caption{Comprobaci?n de carga de datos}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+archivo\_usado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+filas
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+columnas
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+anio\_min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+anio\_max
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+archivo\_usado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+filas
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+columnas
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+anio\_min
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+anio\_max
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+C:/Users/nabee/Desktop/MASTER BEHAVIOURAL DATA SCIENCE/MODULO VIII/RETO
+II/Reto-II/Datos/Base\_de\_datos\_depurada/migracion\_neta\_limpio.csv &
+1624 & 21 & Inf & -Inf \\
+\end{longtable}
+
+\begin{verbatim}
+##  [1] "geo"                    "year"                   "immigrant_stock_value" 
+##  [4] "g77_and_oecd_countries" "income_groups"          "is_country"            
+##  [7] "iso3166_1_alpha2"       "unicode_region_subtag"  "iso3166_1_alpha3"      
+## [10] "iso3166_1_numeric"      "landlocked"             "latitude"              
+## [13] "longitude"              "main_religion_2008"     "name"                  
+## [16] "un_state"               "world_4region"          "world_6region"         
+## [19] "country_name"           "emigrant_stock_value"   "net_migration"
+\end{verbatim}
+
+\section{Objetivos del proyecto}\label{objetivos-del-proyecto}
+
+\section{Objetivos del proyecto}\label{objetivos-del-proyecto-1}
+
+\subsubsection{Objetivo principal}\label{objetivo-principal}
+
+Analizar la evoluci?n y las diferencias en la migraci?n neta
+internacional por pa?s y a?o, a partir de datos abiertos procedentes de
+Gapminder/UN DESA, con el fin de identificar patrones regionales y
+socioecon?micos relevantes en los flujos migratorios y contribuir a una
+mejor comprensi?n de las din?micas poblacionales a nivel global.
+
+\subsubsection{Objetivos espec?ficos}\label{objetivos-especficos}
+
+\begin{itemize}
+\tightlist
+\item
+  Construir una base de datos reproducible que integre los indicadores
+  de inmigraci?n y emigraci?n, generando el indicador de migraci?n neta
+  por pa?s y a?o.
+\item
+  Realizar un an?lisis descriptivo multivariante de la migraci?n neta,
+  incorporando dimensiones geogr?ficas y socioecon?micas (por ejemplo,
+  regiones mundiales y niveles de ingresos).
+\item
+  Implementar visualizaciones din?micas que permitan explorar de manera
+  interactiva la evoluci?n temporal y regional de la migraci?n neta.
+\item
+  Elaborar un informe t?cnico reproducible que resuma los principales
+  hallazgos y tendencias, integrando texto y resultados generados con R.
+\item
+  Dise?ar una presentaci?n acad?mica reproducible que comunique de forma
+  clara y sint?tica los resultados obtenidos, incluyendo tablas,
+  gr?ficos y explicaciones fundamentadas.
+\end{itemize}
+
+\#Metodolog?a (resumen)
+
+Datos originales documentados en Datos/Base\_de\_datos\_original/.
+
+Datasets intermedios y final en Datos/Base\_de\_datos\_depurada/:
+
+inmigracion.csv, emigracion.csv, migracion\_neta.csv.
+
+\#An?lisis con R (rutas relativas, c?digo comentado, resultados
+reproducibles).
+
+Carga de datos (placeholder) \# Descomenta y ajusta cuando tengas los
+CSV depurados listos:
+
+\section{library(readr);
+library(dplyr)}\label{libraryreadr-librarydplyr}
+
+\section{migr\_neta \textless-
+readr::read\_csv(``Datos/Base\_de\_datos\_depurada/migracion\_neta.csv'',}\label{migr_neta---readrread_csvdatosbase_de_datos_depuradamigracion_neta.csv}
+
+\section{show\_col\_types = FALSE)}\label{show_col_types-false}
+
+\section{dplyr::glimpse(migr\_neta)}\label{dplyrglimpsemigr_neta}
+
+Resultados iniciales (placeholder) \# Ejemplo de tabla/resumen cuando
+cargues los datos:
+
+\section{migr\_neta \%\textgreater\%}\label{migr_neta}
+
+\section{group\_by(anio) \%\textgreater\%}\label{group_byanio}
+
+\section{summarise(migracion\_neta\_total = sum(migracion\_neta, na.rm =
+TRUE))}\label{summarisemigracion_neta_total-summigracion_neta-na.rm-true}
+
+\#Conclusiones (provisionales)
+
+Se han definido los objetivos de investigaci?n y la estructura
+reproducible del proyecto.
+
+En pr?ximas iteraciones se incorporar?n tablas y gr?ficos generados
+directamente desde los datos depurados.
+
+\#Referencias
+
+UN DESA / Gapminder (open-numbers). Ver documentaci?n de fuente en
+Datos/Base\_de\_datos\_original/.
+
+\end{document}

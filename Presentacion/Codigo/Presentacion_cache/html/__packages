@@ -1,0 +1,11 @@
+readr
+dplyr
+ggplot2
+scales
+janitor
+here
+knitr
+forcats
+sf
+rnaturalearth
+rnaturalearthdata
