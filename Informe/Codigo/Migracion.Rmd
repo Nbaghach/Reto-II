@@ -78,14 +78,19 @@ kable(resumen, caption = "Comprobación de carga de datos",
 # Objetivos del proyecto 
 
 ## Objetivo principal
-Analizar la evolución y las diferencias en la migración neta internacional por país y año, a partir de datos abiertos procedentes de Gapminder/UN DESA, con el fin de identificar patrones regionales y socioeconómicos relevantes en los flujos migratorios y contribuir a una mejor comprensión de las dinámicas poblacionales a nivel global.
+
+Analizar la evolución y las diferencias en la inmigración, emigración y migración neta internacional por país y año, a partir de datos abiertos procedentes de Gapminder/UN DESA, con el fin de identificar patrones regionales y socioeconómicos relevantes en los flujos migratorios y aportar nueva información a la comprensión de las dinámicas poblacionales globales.
 
 ## Objetivos específicos
+
 - Construir una base de datos reproducible que integre los indicadores de inmigración y emigración, generando el indicador de migración neta por país y año.
-- Realizar un análisis descriptivo multivariante de la migración neta, incorporando dimensiones geográficas y socioeconómicas.
-- Implementar visualizaciones dinámicas que permitan explorar de manera interactiva la evolución temporal y regional de la migración neta.
-- Elaborar un informe técnico reproducible que resuma los principales hallazgos y tendencias.
-- Diseñar una presentación académica reproducible que comunique de forma clara y sintética los resultados obtenidos.
+
+- Desarrollar un análisis descriptivo multivariante de la migración neta, incorporando dimensiones geográficas y socioeconómicas.
+
+- Implementar visualizaciones dinámicas que permitan explorar de forma interactiva la evolución temporal y regional de la migración neta.
+
+- Elaborar un informe y presentación técnica reproducibles que resuman los principales hallazgos y tendencias.
+
 
 ```{r metricas-inline, message=FALSE, warning=FALSE}
 library(dplyr); library(scales)
