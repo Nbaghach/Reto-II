@@ -7,22 +7,22 @@ El objetivo es analizar los **patrones de inmigración, emigración y migración
 
 ##  Estructura del repositorio
 
-Datos/
-├── Base_de_datos_original/   # README con la fuente oficial (UN DESA – Gapminder)
-├── Codigo_depuracion/        # Scripts R de carga y limpieza
-└── Base_de_datos_depurada/   # Datos procesados para análisis
+- **Datos/**
+  - Base_de_datos_original/ → README con la fuente oficial (UN DESA – Gapminder)
+  - Codigo_depuracion/ → Scripts R de carga y limpieza
+  - Base_de_datos_depurada/ → Datos procesados para análisis
 
-Dashboard/
-├── Codigo/   # RMarkdown (flexdashboard / Shiny)
-└── HTML/     # Dashboard compilado
+- **Dashboard/**
+  - Codigo/ → RMarkdown (flexdashboard / Shiny)
+  - HTML/ → Dashboard compilado
 
-Informe/
-├── Codigo/   # Informe .Rmd (knitr/Rmarkdown)
-└── DF/       # Informe compilado
+- **Informe/**
+  - Codigo/ → Informe .Rmd (knitr/Rmarkdown)
+  - DF/ → Informe compilado
 
-Presentacion/
-├── Codigo/     # Presentación .Rmd
-└── PDF_HTML/   # Salida PDF/HTML
+- **Presentacion/**
+  - Codigo/ → Presentación .Rmd
+  - PDF_HTML/ → Salida PDF/HTML
 ---
 
 ##  Reproducibilidad
