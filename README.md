@@ -1,37 +1,39 @@
-# Proyecto de Ciencia de Datos Reproducible: Migración Internacional (1990–2019)
+# Proyecto de Ciencia de Datos Reproducible: Migracion Internacional (1990-2019)
 
 Este repositorio contiene un proyecto de **Ciencia de Datos Reproducible** realizado en RStudio.  
-El objetivo es analizar los **patrones de migración neta por país y año** a partir de datos públicos,  
-aplicando buenas prácticas de reproducibilidad (GitHub, RMarkdown, flexdashboard, etc.).
+El objetivo es analizar los **patrones de inmigraciÃ³n, emigraciÃ³n y migraciÃ³n neta por pais y aÃ±o** a partir de datos pÃºblicos,  
+aplicando buenas prÃ¡cticas de reproducibilidad (GitHub, RMarkdown, flexdashboard, etc.).
 
 ---
 
 ##  Estructura del repositorio
 
-- **Datos/**
-  - `Base_de_datos_original/` ??? contiene el archivo original `migracion_neta_por_pais_ano.csv`.
-  - `Codigo_depuracion/` ??? scripts de R para cargar y depurar los datos.
-  - `Base_de_datos_depurada/` ??? datos procesados listos para análisis.
+Datos/
+  Base_de_datos_original/    # README con la fuente oficial (UN DESA â€“ Gapminder)
+  Codigo_depuracion/         # Scripts R de carga y limpieza
+  Base_de_datos_depurada/    # Datos procesados para anÃ¡lisis
 
-- **Dashboard/**
-  - `Codigo/` ??? código RMarkdown para generar el dashboard.
-  - `HTML/` ??? versión compilada del dashboard.
+Dashboard/
+  Codigo/                    # RMarkdown (flexdashboard / Shiny)
+  HTML/                      # Dashboard compilado
 
-- **Informe/**
-  - `Codigo/` ??? archivo `.Rmd` del informe técnico.
-  - `PDF/` ??? versión compilada en PDF.
+Informe/
+  Codigo/                    # Informe .Rmd (knitr/Rmarkdown)
+  PDF/                       # Informe compilado
 
-- **Presentacion/**
-  - `Codigo/` ??? archivo `.Rmd` de la presentación.
-  - `PDF_HTML/` ??? versión compilada en PDF o HTML.
+Presentacion/
+  Codigo/                    # PresentaciÃ³n .Rmd
+  PDF_HTML/                  # Salida PDF/HTML
 
 ---
 
 ##  Reproducibilidad
 
-- Los datos originales **no se modifican**.  
-- Todos los análisis usan **rutas relativas** (ej. `here::here()` en R).  
-- Los outputs generados (tablas, gráficos, dashboard, informe, presentación)  
+- Fuente de datos: [UN DESA â€“ International Migrant Stock (vÃ­a Gapminder/open-numbers)](https://github.com/open-numbers/ddf--unpop--international_migrant_stock)
+
+- Todos los analisis usan **rutas relativas** (ej. `here::here()` en R).  
+
+- Los outputs generados (tablas, grÃ¡ficos, dashboard, informe, presentaciÃ³n)  
   se guardan en sus carpetas correspondientes.  
 
 ---
@@ -46,8 +48,10 @@ install.packages(c(
   "knitr", "rmarkdown", "flexdashboard", 
   "shiny", "leaflet", "plotly"
 ))
+```
 
-## Autoría
+---
 
-Proyecto desarrollado por **Nabel Baghach**  
-Repositorio GitHub: [Reto-II](https://github.com/Nbaghach/Reto-II)
+##  AutorÃ­a
+
+Nabel Baghach â€” Repositorio: https://github.com/Nbaghach/Reto-II

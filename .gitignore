@@ -1,25 +1,24 @@
-# R / RStudio
+# Archivos de R / RStudio
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 
-# Generated outputs
+# Proyecto de RStudio
+*.Rproj
+
+# Salidas generadas 
 Dashboard/HTML/
 Informe/PDF/
 Presentacion/PDF_HTML/
 
-# Large derived data (optional)
-Datos/Base_de_datos_depurada/*.csv.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
-# Generated outputs
-Dashboard/HTML/
-Informe/PDF/
-Presentacion/PDF_HTML/
-
-# Large derived data (optional)
+# Datos derivados 
 Datos/Base_de_datos_depurada/*.csv
 
+# Cachés de knitr / Rmarkdown
+**/cache/
+**/*_cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
