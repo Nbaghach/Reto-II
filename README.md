@@ -44,8 +44,11 @@ Para ejecutar el proyecto se necesitan los siguientes paquetes de R:
 install.packages(c(
   "tidyverse", "here", "readr", "dplyr", 
   "knitr", "rmarkdown", "flexdashboard", 
-  "shiny", "leaflet", "plotly"
+  "shiny", "leaflet", "plotly",tidyr","ggplot2","scales",
+         "forcats","","stringr",","htmltools
 ))
+
+
 ```
 
 ---
