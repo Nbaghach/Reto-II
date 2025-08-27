@@ -1,5 +1,5 @@
 ---
-title: "Reto 1 modulo 8"
+title: "C贸digo_depuraci贸n"
 output: html_document
 date: "2025-08-03"
 ---
@@ -20,20 +20,20 @@ library(readr)
 library(dplyr)
 library(here)
 
-# Rutas relativas (NO usar rutas absolutas)
+# Rutas relativas
 base    <- here("Datos", "Base_de_datos_original")
 out_dir <- here("Datos", "Base_de_datos_depurada")
 
-# Comprobaci髇 r醦ida: archivos esperados en la carpeta original
+# Comprobaci贸n r谩pida: archivos esperados en la carpeta original
 print(list.files(base))
 stopifnot(file.exists(file.path(base, "ddf--entities--geo--country.csv")))
 stopifnot(file.exists(file.path(base, "ddf--datapoints--immigrant_stock--by--geo--year.csv")))
 stopifnot(file.exists(file.path(base, "ddf--datapoints--emigrant_stock--by--geo--year.csv")))
 ```
 
-3.2 Importaci髇 de datos crudos
+3.2 Importaci贸n de datos crudos
 ```{r}
-# Lectura (UTF-8) de los tres CSV originales
+# Lectura (UTF-8) de los CSV originales
 entities_geo <- read_csv(file.path(base, "ddf--entities--geo--country.csv"),
                          locale = locale(encoding = "UTF-8"),
                          show_col_types = FALSE)
@@ -46,45 +46,51 @@ emigrant_df  <- read_csv(file.path(base, "ddf--datapoints--emigrant_stock--by--g
                          locale = locale(encoding = "UTF-8"),
                          show_col_types = FALSE)
 
-# Vistazo
+# Revisi贸n
 dplyr::glimpse(entities_geo)
 dplyr::glimpse(immigrant_df)
 dplyr::glimpse(emigrant_df)
 ```
 
-3.3 Limpieza y estandarizaci髇
+3.3 Limpieza y estandarizaci贸n
 ```{r}
-# 1) Detectar clave (geo/country) y columna de nombre legible (name / name:en)
+
+# 1) Detectar columnas claves (geo/country) y columna de nombre legible (name / name:en)
+
 key_col  <- if ("country" %in% names(entities_geo)) "country" else "geo"
 name_col <- if ("name" %in% names(entities_geo)) "name" else if ("name:en" %in% names(entities_geo)) "name:en" else NA_character_
 
-# 2) Crear versi髇 de entidades conservando *todas* las columnas originales,
-#    a馻diendo 'country_name' y una clave unificada 'geo_key' para el join
+# 2) Estandariza entidades: Crea versi贸n de entidades conservando *todas* las columnas originales, a帽adiendo 'country_name' y una clave unificada 'geo_key' para el join
+
 entities_geo_full <- entities_geo %>%
   mutate(country_name = dplyr::coalesce(.data[[name_col]], as.character(.data[[key_col]]))) %>%
   rename(geo_key = !!key_col)
 
-# 3) Preparar inmigraci髇 (conservar todas las columnas originales)
+# 3) Preparar tabla inmigraci贸n (conserva todas las columnas originales)
+
 imm <- immigrant_df %>%
   mutate(year = as.integer(year)) %>%
   left_join(entities_geo_full, by = c("geo" = "geo_key")) %>%
   rename(immigrant_stock_value = immigrant_stock)
 
-# 4) Preparar emigraci髇 (conservar todas las columnas originales)
+# 4) Preparar tabla emigraci贸n (conserva todas las columnas originales)
+
 emi <- emigrant_df %>%
   mutate(year = as.integer(year)) %>%
   left_join(entities_geo_full, by = c("geo" = "geo_key")) %>%
   rename(emigrant_stock_value = emigrant_stock)
 
-# 5) Guardar intermedios completos (sin perder variables)
-readr::write_csv(imm, file.path(out_dir, "immigrant_stock_by_country_year.csv"))
-readr::write_csv(emi, file.path(out_dir, "emigrant_stock_by_country_year.csv"))
+# 5) Guardar base de datos intermedias 
+
+readr::write_csv(imm, file.path(out_dir, "immigrants.csv"))
+readr::write_csv(emi, file.path(out_dir, "emigrants.csv"))
 
 ```
 
-3.4 C醠culo de migraci髇 neta y depuraci髇 de duplicadas
+3.4 C谩lculo de migraci贸n neta y depuraci贸n de duplicadas
 ```{r}
-# 6) Unir por geo y year (no unimos por country_name para evitar duplicados innecesarios)
+# 6) Unir por geo y year 
+
 net_mig <- full_join(imm, emi, by = c("geo", "year")) %>%
   mutate(
     immigrant_stock_value = as.numeric(immigrant_stock_value),
@@ -92,17 +98,33 @@ net_mig <- full_join(imm, emi, by = c("geo", "year")) %>%
     net_migration = immigrant_stock_value - emigrant_stock_value
   )
 
-# Guardar versi髇 base (antes de limpiar duplicadas)
-readr::write_csv(net_mig, file.path(out_dir, "migracion_neta_por_pais_ano.csv"))
+# Guardar versi贸n base (antes de limpieza)
+readr::write_csv(net_mig, file.path(out_dir, "migracion_neta.csv"))
 
-# 7) Eliminar columnas duplicadas *.y, quitar sufijo .x, y eliminar iso3166_2 (si aparece)
+# 7) Eliminar columnas duplicadas y renombrar
+
 net_mig_clean <- net_mig %>%
-  select(-matches("\\.y$")) %>%                                   # elimina duplicadas .y
-  rename_with(~ sub("\\.x$", "", .x), ends_with(".x")) %>%        # quita sufijo .x en resto
-  select(-any_of(c("iso3166_2", "iso3166_2.x", "iso3166_2.y"))) %>% # elimina iso3166_2
-  arrange(geo, year)
+  dplyr::transmute(
+    iso3           = dplyr::coalesce(iso3166_1_alpha3.x, iso3166_1_alpha3.y),
+    country_name   = dplyr::coalesce(country_name.x, country_name.y, name.x, name.y),
+    year           = year,
+    inmigrants    = immigrant_stock_value,
+    emigrants     = emigrant_stock_value,
+    net_migration  = net_migration,
+    region4        = dplyr::coalesce(world_4region.x, world_4region.y),
+    region6        = dplyr::coalesce(world_6region.x, world_6region.y),
+    income_groups = dplyr::coalesce(income_groups.x, income_groups.y),
+    g77_ocde       = dplyr::coalesce(g77_and_oecd_countries.x, g77_and_oecd_countries.y),
+    un_state       = dplyr::coalesce(un_state.x, un_state.y),
+    landlocked     = dplyr::coalesce(landlocked.x, landlocked.y),
+    latitude       = dplyr::coalesce(latitude.x, latitude.y),
+    longitude      = dplyr::coalesce(longitude.x, longitude.y),
+    religion       = dplyr::coalesce(main_religion_2008.x, main_religion_2008.y)
+  ) %>%
+  dplyr::arrange(iso3, year)
 
-# Guardar versi髇 limpia definitiva
+# Guardar versi贸n limpia definitiva
+
 readr::write_csv(net_mig_clean, file.path(out_dir, "migracion_neta_limpio.csv"))
 
 ```
