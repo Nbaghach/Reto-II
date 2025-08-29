@@ -6,7 +6,8 @@ El objetivo es analizar los **patrones de inmigración, emigración y migración
 ---
 
 ## Estructura del repositorio
-.
+
+```r
 ├─ Datos/
 │  ├─ Base_de_datos_original/             # CSV originales + README con la fuente oficial
 │  ├─ Codigo_depuracion/
@@ -31,7 +32,7 @@ El objetivo es analizar los **patrones de inmigración, emigración y migración
 │     └─ Presentacion.html                # salida compilada
 ├─ Reto-II.Rproj                          # proyecto de RStudio
 └─ README.md                              # este archivo
-
+```
 ---
 ## Reproducibilidad
 
