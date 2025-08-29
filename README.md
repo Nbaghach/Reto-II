@@ -45,7 +45,7 @@ install.packages(c(
   "tidyverse", "here", "readr", "dplyr", 
   "knitr", "rmarkdown", "flexdashboard", 
   "shiny", "leaflet", "plotly",tidyr","ggplot2","scales",
-         "forcats","","stringr",","htmltools
+         "forcats","","stringr",","htmltools, "janitor"
 ))
 
 

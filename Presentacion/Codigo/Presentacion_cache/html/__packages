@@ -6,6 +6,7 @@ janitor
 here
 knitr
 forcats
+tidyr
 sf
 rnaturalearth
 rnaturalearthdata

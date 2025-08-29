@@ -124,19 +124,18 @@ Se documenta la estructura del proyecto, los objetivos, la metodología y un pri
 
 # Objetivos del proyecto 
 
-## Objetivo principal
+## Objetivo general
 
-Analizar la evolución y las diferencias en la inmigración, emigración y migración neta internacional por país y año, a partir de datos abiertos procedentes de Gapminder/UN DESA, con el fin de identificar patrones regionales y socioeconómicos relevantes en los flujos migratorios y aportar nueva información a la comprensión de las dinámicas poblacionales globales.
+Analizar la evolución y las diferencias en la **inmigración**, **emigración** y **migración neta** internacional por país y año, a partir de datos abiertos de **Gapminder/UN DESA**, con el fin de **identificar patrones regionales y socioeconómicos** relevantes en los flujos migratorios y **aportar nueva información** a la comprensión de las dinámicas poblacionales globales.
 
 ## Objetivos específicos
 
-- Construir una base de datos reproducible que integre los indicadores de inmigración y emigración, generando el indicador de migración neta por país y año.
+- **Medir y comparar** los stocks de inmigrantes y emigrantes por país–año y **estimar la migración neta**.
+- **Describir la evolución temporal** (``r periodo_min``–``r periodo_max``) y calcular métricas de crecimiento (por ejemplo, **CAGR**).
+- **Caracterizar patrones** por **región** e **ingresos** (World Bank) y detectar asimetrías receptor/emisor.
+- **Priorizar casos** con mayores saldos (Top ±) y documentar su contribución al total mundial en ``r ultimo_anio``.
+- **Comunicar hallazgos** con visualizaciones reproducibles (barras, líneas, mapa / alternativa) y una tabla resumen de indicadores.
 
-- Desarrollar un análisis descriptivo multivariante de la migración neta, incorporando dimensiones geográficas y socioeconómicas.
-
-- Implementar visualizaciones dinámicas que permitan explorar de forma interactiva la evolución temporal y regional de la migración neta.
-
-- Elaborar un informe y presentación técnica reproducibles que resuman los principales hallazgos y tendencias.
 
 # Métricas globales y tabla resumen
 
