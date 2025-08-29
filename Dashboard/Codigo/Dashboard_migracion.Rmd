@@ -1,5 +1,5 @@
 ---
-title: "Dashboard - Flujos migratorios Internacionales"
+title: "Dashboard - Migración Internacional (1990–2019)"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
