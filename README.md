@@ -7,21 +7,32 @@ El objetivo es analizar los **patrones de inmigración, emigración y migración
 
 ## Estructura del repositorio
 
-- **Datos/**
-  - `Base_de_datos_original/` → CSV originales + README con fuente oficial (UN DESA – Gapminder)
-  - `Codigo_depuracion/` → Scripts R de carga y limpieza
-  - `Base_de_datos_depurada/` → Datos procesados para análisis
+Datos/
+├─ Base_de_datos_original/ # CSV originales + README con la fuente oficial
+├─ Codigo_depuracion/ # depuracion_script.Rmd
+└─ Base_de_datos_depurada/ # migracion_neta_limpio.csv (dataset final)
 
-- **Dashboard/**
-  - `Codigo/` → RMarkdown (flexdashboard / Shiny)
+Dashboard/
+├─ Codigo/
+│ ├─ dashboard_migracion.Rmd # Dashboard dinámico (Shiny)
+│ └─ Dashboard_migracion_static.Rmd # Dashboard estático (HTML)
+└─ HTML/
+    └─ dashboard_migracion_static.html 
 
-- **Informe/**
-  - `Codigo/` → Informe.Rmd (knitr/Rmarkdown)
-  - `PDF/` → Informe compilado
+Informe/
+├─ Codigo/
+│ └─ informe_migracion.Rmd # Informe técnico (RMarkdown/knitr)
+└─ PDF/
+   └─ informe_migracion.pdf
 
-- **Presentacion/**
-  - `Codigo/` → Presentación.Rmd
-  - (salidas PDF/HTML se generan al compilar)
+Presentacion/
+├─ Codigo/
+│ └─ Presentacion.Rmd # ioslides
+└─ PDF_HTML/
+  └─ Presentacion.html 
+
+Reto-II.Rproj # Proyecto de RStudio
+README.md # Este archivo
 
 ---
 ## Reproducibilidad
@@ -76,9 +87,9 @@ rmarkdown::render("Presentacion/Codigo/Presentacion.Rmd")
 
 ```r
 install.packages(c(
-  "tidyverse", "janitor", "scales",
-  "knitr", "rmarkdown", "flexdashboard", "plotly",
-  "sf", "countrycode"
+  "tidyverse","janitor","scales","knitr","rmarkdown",
+  "flexdashboard","shiny","plotly","here","countrycode",
+  "sf","rnaturalearth","rnaturalearthdata" 
 ))
 ```
 ---

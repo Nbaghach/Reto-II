@@ -1,20 +1,14 @@
-# Archivos de R / RStudio
+# --- R / RStudio (solo cachés/temporales) ---
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 
-# Salidas generadas
-Dashboard/HTML/
-Informe/PDF/
-Presentacion/Codigo/figs/
-Presentacion/Codigo/*_cache/
-
-# Cachts de knitr / Rmarkdown
+# --- Cachés de knitr / Rmarkdown e intermedios ---
 **/cache/
 **/*_cache/
 **/*_files/
 
-# Archivos del sistema
+# --- Basura del SO ---
 .DS_Store
 Thumbs.db
