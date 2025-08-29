@@ -1,24 +1,22 @@
- Datos originales (documentación de fuente)
+ # Datos originales â€” MigraciÃ³n Internacional
 
-Este directorio contiene los archivos originales mínimos necesarios para la depuración del proyecto Migración Internacional (1990–2019), junto con la documentación de la fuente para garantizar la reproducibilidad.
+Este directorio contiene los **datos originales** descargados de la fuente oficial antes de cualquier procesamiento.
 
-## Fuente oficial
+## Fuente 
 
-- **UN DESA – International Migrant Stock (vía Gapminder / open-numbers)**
-  - Repositorio DDF: https://github.com/open-numbers/ddf--unpop--international_migrant_stock
+- **Fuente utilizada**: dataset integrado en el repositorio abierto [Gapminder / open-numbers](https://github.com/open-numbers/ddf--unpop--international_migrant_stock)  
+- **Fecha de descarga**: agosto 2025  
 
-### Archivos relevantes del repositorio 
-
-- `ddf--datapoints--immigrant_stock--by--geo--year.csv` (stock de inmigrantes por país y año)
-- `ddf--datapoints--emigrant_stock--by--geo--year.csv` (stock de emigrantes por país y año)
-- `ddf--entities--geo--country.csv` (Metadatos de países (ISO3, nombre, grupos de ingresos,etc.))
-
+## Archivos incluidos
+- `ddf--entities--geo--country.csv` â†’ listado de paÃ­ses y regiones con metadatos (cÃ³digos ISO, nombres, clasificaciones).  
+- `ddf--datapoints--immigrant_stock--by--geo--year.csv` â†’ stock de inmigrantes por paÃ­s y aÃ±o.  
+- `ddf--datapoints--emigrant_stock--by--geo--year.csv` â†’ stock de emigrantes por paÃ­s y aÃ±o.  
 
 ## Flujo reproducible
-1. Usar estas bases de datos originales como entrada.
-2. Ejecutar los scripts de `Datos/Codigo_depuracion/` para:
-   - limpiar y estandarizar nombres/campos,
-   - construir **inmigración** y **emigración** por país–año,
-   - generar **migración neta = inmigrantes – emigrantes**.
-3. Guardar los resultados en `Datos/Base_de_datos_depurada/`.
+
+- Usar estas bases de datos originales como entrada.
+- La limpieza y transformaciÃ³n se hace en el script [`Datos/Codigo_depuracion/depuracion_script.Rmd`]
+- Los resultados de la depuraciÃ³n se guardan en `Datos/Base_de_datos_depurada/`.
+
+
 

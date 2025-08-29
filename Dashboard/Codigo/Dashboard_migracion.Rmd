@@ -1,5 +1,5 @@
 ---
-title: "Dashboard - Migración Internacional"
+title: "Dashboard - Flujos migratorios Internacionales"
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -19,6 +19,7 @@ knitr::opts_knit$set(encoding = "UTF-8")
 # Paquetes requeridos
 req <- c("shiny","flexdashboard","readr","dplyr","tidyr","ggplot2","scales",
          "forcats","here","stringr","plotly","htmltools")
+
 to_install <- req[!sapply(req, requireNamespace, quietly=TRUE)]
 if (length(to_install)) install.packages(to_install, dependencies=TRUE)
 
@@ -30,7 +31,7 @@ library(plotly); library(htmltools)
 
 fmt_si <- label_number(accuracy = 1, scale_cut = cut_short_scale())
 
-# Carga de datos (USANDO NOMBRES REALES DE TU BASE FINAL)
+# Carga de datos 
 ruta <- here("Datos","Base_de_datos_depurada","migracion_neta_limpio.csv")
 stopifnot(file.exists(ruta))
 df_raw <- read_csv(ruta, show_col_types = FALSE)
@@ -77,7 +78,7 @@ selectInput("income", "Ingreso:",
 
 ```
 
-# Main
+# Principal
 
 ## Column {data-width="75%"}
 
@@ -96,14 +97,14 @@ renderPlotly({
     d_income <- d_income %>% filter(income == input$income)
   }
 
-  # Serie GLOBAL (siempre)
+  # Serie GLOBAL 
   glob <- d_income %>%
     group_by(year) %>%
     summarise(valor = sum(.data[[metric]], na.rm = TRUE), .groups = "drop") %>%
     arrange(year) %>%
-    mutate(serie = "GLOBAL")
+    mutate(serie = "Global")
 
-  # Series regionales (todas o una)
+  # Series regionales
   if (!is.null(input$region) && input$region != "Todas") {
     reg <- d_income %>%
       filter(region == input$region) %>%
@@ -173,7 +174,7 @@ renderPlotly({
 ### Mapa mundial: Migrantes internacionales por país {data-height="62"}
 
 ```{r}
-## 4) Mapa (choropleth Plotly) — ahora por **ISO-3** real
+## 4) Mapa (choropleth Plotly)
 
 renderPlotly({
   req(input$metric, input$year)
@@ -181,7 +182,7 @@ renderPlotly({
   # Datos del año seleccionado
   d_year <- df %>% filter(year == input$year)
 
-  # Base completa (para modo "sin filtros")
+  # Base completa
   base <- d_year %>%
     transmute(
       iso3 = iso3,
@@ -290,9 +291,9 @@ renderPlotly({
 
 div(style = "height: auto; padding: 10px;",
 
-  # Top 5 Inmigrants
+  # Top 5 Inmigrantes
   div(style = "margin-bottom: 30px;",
-    h4("Top 5 Inmigrantes", style = "text-align: center; margin-bottom: 15px; color: #2166ac; font-size: 14px;"),
+    h4("Top 5 paises inmigrantes", style = "text-align: center; margin-bottom: 15px; color: #2166ac; font-size: 14px;"),
     renderPlot({
       req(input$year)
       d <- df %>% filter(year == as.numeric(input$year))
@@ -323,9 +324,9 @@ div(style = "height: auto; padding: 10px;",
     }, height = 180)
   ),
 
-  # Top 5 Emigrants
+  # Top 5 Emigrantes
   div(style = "margin-bottom: 30px;",
-    h4("Top 5 Emigrantes", style = "text-align: center; margin-bottom: 15px; color: #d73027; font-size: 14px;"),
+    h4("Top 5 paises emigrantes", style = "text-align: center; margin-bottom: 15px; color: #d73027; font-size: 14px;"),
     renderPlot({
       req(input$year)
       d <- df %>% filter(year == as.numeric(input$year))
@@ -356,7 +357,7 @@ div(style = "height: auto; padding: 10px;",
     }, height = 180)
   ),
 
-  # Top 5 Net Migration
+  # Top 5 migracion neta
   div(style = "margin-bottom: 20px;",
     h4("Top 5 Migración Neta", style = "text-align: center; margin-bottom: 15px; color: #333; font-size: 14px;"),
     renderPlot({

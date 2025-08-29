@@ -4,20 +4,16 @@
 .RData
 .Ruserdata
 
-# Proyecto de RStudio
-*.Rproj
-
-# Salidas generadas 
+# Salidas generadas
 Dashboard/HTML/
 Informe/PDF/
-Presentacion/PDF_HTML/
+Presentacion/Codigo/figs/
+Presentacion/Codigo/*_cache/
 
-# Datos derivados 
-Datos/Base_de_datos_depurada/*.csv
-
-# Cachés de knitr / Rmarkdown
+# Cachts de knitr / Rmarkdown
 **/cache/
 **/*_cache/
+**/*_files/
 
 # Archivos del sistema
 .DS_Store

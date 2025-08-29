@@ -1,0 +1,271 @@
+---
+title: "Dashboard - Migración Internacional (estático)"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+    self_contained: true
+runtime: static
+encoding: UTF-8
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(encoding = "UTF-8")
+library(tidyverse)
+library(readr)
+library(janitor)
+library(plotly)
+library(scales)
+library(here)
+library(countrycode)
+library(htmltools)
+
+# Parámetros 
+year_selected   <- 2019            # cambia el año si quieres otra instantánea
+show_metric     <- "inmigrants"    # opciones: "inmigrants", "emigrants", "net"
+
+fmt_si <- label_number(accuracy = 1, scale_cut = cut_short_scale())
+
+# Carga datos depurado
+ruta <- here::here("Datos","Base_de_datos_depurada","migracion_neta_limpio.csv")
+if (!file.exists(ruta)) {
+  ruta <- file.path("..","..","Datos","Base_de_datos_depurada","migracion_neta_limpio.csv")
+}
+stopifnot(file.exists(ruta))
+
+df_raw <- read_csv(ruta, locale = locale(encoding = "UTF-8"), show_col_types = FALSE) |>
+  clean_names()
+
+# --- Armonización con derivación de ISO3 y filtrado de agregados ---
+df <- df_raw |>
+  mutate(
+    # Si iso3 viene vacío/NA, lo derivamos desde el nombre del país
+    iso3 = toupper(dplyr::coalesce(
+      iso3,
+      countrycode(country_name, "country.name", "iso3c", warn = FALSE)
+    ))
+  ) |>
+  transmute(
+    iso3       = iso3,
+    year       = as.integer(year),
+    country    = country_name,
+    inmigrants = as.numeric(inmigrants),
+    emigrants  = as.numeric(emigrants),
+    net        = as.numeric(net_migration),
+    region4    = region4,
+    region6    = region6,
+    income     = income_groups
+  ) |>
+  mutate(region = dplyr::coalesce(region6, region4)) |>
+  # quitamos agregados/regiones que no tienen ISO3 válido
+  filter(!is.na(iso3))
+
+# Chequeos mínimos
+stopifnot(nrow(df) > 0, all(!is.na(df$year)))
+
+# Etiquetas para el título según la métrica
+metric <- show_metric
+titulo <- c(inmigrants="Inmigrantes", emigrants="Emigrantes", net="Migración neta")[metric]
+```
+
+# Principal
+
+## Column {data-width="70%"}
+
+### Gráfico de líneas: Evolución global y por región (1990-2019) {data-height="40"}
+
+```{r}
+# Agregaciones
+glob <- df |>
+  group_by(year) |>
+  summarise(valor = sum(.data[[metric]], na.rm = TRUE), .groups = "drop") |>
+  mutate(serie = "GLOBAL")
+
+reg <- df |>
+  filter(!is.na(region)) |>
+  group_by(region, year) |>
+  summarise(valor = sum(.data[[metric]], na.rm = TRUE), .groups = "drop") |>
+  mutate(serie = region)
+
+# Plot
+p <- plot_ly()
+
+# Series regionales
+p <- p %>%
+  add_trace(
+    data = reg, type = "scatter", mode = "lines+markers",
+    x = ~year, y = ~valor,
+    color = ~serie, legendgroup = ~serie,
+    text = ~serie,
+    hovertemplate = "Región: %{text}<br>Año: %{x}<br>Valor: %{y:.3s}<extra></extra>",
+    line = list(width = 2), marker = list(size = 5, opacity = 0.9)
+  )
+
+# Serie GLOBAL
+p <- p %>%
+  add_trace(
+    data = glob, type = "scatter", mode = "lines+markers",
+    x = ~year, y = ~valor, name = "GLOBAL", legendgroup = "GLOBAL",
+    text = ~serie,
+    hovertemplate = "Serie: %{text}<br>Año: %{x}<br>Valor: %{y:.3s}<extra></extra>",
+    line = list(width = 4, color = "gray35"),
+    marker = list(size = 7, opacity = 0.95, color = "gray35")
+  ) %>%
+  layout(
+    title = paste0("Evolución de ", titulo),
+    xaxis = list(title = "Año", tickmode = "array", tickvals = seq(min(df$year), max(df$year), 5)),
+    yaxis = list(title = "Personas", tickformat = "~s"),
+    legend = list(orientation = "h", y = -0.2)
+  )
+
+p
+```
+
+### Mapa mundial: Migrantes internacionales por país {data-height="60"}
+
+```{r}
+# Mapa migración neta
+metric_map <- "net"
+lab <- "Migración neta"
+
+d_year <- df |> dplyr::filter(year == year_selected)
+
+base <- d_year |>
+  dplyr::transmute(
+    iso3 = iso3,
+    country = country,
+    valor = .data[[metric_map]]
+  ) |>
+  dplyr::filter(grepl("^[A-Z]{3}$", iso3), is.finite(valor))
+
+if (nrow(base) == 0) {
+  htmltools::div(paste("Sin datos para", lab, "en", year_selected))
+} else {
+  # Escala divergente y límites simétricos 
+  
+  q <- stats::quantile(abs(base$valor), 0.98, na.rm = TRUE)
+  if (!is.finite(q) || q == 0) q <- 1e3
+  zlim <- c(-q, q)
+  cs   <- list(c(0, "#b2182b"), c(0.5, "#f7f7f7"), c(1, "#2166ac"))  # rojo-negativo / azul-positivo
+
+  plot_ly(
+    data = base,
+    type = "choropleth",
+    locations = ~iso3, locationmode = "ISO-3",
+    z = ~valor, zmin = zlim[1], zmax = zlim[2],
+    text = ~country,
+    colorscale = cs, reversescale = FALSE,
+    marker = list(line = list(color = "gray", width = 0.3)),
+    hovertemplate = paste("%{text}<br>", lab, ": %{z:.3s}<extra></extra>"),
+    colorbar = list(title = paste0(lab, " (", year_selected, ")"))
+  ) |>
+    layout(
+      title = paste0("Mapa mundial: ", lab, " — ", year_selected),
+      geo = list(showframe = FALSE, showcoastlines = FALSE,
+                 projection = list(type = "equirectangular"))
+    )
+}
+```
+
+## Column {data-width="30%"}
+
+### Top 5 Inmigrantes {data-height=32}
+
+```{r}
+d <- df |> dplyr::filter(year == year_selected)
+
+top_inm <- d |>
+  dplyr::filter(!is.na(inmigrants), inmigrants > 0) |>
+  dplyr::slice_max(inmigrants, n = 5) |>
+  dplyr::mutate(country = forcats::fct_reorder(country, inmigrants))
+
+ggplot(top_inm, aes(x = country, y = inmigrants)) +
+  geom_col(width = 0.82, alpha = 0.95, fill = "#2166ac") +
+  geom_text(
+    aes(label = scales::number(inmigrants, scale = 1e-6, accuracy = 0.1, suffix = "M")),
+    hjust = -0.10, size = 5.0, fontface = "bold", color = "black"
+  ) +
+  coord_flip() +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.48))) +
+  labs(title = "Top 5 Inmigrantes", x = NULL, y = NULL) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", margin = margin(b = 6)),
+    axis.text.y = element_text(size = 14, face = "bold"),
+    axis.text.x = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    plot.margin = margin(2, 4, 2, 2)
+  )
+```
+
+### Top 5 Emigrantes {data-height=32}
+
+```{r}
+top_emi <- d |>
+  dplyr::filter(!is.na(emigrants), emigrants > 0) |>
+  dplyr::slice_max(emigrants, n = 5) |>
+  dplyr::mutate(country = forcats::fct_reorder(country, emigrants))
+
+ggplot(top_emi, aes(x = country, y = emigrants)) +
+  geom_col(width = 0.82, alpha = 0.95, fill = "#d73027") +
+  geom_text(
+    aes(label = scales::number(emigrants, scale = 1e-6, accuracy = 0.1, suffix = "M")),
+    hjust = -0.10, size = 5.0, fontface = "bold", color = "black"
+  ) +
+  coord_flip() +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.48))) +
+  labs(title = "Top 5 Emigrantes", x = NULL, y = NULL) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", margin = margin(b = 6)),
+    axis.text.y = element_text(size = 14, face = "bold"),
+    axis.text.x = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    plot.margin = margin(2, 4, 2, 2)
+  )
+```
+
+### Top 5 Migracion neta {data-height=36}
+```{r}
+top_pos <- d |>
+  dplyr::filter(!is.na(net), net > 0) |>
+  dplyr::slice_max(net, n = 5)
+
+top_neg <- d |>
+  dplyr::filter(!is.na(net), net < 0) |>
+  dplyr::slice_min(net, n = 5)
+
+top_net <- dplyr::bind_rows(top_neg, top_pos) |>
+  dplyr::arrange(net) |>
+  dplyr::mutate(
+    country = forcats::fct_reorder(country, net),
+    color_type = ifelse(net >= 0, "Positiva", "Negativa")
+  )
+
+ggplot(top_net, aes(x = country, y = net, fill = color_type)) +
+  geom_col(width = 0.82, alpha = 0.95) +
+  scale_fill_manual(values = c("Positiva"="#2166ac","Negativa"="#d73027"), guide = "none") +
+  geom_text(
+    aes(label = paste0(ifelse(net >= 0, "+", ""),
+                       scales::number(net, scale = 1e-6, accuracy = 0.1, suffix = "M"))),
+    hjust = ifelse(top_net$net >= 0, -0.12, 1.12),
+    size = 5.0, fontface = "bold", color = "black"
+  ) +
+  coord_flip() +
+  scale_y_continuous(expand = expansion(mult = c(0.36, 0.36))) +
+  labs(title = "Top 5 Migración neta", x = NULL, y = NULL) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", margin = margin(b = 6)),
+    axis.text.y = element_text(size = 14, face = "bold"),
+    axis.text.x = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank(),
+    legend.position = "none",
+    plot.margin = margin(2, 4, 2, 2)
+  )
+```
+

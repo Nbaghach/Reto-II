@@ -1,0 +1,1625 @@
+iso3,country_name,year,inmigrants,emigrants,net_migration,region4,region6,income_groups,g77_ocde,un_state,landlocked,latitude,longitude,religion
+ABW,Aruba,1990,14444,10596,3848,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,1995,22274,10747,11527,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,2000,30104,11037,19067,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,2005,32540,13056,19484,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,2010,34327,14479,19848,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,2015,36114,17551,18563,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+ABW,Aruba,2019,36532,19640,16892,americas,america,high_income,others,FALSE,coastline,12.5,-69.96667,christian
+AFG,Afghanistan,1990,57686,6823350,-6765664,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,1995,71522,3716077,-3644555,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,2000,75917,4606374,-4530457,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,2005,87300,3898656,-3811356,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,2010,102246,5055805,-4953559,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,2015,489749,4977010,-4487261,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AFG,Afghanistan,2019,149762,5120756,-4970994,asia,south_asia,low_income,g77,TRUE,landlocked,33,66,muslim
+AGO,Angola,1990,33517,824942,-791425,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,1995,39813,688660,-648847,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,2000,46108,913314,-867206,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,2005,61329,716506,-655177,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,2010,332126,660056,-327930,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,2015,632178,644655,-12477,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AGO,Angola,2019,669479,661590,7889,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-12.5,18.5,christian
+AIA,Anguilla,1990,2570,2047,523,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,1995,3317,2566,751,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,2000,4063,3094,969,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,2005,4684,3053,1631,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,2010,5103,2366,2737,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,2015,5470,2565,2905,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+AIA,Anguilla,2019,5679,2707,2972,americas,america,NA,others,FALSE,coastline,18.21667,-63.05,christian
+ALB,Albania,1990,66013,180284,-114271,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,1995,71354,501142,-429788,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,2000,76695,824413,-747718,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,2005,64739,966234,-901495,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,2010,52784,1120305,-1067521,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,2015,52031,1129044,-1077013,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+ALB,Albania,2019,49160,1207032,-1157872,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,41,20,muslim
+AND,Andorra,1990,38891,3792,35099,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,1995,44206,4192,40014,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,2000,42147,5624,36523,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,2005,50298,5778,44520,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,2010,52053,7926,44127,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,2015,42264,8723,33541,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+AND,Andorra,2019,45102,9114,35988,europe,europe_central_asia,high_income,others,TRUE,landlocked,42.50779,1.52109,christian
+ARE,United Arab Emirates,1990,1306574,79545,1227029,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,1995,1824118,97971,1726147,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,2000,2447010,111123,2335887,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,2005,3281115,105072,3176043,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,2010,7316697,121176,7195521,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,2015,7995126,137066,7858060,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARE,United Arab Emirates,2019,8587256,154404,8432852,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,23.75,54.5,muslim
+ARG,Argentina,1990,1649919,430169,1219750,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,1995,1595069,481996,1113073,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,2000,1540219,555587,984632,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,2005,1673088,808409,864679,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,2010,1805957,938087,867870,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,2015,2086302,946815,1139487,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARG,Argentina,2019,2212879,1013414,1199465,americas,america,upper_middle_income,g77,TRUE,coastline,-34,-64,christian
+ARM,Armenia,1990,658789,899649,-240860,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,1995,693999,901872,-207873,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,2000,657900,876470,-218570,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,2005,469119,898086,-428967,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,2010,211147,917350,-706203,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,2015,191199,946978,-755779,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ARM,Armenia,2019,190159,964848,-774689,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,40.25,45,christian
+ASM,American Samoa,1990,21283,2041,19242,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,1995,23098,2638,20460,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,2000,24912,3186,21726,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,2005,24233,2588,21645,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,2010,23555,2159,21396,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,2015,23513,1967,21546,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ASM,American Samoa,2019,23539,1817,21722,asia,east_asia_pacific,upper_middle_income,others,FALSE,coastline,-11.056,-171.082,christian
+ATG,Antigua and Barbuda,1990,12029,21753,-9724,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,1995,17550,27682,-10132,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,2000,23071,33847,-10776,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,2005,24741,37541,-12800,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,2010,26412,41431,-15019,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,2015,28083,52576,-24493,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+ATG,Antigua and Barbuda,2019,29207,55089,-25882,americas,america,high_income,g77,TRUE,coastline,17.05,-61.8,christian
+AUS,Australia,1990,3955213,303696,3651517,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,1995,4153330,344311,3809019,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,2000,4386250,385120,4001130,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,2005,4878030,430599,4447431,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,2010,5882980,487844,5395136,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,2015,6729730,529676,6200054,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUS,Australia,2019,7549270,577255,6972015,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-25,135,christian
+AUT,Austria,1990,793239,506088,287151,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,1995,894893,490849,404044,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,2000,996547,478831,517716,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,2005,1136270,494587,641683,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,2010,1275992,520152,755840,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,2015,1492374,531451,960923,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AUT,Austria,2019,1779857,575950,1203907,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.33333,13.33333,christian
+AZE,Azerbaijan,1990,360600,1634081,-1273481,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,1995,344070,1712211,-1368141,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,2000,327540,1628482,-1300942,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,2005,302220,1446116,-1143896,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,2010,276901,1164567,-887666,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,2015,264241,1137808,-873567,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+AZE,Azerbaijan,2019,253887,1155852,-901965,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,40.5,47.5,muslim
+BDI,Burundi,1990,333110,337118,-4008,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,1995,254853,540567,-285714,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,2000,125628,758674,-633046,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,2005,172874,619478,-446604,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,2010,235259,284587,-49328,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,2015,289810,462022,-172212,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BDI,Burundi,2019,321018,623999,-302981,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-3.5,30,christian
+BEL,Belgium,1990,1280583,365360,915223,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,1995,1288003,376028,911975,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,2000,1268368,400064,868304,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,2005,1248733,439693,809040,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,2010,1503806,487203,1016603,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,2015,1783488,532447,1251041,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEL,Belgium,2019,1981919,581740,1400179,europe,europe_central_asia,high_income,oecd,TRUE,coastline,50.75,4.5,christian
+BEN,Benin,1990,76751,234314,-157563,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,1995,105703,275696,-169993,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,2000,134655,328047,-193392,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,2005,221889,504053,-282164,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,2010,309124,540832,-231708,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,2015,366284,635120,-268836,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BEN,Benin,2019,390112,666357,-276245,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9.5,2.25,NA
+BFA,Burkina Faso,1990,349652,1021332,-671680,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,1995,464104,1215666,-751562,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,2000,520363,1279415,-759052,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,2005,597658,1367198,-769540,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,2010,674438,1434192,-759754,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,2015,704676,1518086,-813410,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BFA,Burkina Faso,2019,718338,1581083,-862745,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,12.5,-1.66667,muslim
+BGD,Bangladesh,1990,881617,5451831,-4570214,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,1995,934735,5425050,-4490315,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,2000,987853,5442722,-4454869,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,2005,1166700,5786866,-4620166,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,2010,1345546,6750115,-5404569,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,2015,1422805,7307527,-5884722,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGD,Bangladesh,2019,2185613,7835152,-5649539,asia,south_asia,low_income,g77,TRUE,coastline,24,90,muslim
+BGR,Bulgaria,1990,21510,613093,-591583,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,1995,32435,649577,-617142,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,2000,43360,688832,-645472,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,2005,61074,906520,-845446,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,2010,76287,1106684,-1030397,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,2015,123803,1155732,-1031929,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BGR,Bulgaria,2019,168516,1541860,-1373344,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.66667,25.25,christian
+BHR,Bahrain,1990,173212,12820,160392,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,1995,205979,26016,179963,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,2000,239361,47738,191623,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,2005,404018,52557,351461,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,2010,657856,53125,604731,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,2015,704137,57930,646207,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHR,Bahrain,2019,741161,60153,681008,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,26.03333,50.55,muslim
+BHS,Bahamas,1990,26855,25182,1673,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,1995,31654,29686,1968,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,2000,36454,34441,2013,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,2005,45595,34866,10729,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,2010,54736,36004,18732,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,2015,59306,43142,16164,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BHS,Bahamas,2019,62962,46467,16495,americas,america,high_income,g77,TRUE,coastline,25.04082,-77.37122,christian
+BIH,Bosnia and Herzegovina,1990,56000,861766,-805766,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,1995,69476,1372534,-1303058,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,2000,82952,1496702,-1413750,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,2005,47272,1496969,-1449697,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,2010,38792,1569275,-1530483,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,2015,38574,1606003,-1567429,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BIH,Bosnia and Herzegovina,2019,35735,1653056,-1617321,europe,europe_central_asia,upper_middle_income,g77,TRUE,coastline,44.25,17.83333,NA
+BLR,Belarus,1990,1248977,1767606,-518629,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,1995,1186282,1736499,-550217,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,2000,1123586,1685652,-562066,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,2005,1106982,1581211,-474229,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,2010,1090378,1465141,-374763,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,2015,1082905,1472195,-389290,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLR,Belarus,2019,1069395,1480794,-411399,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,53,28,christian
+BLZ,Belize,1990,30404,36117,-5713,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,1995,33446,41959,-8513,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,2000,36488,48213,-11725,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,2005,41424,51891,-10467,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,2010,46360,57331,-10971,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,2015,54674,63256,-8582,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BLZ,Belize,2019,59998,68144,-8146,americas,america,upper_middle_income,g77,TRUE,coastline,17.49952,-88.19756,christian
+BMU,Bermuda,1990,15683,71702,-56019,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,1995,16676,42600,-25924,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,2000,17668,14084,3584,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,2005,18276,14921,3355,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,2010,18884,15281,3603,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,2015,19126,16513,2613,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BMU,Bermuda,2019,19336,18049,1287,americas,america,high_income,others,FALSE,coastline,32.2949,-64.78303,christian
+BOL,Bolivia,1990,73758,224693,-150935,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,1995,83598,283540,-199942,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,2000,92658,344713,-252055,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,2005,107745,543783,-436038,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,2010,122846,780095,-657249,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,2015,142989,825826,-682837,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BOL,Bolivia,2019,156114,878211,-722097,americas,america,lower_middle_income,g77,TRUE,landlocked,-17,-65,christian
+BRA,Brazil,1990,798517,500392,298125,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,1995,741557,751469,-9912,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,2000,684596,970453,-285857,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,2005,638582,1220052,-581470,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,2010,592568,1518343,-925775,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,2015,716568,1530784,-814216,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRA,Brazil,2019,807006,1745339,-938333,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-55,christian
+BRB,Barbados,1990,24024,84931,-60907,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,1995,26224,89921,-63697,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,2000,28424,95453,-67029,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,2005,30624,93504,-62880,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,2010,32825,96348,-63523,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,2015,34475,103661,-69186,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRB,Barbados,2019,34807,112925,-78118,americas,america,high_income,g77,TRUE,coastline,13.16667,-59.53333,christian
+BRN,Brunei,1990,73200,26323,46877,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,1995,84748,35052,49696,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,2000,96296,45242,51054,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,2005,98441,45284,53157,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,2010,100587,43871,56716,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,2015,102733,45647,57086,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BRN,Brunei,2019,110641,46977,63664,asia,east_asia_pacific,high_income,g77,TRUE,coastline,4.5,114.66667,muslim
+BTN,Bhutan,1990,23807,28465,-4658,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,1995,27972,117971,-89999,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,2000,32137,120187,-88050,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,2005,40279,118031,-77752,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,2010,48420,86154,-37734,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,2015,51106,47982,3124,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BTN,Bhutan,2019,53254,49216,4038,asia,south_asia,lower_middle_income,g77,TRUE,landlocked,27.5,90.5,eastern_religions
+BWA,Botswana,1990,27510,26053,1457,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,1995,40168,23320,16848,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,2000,74934,26688,48246,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,2005,84614,33296,51318,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,2010,94614,46832,47782,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,2015,103268,77442,25826,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+BWA,Botswana,2019,110596,86501,24095,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,landlocked,-22,24,christian
+CAF,Central African Republic,1990,67234,46362,20872,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,1995,99712,49210,50502,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,2000,123529,55418,68111,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,2005,94449,131396,-36947,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,2010,93466,245925,-152459,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,2015,81598,685844,-604246,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAF,Central African Republic,2019,90649,767884,-677235,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,7,21,NA
+CAN,Canada,1990,4333318,998163,3335155,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,1995,4864778,1069031,3795747,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,2000,5511914,1148499,4363415,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,2005,6078985,1190001,4888984,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,2010,6761226,1272338,5488888,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,2015,7428657,1286881,6141776,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CAN,Canada,2019,7960657,1323087,6637570,americas,america,high_income,oecd,TRUE,coastline,60.10867,-113.64258,christian
+CHE,Switzerland,1990,1392282,326276,1066006,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,1995,1478829,340103,1138726,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,2000,1570756,371471,1199285,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,2005,1805437,504258,1301179,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,2010,2075182,627301,1447881,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,2015,2416394,637550,1778844,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHE,Switzerland,2019,2572029,679796,1892233,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,47.00016,8.01427,christian
+CHL,Chile,1990,107501,493026,-385525,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,1995,142417,499207,-356790,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,2000,177332,512014,-334682,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,2005,276360,542211,-265851,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,2010,375388,570644,-195256,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,2015,639724,619927,19797,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHL,Chile,2019,939992,650151,289841,americas,america,high_income,g77,TRUE,coastline,-33.45694,-70.64827,christian
+CHN,China,1990,376361,4231648,-3855287,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,1995,442198,5030369,-4588171,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,2000,508034,5885006,-5376972,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,2005,678947,7327438,-6648491,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,2010,849861,8733242,-7883381,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,2015,978046,10161659,-9183613,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CHN,China,2019,1030871,10732281,-9701410,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,35,105,eastern_religions
+CIV,Cote d'Ivoire,1990,1816426,366348,1450078,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,1995,2076394,449508,1626886,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,2000,2163644,539243,1624401,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,2005,2265090,701796,1563294,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,2010,2366537,940012,1426525,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,2015,2467984,1055575,1412409,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CIV,Cote d'Ivoire,2019,2549141,1114003,1435138,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8,-5.5,NA
+CMR,Cameroon,1990,265967,115853,150114,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,1995,244791,138948,105843,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,2000,227242,164302,62940,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,2005,265503,221292,44211,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,2010,291474,279448,12026,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,2015,508346,351993,156353,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+CMR,Cameroon,2019,505692,383029,122663,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,6,12.5,christian
+COD,"Congo, Dem. Rep.",1990,754194,436526,317668,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",1995,1816963,559836,1257127,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",2000,744387,862051,-117664,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",2005,622869,1115397,-492528,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",2010,588950,1282572,-693622,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",2015,824492,1519137,-694645,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COD,"Congo, Dem. Rep.",2019,963833,1684615,-720782,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2.5,23.5,christian
+COG,"Congo, Rep.",1990,129391,96372,33019,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",1995,191635,115684,75951,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",2000,305880,135247,170633,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",2005,318724,172360,146364,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",2010,425173,181070,244103,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",2015,390142,226747,163395,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COG,"Congo, Rep.",2019,402142,239397,162745,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,-1,15.5,christian
+COK,Cook Is,1990,2587,17488,-14901,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,1995,2686,17012,-14326,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,2000,2785,19481,-16696,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,2005,3277,19584,-16307,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,2010,3769,20559,-16790,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,2015,3477,21561,-18084,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COK,Cook Is,2019,3491,22488,-18997,asia,east_asia_pacific,NA,others,FALSE,coastline,-21.24842,-159.78516,christian
+COL,Colombia,1990,104277,1009935,-905658,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,1995,106943,1217608,-1110665,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,2000,109609,1436444,-1326835,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,2005,107612,1887924,-1780312,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,2010,124271,2526525,-2402254,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,2015,139134,2703591,-2564457,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COL,Colombia,2019,1142319,2869032,-1726713,americas,america,upper_middle_income,g77,TRUE,coastline,4,-73.25,christian
+COM,Comoros,1990,14079,40083,-26004,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,1995,13939,51292,-37353,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,2000,13799,70503,-56704,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,2005,13209,96158,-82949,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,2010,12618,109067,-96449,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,2015,12555,116051,-103496,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+COM,Comoros,2019,12504,120297,-107793,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-12.23333,44.44553,muslim
+CPV,Cape Verde,1990,8931,91368,-82437,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,1995,9979,106957,-96978,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,2000,11027,124824,-113797,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,2005,12700,141879,-129179,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,2010,14373,152877,-138504,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,2015,14924,172322,-157398,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CPV,Cape Verde,2019,15664,186372,-170708,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,-24,christian
+CRI,Costa Rica,1990,417628,69711,347917,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,1995,364287,85421,278866,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,2000,310946,105682,205264,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,2005,358175,118673,239502,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,2010,405404,133027,272377,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,2015,411697,139525,272172,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CRI,Costa Rica,2019,417768,150400,267368,americas,america,upper_middle_income,g77,TRUE,coastline,10,-84,christian
+CUB,Cuba,1990,34555,835796,-801241,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,1995,26187,935463,-909276,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,2000,17818,1049761,-1031943,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,2005,11935,1162586,-1150651,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,2010,6640,1313321,-1306681,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,2015,5312,1507660,-1502348,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUB,Cuba,2019,4886,1654684,-1649798,americas,america,upper_middle_income,g77,TRUE,coastline,22,-79.5,christian
+CUW,Curaçao,1990,NA,43190,NA,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,1995,NA,50014,NA,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,2000,NA,58569,NA,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,2005,NA,68806,NA,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,2010,34627,109367,-74740,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,2015,37611,110625,-73014,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CUW,Curaçao,2019,40883,123132,-82249,americas,america,high_income,others,FALSE,coastline,12.16667,-68.96667,christian
+CYM,Cayman Islands,1990,9315,373,8942,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,1995,12666,803,11863,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,2000,19176,1279,17897,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,2005,20679,1291,19388,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,2010,24057,1391,22666,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,2015,26177,1759,24418,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYM,Cayman Islands,2019,28985,1973,27012,americas,america,high_income,others,FALSE,coastline,19.5,-80.66667,christian
+CYP,Cyprus,1990,43805,174378,-130573,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,1995,61941,163285,-101344,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,2000,80076,153573,-73497,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,2005,117165,154243,-37078,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,2010,191866,163956,27910,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,2015,192020,192411,-391,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CYP,Cyprus,2019,191922,214648,-22726,europe,europe_central_asia,high_income,others,TRUE,coastline,35,33,christian
+CZE,Czech Republic,1990,110394,277260,-166866,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,1995,165592,333356,-167764,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,2000,220789,400971,-180182,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,2005,322540,607009,-284469,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,2010,398493,782250,-383757,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,2015,416454,836740,-420286,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+CZE,Czech Republic,2019,512705,911388,-398683,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.75,15,christian
+DEU,Germany,1990,5936181,2929448,3006733,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,1995,7464406,3045354,4419052,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,2000,8992631,3235354,5757277,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,2005,9402447,3446260,5956187,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,2010,9812263,3727333,6084930,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,2015,10220418,3756136,6464282,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DEU,Germany,2019,13132146,4014203,9117943,europe,europe_central_asia,high_income,oecd,TRUE,coastline,51.5,10.5,christian
+DJI,Djibouti,1990,122221,5308,116913,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,1995,99774,6964,92810,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,2000,100507,9055,91452,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,2005,92091,12339,79752,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,2010,101575,13832,87743,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,2015,112351,17071,95280,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DJI,Djibouti,2019,115341,18668,96673,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,11.58901,43.14503,muslim
+DMA,Dominica,1990,2519,42437,-39918,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,1995,3121,45232,-42111,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,2000,3723,48446,-44723,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,2005,4744,64239,-59495,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,2010,8110,73693,-65583,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,2015,8093,73846,-65753,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DMA,Dominica,2019,8264,78634,-70370,americas,america,upper_middle_income,g77,TRUE,coastline,15.5,-61.33333,christian
+DNK,Denmark,1990,235189,201761,33428,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,1995,303108,207983,95125,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,2000,371026,218071,152955,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,2005,440383,225671,214712,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,2010,500772,234437,266335,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,2015,595876,241896,353980,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DNK,Denmark,2019,722878,255616,467262,europe,europe_central_asia,high_income,oecd,TRUE,coastline,56,10,christian
+DOM,Dominican Republic,1990,291151,466216,-175065,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,1995,323381,675282,-351901,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,2000,355611,897785,-542174,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,2005,376001,1023442,-647441,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,2010,393720,1185546,-791826,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,2015,549289,1456950,-907661,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DOM,Dominican Republic,2019,567648,1558668,-991020,americas,america,upper_middle_income,g77,TRUE,coastline,19,-70.66667,christian
+DZA,Algeria,1990,273954,921727,-647773,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,1995,262032,979704,-717672,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,2000,250110,1038048,-787938,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,2005,197422,1599882,-1402460,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,2010,216964,1656453,-1439489,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,2015,239473,1838674,-1599201,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+DZA,Algeria,2019,249075,1944784,-1695709,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,3,muslim
+ECU,Ecuador,1990,78663,214008,-135345,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,1995,115093,326230,-211137,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,2000,151523,446391,-294868,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,2005,187404,987059,-799655,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,2010,325366,1152628,-827262,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,2015,387513,1130942,-743429,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+ECU,Ecuador,2019,381507,1183685,-802178,americas,america,upper_middle_income,g77,TRUE,coastline,-1.25,-78.25,christian
+EGY,Egypt,1990,173833,1322178,-1148345,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,1995,166955,1492244,-1325289,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,2000,184774,1708513,-1523739,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,2005,285006,1901661,-1616655,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,2010,310017,2611870,-2301853,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,2015,353641,3187593,-2833952,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+EGY,Egypt,2019,504053,3547626,-3043573,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,27,30,muslim
+ERI,Eritrea,1990,11848,170603,-158755,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,1995,12400,375258,-362858,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,2000,12952,511508,-498556,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,2005,14314,294519,-280205,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,2010,15676,320659,-304983,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,2015,15941,587339,-571398,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ERI,Eritrea,2019,16101,751481,-735380,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,15,39,muslim
+ESH,Western Sahara,1990,2688,168239,-165551,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,1995,2989,167148,-164159,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,2000,3289,166064,-162775,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,2005,3891,131091,-127200,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,2010,4493,143996,-139503,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,2015,5179,188053,-182874,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESH,Western Sahara,2019,5384,195572,-190188,africa,middle_east_north_africa,NA,others,FALSE,coastline,24.49215,-12.65625,muslim
+ESP,Spain,1990,821605,1439019,-617414,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,1995,1020067,1362439,-342372,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,2000,1657285,1290279,367006,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,2005,4107226,1113967,2993259,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,2010,6280065,1086552,5193513,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,2015,5891208,1271020,4620188,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+ESP,Spain,2019,6104203,1444942,4659261,europe,europe_central_asia,high_income,oecd,TRUE,coastline,40,-4,christian
+EST,Estonia,1990,381997,113905,268092,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,1995,315755,129640,186115,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,2000,249512,141883,107629,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,2005,233701,150427,83274,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,2010,217890,160489,57401,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,2015,194664,195142,-478,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+EST,Estonia,2019,190242,208257,-18015,europe,europe_central_asia,high_income,others,TRUE,coastline,59,26,christian
+ETH,Ethiopia,1990,1155390,1689955,-534565,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,1995,806904,816429,-9525,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,2000,611384,445891,165493,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,2005,514242,522889,-8647,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,2010,568748,664819,-96071,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,2015,1161642,781368,380274,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+ETH,Ethiopia,2019,1253083,871747,381336,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,9,39.5,christian
+FIN,Finland,1990,63255,250765,-187510,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,1995,99729,288821,-189092,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,2000,136203,316039,-179836,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,2005,192169,302908,-110739,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,2010,228481,290411,-61930,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,2015,314856,288880,25976,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FIN,Finland,2019,383116,290006,93110,europe,europe_central_asia,high_income,oecd,TRUE,coastline,64,26,christian
+FJI,Fiji,1990,13283,90166,-76883,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,1995,13001,106495,-93494,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,2000,12719,131917,-119198,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,2005,12435,156671,-144236,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,2010,13351,182913,-169562,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,2015,13751,207897,-194146,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FJI,Fiji,2019,14038,222633,-208595,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-18,178,christian
+FLK,Falkland Is (Malvinas),1990,855,260,595,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),1995,868,763,105,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),2000,1067,1264,-197,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),2005,1166,1099,67,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),2010,1436,1169,267,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),2015,1571,1454,117,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FLK,Falkland Is (Malvinas),2019,1902,1623,279,americas,america,NA,others,FALSE,coastline,-51.75,-59.16667,christian
+FRA,France,1990,5897267,1215895,4681372,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,1995,6087993,1353418,4734575,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,2000,6278718,1555610,4723108,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,2005,6737600,1725773,5011827,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,2010,7309986,1957969,5352017,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,2015,7874172,2135048,5739124,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRA,France,2019,8334875,2296534,6038341,europe,europe_central_asia,high_income,oecd,TRUE,coastline,46,2,christian
+FRO,Faeroe Islands,1990,4285,7520,-3235,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,1995,2900,10005,-7105,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,2000,3593,12412,-8819,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,2005,4583,12547,-7964,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,2010,5096,12736,-7640,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,2015,5485,14777,-9292,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FRO,Faeroe Islands,2019,6454,13838,-7384,europe,europe_central_asia,high_income,others,FALSE,coastline,62,-7,christian
+FSM,"Micronesia, Fed. Sts.",1990,3685,7714,-4029,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",1995,3342,12139,-8797,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",2000,3116,16915,-13799,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",2005,2905,18347,-15442,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",2010,2806,19406,-16600,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",2015,2756,20634,-17878,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+FSM,"Micronesia, Fed. Sts.",2019,2819,21819,-19000,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,6.924,158.162,christian
+GAB,Gabon,1990,128188,15352,112836,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,1995,171427,16615,154812,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,2000,214431,18046,196385,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,2005,233824,41290,192534,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,2010,270829,37068,233761,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,2015,378686,43451,335235,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GAB,Gabon,2019,411463,46684,364779,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-1,11.75,christian
+GBR,United Kingdom,1990,3650286,3794333,-144047,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,1995,4155293,3713904,441389,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,2000,4730165,3866248,863917,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,2005,5926156,4148316,1777840,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,2010,7119664,4450254,2669410,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,2015,8411569,4028281,4383288,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GBR,United Kingdom,2019,9552110,4274998,5277112,europe,europe_central_asia,high_income,oecd,TRUE,coastline,54.75844,-2.69531,christian
+GEO,Georgia,1990,304470,919454,-614984,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,1995,152235,953289,-801054,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,2000,76117,967024,-890907,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,2005,72311,888613,-816302,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,2010,73034,813454,-740420,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,2015,76685,841734,-765049,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GEO,Georgia,2019,79035,852816,-773781,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,41.99998,43.4999,christian
+GHA,Ghana,1990,164851,371162,-206311,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,1995,252879,428057,-175178,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,2000,191601,495900,-304299,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,2005,304436,665990,-361554,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,2010,337017,762986,-425969,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,2015,414744,905852,-491108,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GHA,Ghana,2019,466780,970625,-503845,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,8.1,-1.2,christian
+GIB,Gibraltar,1990,8709,11994,-3285,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,1995,8381,10135,-1754,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,2000,8054,8456,-402,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,2005,9211,9667,-456,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,2010,10369,10189,180,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,2015,11065,12679,-1614,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIB,Gibraltar,2019,11172,14320,-3148,europe,europe_central_asia,NA,others,FALSE,coastline,36.14474,-5.35257,christian
+GIN,Guinea,1990,403621,352763,50858,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,1995,774505,365864,408641,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,2000,560075,377023,183052,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,2005,229611,405421,-175810,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,2010,177998,457146,-279148,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,2015,126386,485578,-359192,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GIN,Guinea,2019,120642,530963,-410321,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,10.83333,-10.66667,muslim
+GLP,Guadeloupe,1990,65944,5828,60116,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,1995,74566,6879,67687,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,2000,83188,7950,75238,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,2005,89065,9125,79940,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,2010,94942,10821,84121,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,2015,98507,11395,87112,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GLP,Guadeloupe,2019,100030,11856,88174,americas,america,NA,others,FALSE,coastline,16.25,-61.58333,christian
+GMB,Gambia,1990,118123,36280,81843,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,1995,150890,38385,112505,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,2000,182514,45429,137085,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,2005,181905,61266,120639,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,2010,185763,77899,107864,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,2015,192540,90252,102288,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GMB,Gambia,2019,215406,118483,96923,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,13.5,-15.5,muslim
+GNB,Guinea-Bissau,1990,15368,55409,-40041,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,1995,27961,67151,-39190,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,2000,20450,77666,-57216,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,2005,20736,83098,-62362,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,2010,21061,91921,-70860,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,2015,22333,98418,-76085,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNB,Guinea-Bissau,2019,26916,103587,-76671,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,12,-15,NA
+GNQ,Equatorial Guinea,1990,2740,36178,-33438,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,1995,3629,46414,-42785,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,2000,4517,59932,-55415,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,2005,6588,71834,-65246,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,2010,8658,84400,-75742,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,2015,209611,117022,92589,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GNQ,Equatorial Guinea,2019,227617,125670,101947,africa,sub_saharan_africa,high_income,g77,TRUE,coastline,1.7,10.5,christian
+GRC,Greece,1990,618139,1022459,-404320,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,1995,857850,1004521,-146671,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,2000,1111665,983006,128659,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,2005,1190707,868029,322678,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,2010,1321149,792872,528277,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,2015,1242924,826306,416618,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRC,Greece,2019,1211382,1039257,172125,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39,22,christian
+GRD,Grenada,1990,4263,43249,-38986,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,1995,5544,54091,-48547,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,2000,6825,63904,-57079,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,2005,6902,64748,-57846,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,2010,6980,64030,-57050,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,2015,7057,69882,-62825,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRD,Grenada,2019,7124,75784,-68660,americas,america,upper_middle_income,g77,TRUE,coastline,12.11667,-61.66667,christian
+GRL,Greenland,1990,9282,9510,-228,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,1995,7121,11366,-4245,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,2000,6601,13274,-6673,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,2005,6556,14735,-8179,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,2010,6091,15928,-9837,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,2015,5797,18161,-12364,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GRL,Greenland,2019,5690,18684,-12994,europe,europe_central_asia,high_income,others,FALSE,coastline,72,-40,christian
+GTM,Guatemala,1990,264257,348332,-84075,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,1995,156188,462072,-305884,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,2000,48119,583020,-534901,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,2005,57252,737106,-679854,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,2010,66384,925252,-858868,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,2015,78352,1119417,-1041065,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GTM,Guatemala,2019,80421,1205644,-1125223,americas,america,lower_middle_income,g77,TRUE,coastline,14.64072,-90.51327,christian
+GUF,French Guiana,1990,63612,2844,60768,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,1995,70131,3227,66904,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,2000,76649,3648,73001,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,2005,86468,3808,82660,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,2010,96288,3942,92346,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,2015,106108,4412,101696,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUF,French Guiana,2019,117372,4555,112817,americas,america,NA,others,FALSE,coastline,4,-53,christian
+GUM,Guam,1990,69755,1376,68379,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,1995,71912,1616,70296,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,2000,74070,2801,71269,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,2005,74743,2541,72202,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,2010,75416,2217,73199,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,2015,76089,2145,73944,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUM,Guam,2019,79846,2197,77649,asia,east_asia_pacific,high_income,others,FALSE,coastline,13.47861,144.81834,christian
+GUY,Guyana,1990,4095,233731,-229636,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,1995,6352,296132,-289780,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,2000,8610,363434,-354824,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,2005,10868,393980,-383112,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,2010,13126,439451,-426325,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,2015,15384,483172,-467788,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+GUY,Guyana,2019,15699,520196,-504497,americas,america,lower_middle_income,g77,TRUE,coastline,5,-59,christian
+HKG,"Hong Kong, China",1990,2218473,551080,1667393,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",1995,2443798,619223,1824575,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",2000,2669122,687946,1981176,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",2005,2721235,803530,1917705,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",2010,2779950,943069,1836881,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",2015,2838665,1042543,1796122,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HKG,"Hong Kong, China",2019,2942254,1110358,1831896,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.285520000000002,114.15769,eastern_religions
+HND,Honduras,1990,270423,156594,113829,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,1995,149442,246799,-97357,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,2000,28461,342337,-313876,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,2005,27875,449303,-421428,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,2010,27288,587886,-560598,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,2015,38317,731096,-692779,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HND,Honduras,2019,38933,800707,-761774,americas,america,lower_middle_income,g77,TRUE,coastline,15,-86.5,christian
+HRV,Croatia,1990,475438,425807,49631,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,1995,674085,735556,-61471,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,2000,585298,907454,-322156,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,2005,579273,840203,-260930,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,2010,573248,822331,-249083,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,2015,561093,816168,-255075,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HRV,Croatia,2019,518083,990012,-471929,europe,europe_central_asia,high_income,others,TRUE,coastline,45.16667,15.5,christian
+HTI,Haiti,1990,19084,528873,-509789,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,1995,18129,665028,-646899,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,2000,17222,805430,-788208,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,2005,16360,972717,-956357,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,2010,17178,1123759,-1106581,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,2015,18036,1469133,-1451097,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HTI,Haiti,2019,18756,1585681,-1566925,americas,america,low_income,g77,TRUE,coastline,19,-72.41667,christian
+HUN,Hungary,1990,347510,387514,-40004,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,1995,322234,404699,-82465,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,2000,296957,421411,-124454,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,2005,366787,468156,-101369,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,2010,436616,513838,-77222,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,2015,475508,554781,-79273,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+HUN,Hungary,2019,512043,632126,-120083,europe,europe_central_asia,upper_middle_income,oecd,TRUE,landlocked,47,20,christian
+IDN,Indonesia,1990,465612,1638365,-1172753,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,1995,378960,1953465,-1574505,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,2000,292307,2431466,-2139159,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,2005,289568,2804569,-2515001,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,2010,305416,3429170,-3123754,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,2015,338124,4081692,-3743568,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IDN,Indonesia,2019,353135,4532992,-4179857,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-5,120,muslim
+IMN,Isle of Man,1990,34769,10735,24034,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,1995,36886,9003,27883,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,2000,39002,7377,31625,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,2005,41475,8501,32974,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,2010,43447,9030,34417,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,2015,42238,11227,31011,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IMN,Isle of Man,2019,42864,12809,30055,europe,europe_central_asia,high_income,others,FALSE,coastline,54.15,-4.48333,christian
+IND,India,1990,7594801,6623177,971624,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,1995,6952238,7157482,-205244,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,2000,6411331,7932405,-1521074,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,2005,5923945,9597951,-3674006,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,2010,5439758,13229275,-7789517,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,2015,5240960,15930200,-10689240,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IND,India,2019,5154737,17510931,-12356194,asia,south_asia,lower_middle_income,g77,TRUE,coastline,22,79,eastern_religions
+IRL,Ireland,1990,227961,917286,-689325,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,1995,226892,863749,-636857,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,2000,350552,820902,-470350,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,2005,589046,771302,-182256,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,2010,730542,730771,-229,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,2015,759256,744443,14813,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRL,Ireland,2019,833564,816797,16767,europe,europe_central_asia,high_income,oecd,TRUE,coastline,53,-8,christian
+IRN,Iran,1990,4291601,631339,3660262,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,1995,2937668,746894,2190774,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,2000,2803805,831372,1972433,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,2005,2568930,889941,1678989,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,2010,2761561,989560,1772001,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,2015,2726420,1171364,1555056,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRN,Iran,2019,2682214,1301975,1380239,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,32,53,muslim
+IRQ,Iraq,1990,83638,1506702,-1423064,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,1995,199460,1328725,-1129265,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,2000,210525,1164056,-953531,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,2005,132915,1446429,-1313514,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,2010,117389,2627057,-2509668,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,2015,359381,1743594,-1384213,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+IRQ,Iraq,2019,368062,2033522,-1665460,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33,44,muslim
+ISL,Iceland,1990,9584,17621,-8037,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,1995,12738,21450,-8712,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,2000,15892,26184,-10292,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,2005,25492,28804,-3312,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,2010,35091,33103,1988,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,2015,39072,39053,19,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISL,Iceland,2019,52404,42186,10218,europe,europe_central_asia,high_income,oecd,TRUE,coastline,65,-18,christian
+ISR,Israel,1990,1632704,281597,1351107,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,1995,1792185,291849,1500336,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,2000,1851309,304861,1546448,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,2005,1889503,319756,1569747,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,2010,1950615,336473,1614142,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,2015,2011727,339067,1672660,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ISR,Israel,2019,1956346,369935,1586411,asia,middle_east_north_africa,high_income,oecd,TRUE,coastline,31.5,34.75,NA
+ITA,Italy,1990,1428219,3351006,-1922787,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,1995,1774954,3207777,-1432823,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,2000,2121688,3067571,-945883,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,2005,3954790,2699529,1255261,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,2010,5787893,2563339,3224554,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,2015,5805328,2692064,3113264,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+ITA,Italy,2019,6273722,3077777,3195945,europe,europe_central_asia,high_income,oecd,TRUE,coastline,42.83333,12.83333,christian
+JAM,Jamaica,1990,20475,589010,-568535,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,1995,22713,719398,-696685,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,2000,24952,858815,-833863,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,2005,24314,906462,-882148,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,2010,23677,989512,-965835,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,2015,23167,1031086,-1007919,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JAM,Jamaica,2019,23468,1111021,-1087553,americas,america,upper_middle_income,g77,TRUE,coastline,18.16667,-77.25,christian
+JOR,Jordan,1990,1146349,313997,832352,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,1995,1537097,339346,1197751,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,2000,1927845,368562,1559283,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,2005,2325414,434172,1891242,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,2010,2722983,597431,2125552,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,2015,3112026,705353,2406673,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JOR,Jordan,2019,3346703,784377,2562326,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,31,36,muslim
+JPN,Japan,1990,1075317,608921,466396,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,1995,1362371,657199,705172,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,2000,1686444,712768,973676,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,2005,2011555,722116,1289439,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,2010,2134151,760479,1373672,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,2015,2232189,780809,1451380,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+JPN,Japan,2019,2498891,838852,1660039,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,35.68536,139.75309,eastern_religions
+KAZ,Kazakhstan,1990,3619200,2971639,647561,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,1995,3251968,3295163,-43195,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,2000,2874194,3554491,-680297,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,2005,3103027,3718750,-615723,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,2010,3334937,3803375,-468438,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,2015,3546060,3904820,-358760,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KAZ,Kazakhstan,2019,3705556,4005587,-300031,asia,europe_central_asia,upper_middle_income,others,TRUE,landlocked,48,68,muslim
+KEN,Kenya,1990,298089,250340,47749,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,1995,618745,277660,341085,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,2000,707852,317453,390399,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,2005,773354,358521,414833,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,2010,954925,438479,516446,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,2015,1126886,484760,642126,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KEN,Kenya,2019,1044854,525437,519417,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,1,38,christian
+KGZ,Kyrgyz Republic,1990,623083,522578,100505,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,1995,518338,550026,-31688,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,2000,389824,566319,-176495,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,2005,309399,652862,-343463,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,2010,232065,726917,-494852,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,2015,204382,745416,-541034,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KGZ,Kyrgyz Republic,2019,200260,754969,-554709,asia,europe_central_asia,low_income,others,TRUE,landlocked,41.5,75,muslim
+KHM,Cambodia,1990,38375,355430,-317055,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,1995,92230,418216,-325986,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,2000,146085,459625,-313540,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,2005,114031,674465,-560434,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,2010,81977,953169,-871192,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,2015,73963,1042505,-968542,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KHM,Cambodia,2019,78649,1097884,-1019235,asia,east_asia_pacific,low_income,g77,TRUE,coastline,13,105,eastern_religions
+KIR,Kiribati,1990,2162,4053,-1891,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,1995,2223,4246,-2023,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,2000,2283,3991,-1708,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,2005,2487,4021,-1534,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,2010,2868,3556,-688,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,2015,2919,4122,-1203,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KIR,Kiribati,2019,3022,4370,-1348,asia,east_asia_pacific,lower_middle_income,others,TRUE,coastline,1.421,172.984,christian
+KNA,St. Kitts and Nevis,1990,3210,20714,-17504,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,1995,4248,25986,-21738,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,2000,5871,31420,-25549,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,2005,6682,33923,-27241,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,2010,7245,35838,-28593,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,2015,7443,116555,-109112,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KNA,St. Kitts and Nevis,2019,7587,124941,-117354,americas,america,high_income,g77,TRUE,coastline,17.33333,-62.75,christian
+KOR,South Korea,1990,43247,1624729,-1581482,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,1995,123886,1785743,-1661857,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,2000,244224,1952161,-1707937,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,2005,486065,2039728,-1553663,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,2010,919987,2309955,-1389968,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,2015,1143087,2089862,-946775,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KOR,South Korea,2019,1163655,2176580,-1012925,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,36.5,127.75,NA
+KWT,Kuwait,1990,1074391,81611,992780,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,1995,921954,97039,824915,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,2000,1127640,113446,1014194,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,2005,1333327,126406,1206921,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,2010,1871537,170724,1700813,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,2015,2866136,188661,2677475,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+KWT,Kuwait,2019,3034845,205382,2829463,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,29.36972,47.97833,muslim
+LAO,Lao,1990,22866,483021,-460155,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,1995,23526,547793,-524267,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,2000,21948,649288,-627340,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,2005,20371,895859,-875488,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,2010,32955,1198715,-1165760,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,2015,45538,1285226,-1239688,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LAO,Lao,2019,48275,1347034,-1298759,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,18,105,eastern_religions
+LBN,Lebanon,1990,523693,509323,14370,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,1995,608303,533444,74859,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,2000,692913,561102,131811,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,2005,756784,613614,143170,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,2010,820655,704562,116093,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,2015,1973204,769251,1203953,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBN,Lebanon,2019,1863873,844158,1019715,asia,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,33.83333,35.83333,NA
+LBR,Liberia,1990,94964,516886,-421922,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,1995,208563,542301,-333738,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,2000,151868,248417,-96549,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,2005,87188,350999,-263811,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,2010,99129,219256,-120127,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,2015,113779,206706,-92927,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBR,Liberia,2019,94448,219338,-124890,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6.5,-9.5,NA
+LBY,Libya,1990,457075,76256,380819,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,1995,508041,77417,430624,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,2000,567436,80036,487400,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,2005,625212,101106,524106,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,2010,683998,128104,555894,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,2015,771146,158575,612571,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LBY,Libya,2019,818216,180586,637630,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,28,17,muslim
+LCA,St. Lucia,1990,5305,22005,-16700,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,1995,7155,30705,-23550,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,2000,9871,39618,-29747,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,2005,9842,47006,-37164,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,2010,9051,50480,-41429,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,2015,8673,59098,-50425,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LCA,St. Lucia,2019,8383,63605,-55222,americas,america,upper_middle_income,g77,TRUE,coastline,13.88333,-60.96667,christian
+LIE,Liechtenstein,1990,10906,3428,7478,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,1995,13311,3020,10291,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,2000,15483,2690,12793,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,2005,18898,2939,15959,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,2010,22342,3594,18748,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,2015,23799,3574,20225,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LIE,Liechtenstein,2019,25467,3713,21754,europe,europe_central_asia,high_income,others,TRUE,landlocked,47.16667,9.53333,christian
+LKA,Sri Lanka,1990,41561,885951,-844390,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,1995,40841,925755,-884914,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,2000,40132,981294,-941162,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,2005,39526,1137286,-1097760,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,2010,38959,1410887,-1371928,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,2015,39706,1498852,-1459146,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LKA,Sri Lanka,2019,40018,1775768,-1735750,asia,south_asia,lower_middle_income,g77,TRUE,coastline,7.75,80.75,eastern_religions
+LSO,Lesotho,1990,8240,191339,-183099,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,1995,7204,136603,-129399,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,2000,6167,120575,-114408,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,2005,6290,158995,-152705,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,2010,6414,243150,-236736,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,2015,6572,305364,-298792,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LSO,Lesotho,2019,6928,341580,-334652,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-29.5,28.25,christian
+LTU,Lithuania,1990,349258,341050,8208,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,1995,273587,342455,-68868,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,2000,214311,348620,-134309,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,2005,201209,412612,-211403,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,2010,160772,519665,-358893,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,2015,136021,559733,-423712,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LTU,Lithuania,2019,117218,610223,-493005,europe,europe_central_asia,high_income,others,TRUE,coastline,55.41667,24,christian
+LUX,Luxembourg,1990,113795,36141,77654,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,1995,126106,37909,88197,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,2000,139750,39797,99953,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,2005,150618,52903,97715,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,2010,163142,62241,100901,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,2015,248888,69842,179046,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LUX,Luxembourg,2019,291723,75470,216253,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,49.61167,6.13,christian
+LVA,Latvia,1990,646007,215134,430873,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,1995,538093,229015,309078,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,2000,430178,238691,191487,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,2005,376725,271170,105555,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,2010,313786,279368,34418,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,2015,265418,307919,-42501,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+LVA,Latvia,2019,237266,332220,-94954,europe,europe_central_asia,high_income,others,TRUE,coastline,57,25,christian
+MAC,"Macao, China",1990,205047,95648,109399,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",1995,224929,98093,126836,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",2000,240791,101637,139154,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",2005,279308,115392,163916,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",2010,318506,130805,187701,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",2015,376066,141001,235065,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAC,"Macao, China",2019,399572,161930,237642,asia,east_asia_pacific,high_income,others,FALSE,coastline,22.20056,113.54611,eastern_religions
+MAR,Morocco,1990,54895,1748251,-1693356,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,1995,50360,1884066,-1833706,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,2000,53034,2077160,-2024126,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,2005,54379,2473209,-2418830,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,2010,70909,2863810,-2792901,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,2015,92424,2984804,-2892380,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MAR,Morocco,2019,98574,3136069,-3037495,africa,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,32,-6,muslim
+MCO,Monaco,1990,20359,4479,15880,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,1995,21060,4790,16270,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,2000,21787,5133,16654,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,2005,21312,19114,2198,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,2010,21132,26961,-5829,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,2015,25983,29351,-3368,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MCO,Monaco,2019,26511,31452,-4941,europe,europe_central_asia,high_income,others,TRUE,coastline,43.73333,7.41667,christian
+MDA,Moldova,1990,544162,625683,-81521,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,1995,367231,620036,-252805,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,2000,247828,602782,-354954,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,2005,171122,715599,-544477,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,2010,129488,827763,-698275,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,2015,106374,911446,-805072,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDA,Moldova,2019,104713,1013417,-908704,europe,europe_central_asia,lower_middle_income,others,TRUE,landlocked,47.25,28.58333,christian
+MDG,Madagascar,1990,23917,59424,-35507,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,1995,21177,67333,-46156,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,2000,23541,77098,-53557,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,2005,26058,148827,-122769,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,2010,28905,160871,-131966,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,2015,32075,175637,-143562,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDG,Madagascar,2019,34934,184762,-149828,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-20,47,NA
+MDV,Maldives,1990,8689,2193,6496,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,1995,18510,1688,16822,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,2000,27092,1217,25875,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,2005,45045,1771,43274,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,2010,54659,2746,51913,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,2015,64273,2935,61338,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MDV,Maldives,2019,69249,3053,66196,asia,south_asia,upper_middle_income,g77,TRUE,coastline,3.2,73,muslim
+MEX,Mexico,1990,695674,4395365,-3699691,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,1995,458549,6949297,-6490748,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,2000,538051,9562929,-9024878,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,2005,712487,10818079,-10105592,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,2010,969538,12414825,-11445287,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,2015,1028803,11924099,-10895296,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MEX,Mexico,2019,1060707,11796178,-10735471,americas,america,upper_middle_income,oecd,TRUE,coastline,19.42847,-99.12766,christian
+MHL,Marshall Islands,1990,1158,1426,-268,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,1995,1480,4154,-2674,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,2000,1891,6976,-5085,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,2005,2417,6654,-4237,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,2010,3089,6483,-3394,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,2015,3284,7618,-4334,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MHL,Marshall Islands,2019,3296,8205,-4909,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,7.113,171.236,christian
+MKD,North Macedonia,1990,95142,432296,-337154,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,1995,109343,492304,-382961,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,2000,125665,532531,-406866,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,2005,127667,459289,-331622,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,2010,129701,527075,-397374,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,2015,130730,562907,-432177,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MKD,North Macedonia,2019,131175,658264,-527089,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,41.66667,21.75,christian
+MLI,Mali,1990,160736,647436,-486700,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,1995,176187,820613,-644426,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,2000,189475,772954,-583479,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,2005,256797,895610,-638813,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,2010,339375,997135,-657760,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,2015,420504,1222819,-802315,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLI,Mali,2019,468230,1264700,-796470,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,-2,muslim
+MLT,Malta,1990,15077,110746,-95669,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,1995,17740,109850,-92110,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,2000,21521,104884,-83363,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,2005,24560,100337,-75777,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,2010,33008,99362,-66354,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,2015,52642,103779,-51137,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MLT,Malta,2019,84949,111137,-26188,europe,europe_central_asia,high_income,others,TRUE,coastline,35.91667,14.43333,christian
+MMR,Myanmar,1990,133545,685310,-551765,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,1995,113663,911446,-797783,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,2000,98011,1224311,-1126300,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,2005,83025,1801951,-1718926,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,2010,76414,2469533,-2393119,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,2015,73309,2842006,-2768697,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MMR,Myanmar,2019,75998,3699472,-3623474,asia,east_asia_pacific,low_income,g77,TRUE,coastline,21,96,eastern_religions
+MNE,Montenegro,1990,NA,77384,NA,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,1995,NA,144640,NA,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,2000,NA,185958,NA,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,2005,NA,148156,NA,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,2010,78512,148982,-70470,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,2015,71719,154657,-82938,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNE,Montenegro,2019,70967,153009,-82042,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,42.75,19.25,christian
+MNG,Mongolia,1990,6718,24466,-17748,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,1995,7424,27694,-20270,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,2000,8206,30649,-22443,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,2005,11477,42378,-30901,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,2010,16062,57766,-41704,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,2015,19886,66861,-46975,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNG,Mongolia,2019,21128,73488,-52360,asia,east_asia_pacific,lower_middle_income,g77,TRUE,landlocked,46,105,NA
+MNP,Northern Mariana Islands,1990,26593,2525,24068,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,1995,32376,2654,29722,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,2000,40122,2772,37350,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,2005,37542,2735,34807,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,2010,24168,2626,21542,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,2015,21648,2639,19009,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MNP,Northern Mariana Islands,2019,21815,2764,19051,asia,east_asia_pacific,high_income,others,FALSE,coastline,15.214,145.756,christian
+MOZ,Mozambique,1990,122332,2222369,-2100037,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,1995,168256,812715,-644459,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,2000,195702,644467,-448765,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,2005,264679,663147,-398468,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,2010,306471,798225,-491754,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,2015,321794,927812,-606018,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MOZ,Mozambique,2019,334665,1013416,-678751,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-18.25,35,christian
+MRT,Mauritania,1990,111650,134488,-22838,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,1995,89562,151715,-62153,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,2000,57366,107608,-50242,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,2005,58119,102410,-44291,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,2010,84679,109431,-24752,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,2015,166552,108339,58213,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MRT,Mauritania,2019,172987,128506,44481,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,20.25,-10.5,muslim
+MSR,Montserrat,1990,2013,7188,-5175,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,1995,1612,11591,-9979,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,2000,1211,16133,-14922,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,2005,1244,15826,-14582,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,2010,1291,17369,-16078,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,2015,1351,20781,-19430,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MSR,Montserrat,2019,1375,22838,-21463,americas,america,NA,others,FALSE,coastline,16.75,-62.2,christian
+MTQ,Martinique,1990,38705,11041,27664,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,1995,46599,12602,33997,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,2000,54492,14217,40275,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,2005,57034,14551,42483,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,2010,59575,14668,44907,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,2015,61731,13438,48293,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MTQ,Martinique,2019,61647,13919,47728,americas,america,NA,others,FALSE,coastline,14.66667,-61,christian
+MUS,Mauritius,1990,3613,110708,-107095,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,1995,7493,114074,-106581,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,2000,15543,119005,-103462,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,2005,19647,130695,-111048,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,2010,24836,148643,-123807,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,2015,28585,172989,-144404,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MUS,Mauritius,2019,28849,188344,-159495,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-20.3,57.58333,NA
+MWI,Malawi,1990,1127724,143437,984287,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,1995,241624,150826,90798,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,2000,232620,186231,46389,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,2005,221661,221368,293,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,2010,217722,255164,-37442,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,2015,232803,303273,-70470,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MWI,Malawi,2019,247652,324541,-76889,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-13.5,34,christian
+MYS,Malaysia,1990,695920,562762,133158,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,1995,937368,863664,73704,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,2000,1463598,1203638,259960,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,2005,1918504,1380437,538067,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,2010,2417395,1598510,818885,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,2015,3280681,1795763,1484918,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYS,Malaysia,2019,3430380,1689222,1741158,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,2.5,112.5,muslim
+MYT,Mayotte,1990,15229,1835,13394,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,1995,26316,3937,22379,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,2000,45474,6215,39259,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,2005,63176,6469,56707,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,2010,72757,6327,66430,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,2015,73992,6518,67474,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+MYT,Mayotte,2019,74643,6617,68026,africa,sub_saharan_africa,NA,others,FALSE,coastline,-12.83333,45.16667,muslim
+NAM,Namibia,1990,120641,16079,104562,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,1995,115372,28224,87148,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,2000,135547,49354,86193,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,2005,107347,65430,41917,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,2010,103826,99630,4196,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,2015,101618,174512,-72894,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NAM,Namibia,2019,107561,195515,-87954,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-22,17,christian
+NCL,New Caledonia,1990,37673,4151,33522,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,1995,43662,4603,39059,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,2000,49651,4945,44706,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,2005,55405,5225,50180,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,2010,61158,4911,56247,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,2015,68881,4797,64084,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NCL,New Caledonia,2019,72537,5098,67439,asia,east_asia_pacific,high_income,others,FALSE,coastline,-21.5,165.5,christian
+NER,Niger,1990,115464,149779,-34315,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,1995,145999,177073,-31074,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,2000,122260,205246,-82986,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,2005,124461,302041,-177580,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,2010,126464,335884,-209420,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,2015,252998,384235,-131237,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NER,Niger,2019,294161,401653,-107492,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,18,9,muslim
+NGA,Nigeria,1990,456621,446806,9815,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,1995,462999,524591,-61592,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,2000,487882,610200,-122318,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,2005,969294,810687,158607,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,2010,988679,987165,1514,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,2015,1199115,1256114,-56999,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NGA,Nigeria,2019,1256408,1438331,-181923,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,10,8,NA
+NIC,Nicaragua,1990,41421,442126,-400705,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,1995,26619,438387,-411768,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,2000,30389,502243,-471854,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,2005,34918,436780,-401862,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,2010,37333,610902,-573569,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,2015,40262,647919,-607657,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIC,Nicaragua,2019,42172,682865,-640693,americas,america,lower_middle_income,g77,TRUE,coastline,13,-85,christian
+NIU,Niue,1990,461,5860,-5399,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,1995,480,5574,-5094,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,2000,498,5754,-5256,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,2005,522,5298,-4776,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,2010,589,5358,-4769,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,2015,588,5369,-4781,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NIU,Niue,2019,588,5593,-5005,asia,east_asia_pacific,NA,others,FALSE,coastline,-19.03333,-169.86667,christian
+NLD,Netherlands,1990,1182263,723638,458625,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,1995,1346164,734149,612015,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,2000,1556337,755052,801285,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,2005,1736127,799588,936539,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,2010,1832510,866675,965835,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,2015,1996318,897767,1098551,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NLD,Netherlands,2019,2282791,980753,1302038,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52.25,5.75,christian
+NOR,Norway,1990,192587,138536,54051,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,1995,233302,151368,81934,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,2000,292440,164243,128197,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,2005,361144,175298,185846,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,2010,526799,181698,345101,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,2015,746375,190472,555903,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NOR,Norway,2019,867765,202336,665429,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,10,christian
+NPL,Nepal,1990,429974,748060,-318086,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,1995,690225,856036,-165811,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,2000,717900,977405,-259505,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,2005,679457,1138625,-459168,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,2010,578657,1434586,-855929,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,2015,509471,2013843,-1504372,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NPL,Nepal,2019,490802,2285364,-1794562,asia,south_asia,low_income,g77,TRUE,landlocked,28,84,eastern_religions
+NRU,Nauru,1990,2815,1419,1396,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,1995,2605,1514,1091,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,2000,2394,1600,794,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,2005,2253,1880,373,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,2010,1183,2146,-963,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,2015,1890,2275,-385,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NRU,Nauru,2019,2114,2421,-307,asia,east_asia_pacific,NA,others,TRUE,coastline,-0.517,166.933,christian
+NZL,New Zealand,1990,518047,388173,129874,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,1995,588617,417098,171519,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,2000,678813,490020,188793,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,2005,839952,556056,283896,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,2010,947443,662996,284447,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,2015,1039736,736037,303699,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+NZL,New Zealand,2019,1068739,777303,291436,asia,east_asia_pacific,high_income,oecd,TRUE,coastline,-42,174,christian
+OMN,Oman,1990,304000,12535,291465,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,1995,539643,13862,525781,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,2000,623608,15628,607980,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,2005,666160,18067,648093,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,2010,816221,20092,796129,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,2015,1856226,23039,1833187,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+OMN,Oman,2019,2286226,24939,2261287,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,21,57,muslim
+PAK,Pakistan,1990,6208204,3343328,2864876,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,1995,3669308,3345394,323914,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,2000,4181912,3401303,780609,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,2005,3171132,3902648,-731516,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,2010,3941586,4992279,-1050693,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,2015,3506520,5910360,-2403840,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAK,Pakistan,2019,3257978,6303286,-3045308,asia,south_asia,lower_middle_income,g77,TRUE,coastline,30,70,muslim
+PAN,Panama,1990,62744,134743,-71999,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,1995,70848,133405,-62557,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,2000,83410,137430,-54020,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,2005,117563,132266,-14703,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,2010,157309,140609,16700,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,2015,184710,150417,34293,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PAN,Panama,2019,185072,161107,23965,americas,america,upper_middle_income,g77,TRUE,coastline,8.9936,-79.51973,christian
+PER,Peru,1990,56688,314854,-258166,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,1995,56732,509283,-452551,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,2000,66300,699598,-633298,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,2005,77877,973644,-895767,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,2010,104706,1302167,-1197461,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,2015,154774,1387590,-1232816,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PER,Peru,2019,782169,1512920,-730751,americas,america,upper_middle_income,g77,TRUE,coastline,-10,-75.25,christian
+PHL,Philippines,1990,154071,2033684,-1879613,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,1995,207345,2508005,-2300660,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,2000,318095,3092284,-2774189,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,2005,257468,3712857,-3455389,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,2010,208599,4719359,-4510760,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,2015,211862,4947011,-4735149,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PHL,Philippines,2019,218530,5377337,-5158807,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,13,122,christian
+PLW,Palau,1990,2801,2958,-157,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,1995,4749,2845,1904,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,2000,6310,4000,2310,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,2005,6043,3786,2257,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,2010,5490,2621,2869,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,2015,4937,2561,2376,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PLW,Palau,2019,5066,2650,2416,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,7.503,134.621,christian
+PNG,Papua New Guinea,1990,33710,3111,30599,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,1995,33526,4063,29463,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,2000,26304,4556,21748,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,2005,30106,4502,25604,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,2010,30425,4238,26187,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,2015,30940,205125,-174185,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+PNG,Papua New Guinea,2019,31212,219126,-187914,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-6,147,christian
+POL,Poland,1990,1127771,1510415,-382644,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,1995,964725,1776628,-811903,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,2000,825251,2048371,-1223120,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,2005,722509,2887741,-2165232,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,2010,642417,3731041,-3088624,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,2015,619403,4004328,-3384925,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+POL,Poland,2019,655985,4446985,-3791000,europe,europe_central_asia,high_income,oecd,TRUE,coastline,52,20,christian
+PRI,Puerto Rico,1990,321909,1200821,-878912,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,1995,338067,1406262,-1068195,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,2000,355038,1600752,-1245714,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,2005,352144,1640856,-1288712,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,2010,304969,1732654,-1427685,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,2015,280494,1861524,-1581030,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRI,Puerto Rico,2019,266828,2007347,-1740519,americas,america,high_income,others,FALSE,coastline,18.46633,-66.10572,christian
+PRK,North Korea,1990,34103,39784,-5681,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,1995,35143,54029,-18886,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,2000,36183,72414,-36231,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,2005,40097,86930,-46833,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,2010,44010,96575,-52565,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,2015,48458,107524,-59066,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRK,North Korea,2019,49393,113118,-63725,asia,east_asia_pacific,low_income,g77,TRUE,coastline,40,127,NA
+PRT,Portugal,1990,435782,1873457,-1437675,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,1995,532822,1922320,-1389498,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,2000,651472,1995386,-1343914,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,2005,771184,1744741,-973557,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,2010,762825,1950392,-1187567,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,2015,864814,2461470,-1596656,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRT,Portugal,2019,888162,2631559,-1743397,europe,europe_central_asia,high_income,oecd,TRUE,coastline,39.6945,-8.13057,christian
+PRY,Paraguay,1990,195884,297979,-102095,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,1995,186570,336064,-149494,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,2000,176608,374876,-198268,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,2005,168243,545839,-377596,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,2010,160299,766008,-605709,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,2015,156462,842425,-685963,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PRY,Paraguay,2019,160519,871638,-711119,americas,america,lower_middle_income,g77,TRUE,landlocked,-23.33333,-58,christian
+PSE,Palestine,1990,288332,1813063,-1524731,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,1995,281767,2275128,-1993361,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,2000,275202,2768020,-2492818,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,2005,266617,3049106,-2782489,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,2010,258032,3343320,-3085288,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,2015,255507,3700596,-3445089,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PSE,Palestine,2019,253735,3890650,-3636915,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,31.92157,35.20329,muslim
+PYF,French Polynesia,1990,25830,3149,22681,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,1995,28360,3749,24611,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,2000,30329,4305,26024,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,2005,32286,2725,29561,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,2010,31640,1459,30181,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,2015,30058,1833,28225,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+PYF,French Polynesia,2019,31205,1982,29223,asia,east_asia_pacific,high_income,others,FALSE,coastline,-15,-140,christian
+QAT,Qatar,1990,309753,12204,297549,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,1995,361673,13329,348344,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,2000,359697,14706,344991,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,2005,646026,17777,628249,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,2010,1456413,21622,1434791,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,2015,1687640,160323,1527317,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+QAT,Qatar,2019,2229688,171632,2058056,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25.27932,51.52245,muslim
+REU,Reunion,1990,57210,3087,54123,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,1995,77159,2624,74535,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,2000,100678,2362,98316,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,2005,115076,2559,112517,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,2010,123029,2773,120256,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,2015,127209,124877,2332,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+REU,Reunion,2019,129153,133769,-4616,africa,sub_saharan_africa,NA,others,FALSE,coastline,-20.88231,55.4504,christian
+ROU,Romania,1990,135825,813066,-677241,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,1995,135037,977495,-842458,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,2000,134254,1139475,-1005221,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,2005,145162,2108741,-1963579,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,2010,177211,3370044,-3192833,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,2015,281048,3362050,-3081002,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+ROU,Romania,2019,462552,3572794,-3110242,europe,europe_central_asia,upper_middle_income,others,TRUE,coastline,46,25,christian
+RUS,Russia,1990,11524948,12662893,-1137945,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,1995,11928927,11621262,307665,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,2000,11900297,10721414,1178883,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,2005,11667588,10358533,1309055,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,2010,11194710,10130259,1064451,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,2015,11643276,10194421,1448855,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RUS,Russia,2019,11640559,10491715,1148844,europe,europe_central_asia,high_income,others,TRUE,coastline,60,100,christian
+RWA,Rwanda,1990,160024,547718,-387694,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,1995,215735,2060366,-1844631,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,2000,347076,318203,28873,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,2005,423187,285203,137984,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,2010,426901,331087,95814,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,2015,514647,596061,-81414,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+RWA,Rwanda,2019,539932,588544,-48612,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-2,30,christian
+SAU,Saudi Arabia,1990,4998445,107166,4891279,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,1995,5122702,131016,4991686,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,2000,5263387,153703,5109684,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,2005,6501819,177327,6324492,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,2010,8429956,203703,8226253,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,2015,10771366,267194,10504172,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SAU,Saudi Arabia,2019,13122338,296254,12826084,asia,middle_east_north_africa,high_income,g77,TRUE,coastline,25,45,muslim
+SDN,Sudan,1990,1402896,584940,817956,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,1995,1053396,775379,278017,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,2000,805086,885664,-80578,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,2005,546419,1220379,-673960,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,2010,618709,1234913,-616204,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,2015,620523,1848250,-1227727,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SDN,Sudan,2019,1223092,2040613,-817521,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,16,30,muslim
+SEN,Senegal,1990,270410,370263,-99853,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,1995,287654,359074,-71420,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,2000,231901,394614,-162713,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,2005,238298,472787,-234489,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,2010,256092,559557,-303465,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,2015,266496,584921,-318425,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SEN,Senegal,2019,275239,642654,-367415,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,14.5,-14.25,muslim
+SGP,Singapore,1990,727262,156468,570794,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,1995,991492,168141,823351,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,2000,1351691,192989,1158702,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,2005,1710594,233440,1477154,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,2010,2164794,278308,1886486,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,2015,2543638,314281,2229357,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SGP,Singapore,2019,2155653,340751,1814902,asia,east_asia_pacific,high_income,g77,TRUE,coastline,1.28967,103.85007,eastern_religions
+SHN,St. Helena,1990,178,884,-706,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,1995,117,2371,-2254,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,2000,108,4043,-3935,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,2005,163,3766,-3603,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,2010,248,4269,-4021,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,2015,377,5629,-5252,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SHN,St. Helena,2019,433,6596,-6163,africa,sub_saharan_africa,NA,others,FALSE,coastline,-15.95,-5.7,christian
+SLB,Solomon Islands,1990,4226,2212,2014,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,1995,4178,2542,1636,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,2000,3981,2728,1253,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,2005,3271,3000,271,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,2010,2760,3348,-588,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,2015,2585,3870,-1285,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLB,Solomon Islands,2019,2532,4234,-1702,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8,159,christian
+SLE,Sierra Leone,1990,222148,61854,160294,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,1995,98516,457828,-359312,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,2000,97974,509099,-411125,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,2005,146050,147931,-1881,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,2010,79055,126868,-47813,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,2015,58813,171734,-112921,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLE,Sierra Leone,2019,54332,187102,-132770,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.5,-11.5,NA
+SLV,El Salvador,1990,47360,1242075,-1194715,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,1995,39537,933330,-893793,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,2000,31713,949270,-917557,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,2005,36019,1119319,-1083300,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,2010,40324,1337458,-1297134,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,2015,42045,1514601,-1472556,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SLV,El Salvador,2019,42617,1600739,-1558122,americas,america,lower_middle_income,g77,TRUE,coastline,13.83333,-88.91667,christian
+SMR,San Marino,1990,3310,1419,1891,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,1995,3659,2460,1199,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,2000,4045,3496,549,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,2005,4218,2910,1308,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,2010,4880,2265,2615,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,2015,5195,3656,1539,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SMR,San Marino,2019,5507,2425,3082,europe,europe_central_asia,high_income,others,TRUE,landlocked,43.93667,12.44639,christian
+SOM,Somalia,1990,478294,848067,-369773,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,1995,19527,968967,-949440,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,2000,20097,1006139,-986042,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,2005,20670,1101320,-1080650,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,2010,48106,1589706,-1541600,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,2015,40990,1955462,-1914472,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SOM,Somalia,2019,52131,2054377,-2002246,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,6,48,muslim
+SPM,St.-Pierre-et-Miquelon,1990,1099,485,614,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,1995,1320,479,841,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,2000,1458,486,972,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,2005,1147,429,718,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,2010,1017,391,626,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,2015,986,2201,-1215,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SPM,St.-Pierre-et-Miquelon,2019,990,2356,-1366,americas,america,NA,others,FALSE,coastline,46.83333,-56.33333,christian
+SRB,Serbia,1990,99269,742547,-643278,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,1995,870980,914112,-43132,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,2000,977873,1129412,-151539,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,2005,854848,929729,-74881,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,2010,826275,829298,-3023,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,2015,807441,819273,-11832,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SRB,Serbia,2019,820312,950485,-130173,europe,europe_central_asia,upper_middle_income,others,TRUE,landlocked,44.81892,20.45998,christian
+SSD,South Sudan,1990,NA,514943,NA,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,1995,NA,438044,NA,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,2000,NA,342628,NA,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,2005,NA,243075,NA,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,2010,257905,403896,-145991,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,2015,844122,1082880,-238758,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+SSD,South Sudan,2019,865552,2608218,-1742666,africa,sub_saharan_africa,low_income,NA,TRUE,landlocked,7.5,30,NA
+STP,Sao Tome and Principe,1990,5582,13977,-8395,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,1995,4936,19272,-14336,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,2000,4365,25156,-20791,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,2005,3433,29790,-26357,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,2010,2700,30887,-28187,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,2015,2394,35386,-32992,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+STP,Sao Tome and Principe,2019,2174,37013,-34839,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,coastline,1,7,christian
+SUR,Suriname,1990,18083,179870,-161787,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,1995,22320,193707,-171387,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,2000,27506,213526,-186020,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,2005,33664,252472,-218808,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,2010,39713,261654,-221941,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,2015,43127,412080,-368953,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SUR,Suriname,2019,46157,423517,-377360,americas,america,upper_middle_income,g77,TRUE,coastline,4,-56,christian
+SVK,Slovak Republic,1990,41295,133006,-91711,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,1995,69323,191650,-122327,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,2000,116376,251584,-135208,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,2005,130491,272294,-141803,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,2010,146319,261356,-115037,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,2015,177624,301269,-123645,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVK,Slovak Republic,2019,187984,345683,-157699,europe,europe_central_asia,high_income,oecd,TRUE,landlocked,48.66667,19.5,christian
+SVN,Slovenia,1990,178077,91496,86581,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,1995,174419,108668,65751,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,2000,214508,118724,95784,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,2005,217218,119620,97598,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,2010,253786,123291,130495,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,2015,237616,138082,99534,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SVN,Slovenia,2019,253122,147593,105529,europe,europe_central_asia,high_income,others,TRUE,coastline,46.08333,15,christian
+SWE,Sweden,1990,788767,206848,581919,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,1995,936022,226803,709219,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,2000,1003798,258000,745798,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,2005,1125790,270865,854925,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,2010,1384929,304911,1080018,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,2015,1676264,327091,1349173,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWE,Sweden,2019,2005210,353825,1651385,europe,europe_central_asia,high_income,oecd,TRUE,coastline,62,15,christian
+SWZ,Swaziland,1990,74991,35181,39810,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,1995,35157,30342,4815,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,2000,34084,34118,-34,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,2005,33392,44865,-11473,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,2010,32637,69003,-36366,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,2015,32352,97121,-64769,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SWZ,Swaziland,2019,32310,108188,-75878,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-26.5,31.5,christian
+SXM,Sint Maarten (Dutch part),1990,NA,14823,NA,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),1995,NA,17215,NA,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),2000,NA,20223,NA,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),2005,13100,23604,-10504,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),2010,26200,25352,848,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),2015,27295,25811,1484,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SXM,Sint Maarten (Dutch part),2019,28260,29209,-949,americas,NA,high_income,NA,FALSE,NA,18.04167,-63.06667,NA
+SYC,Seychelles,1990,3721,35633,-31912,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,1995,5148,27798,-22650,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,2000,6574,19244,-12670,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,2005,8997,23290,-14293,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,2010,11420,25978,-14558,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,2015,12791,34710,-21919,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYC,Seychelles,2019,12926,36788,-23862,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-4.58333,55.66667,christian
+SYR,Syria,1990,714140,621881,92259,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,1995,830610,662477,168133,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,2000,834916,707872,127044,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,2005,878308,863712,14596,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,2010,1787561,1084203,703358,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,2015,871174,6226975,-5355801,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+SYR,Syria,2019,867848,8225499,-7357651,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,35,38,muslim
+TCA,Turks and Caicos Islands,1990,5062,2311,2751,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,1995,7039,1535,5504,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,2000,9015,759,8256,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,2005,13115,1237,11878,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,2010,17216,2280,14936,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,2015,22719,28948,-6229,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCA,Turks and Caicos Islands,2019,24534,31033,-6499,americas,america,high_income,others,FALSE,coastline,21.73333,-71.58333,christian
+TCD,Chad,1990,74342,336802,-262460,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,1995,89584,223106,-133522,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,2000,104825,206069,-101244,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,2005,352062,210455,141607,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,2010,416924,202288,214636,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,2015,466968,192146,274822,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TCD,Chad,2019,512230,206400,305830,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,15,19,muslim
+TGO,Togo,1990,84844,193830,-108986,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,1995,101583,309627,-208044,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,2000,137968,267183,-129215,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,2005,203799,385788,-181989,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,2010,255413,417150,-161737,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,2015,277384,507569,-230185,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+TGO,Togo,2019,279142,543277,-264135,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,8.66667,1.08333,NA
+THA,Thailand,1990,528693,311308,217385,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,1995,809720,417273,392447,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,2000,1257821,537198,720623,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,2005,2163447,637455,1525992,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,2010,3224131,773556,2450575,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,2015,3486526,930185,2556341,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+THA,Thailand,2019,3635085,1020119,2614966,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,15.5,101,eastern_religions
+TJK,Tajikistan,1990,428900,537701,-108801,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,1995,348347,555428,-207081,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,2000,299499,541185,-241686,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,2005,280466,586243,-305777,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,2010,279808,584770,-304962,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,2015,275101,602976,-327875,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TJK,Tajikistan,2019,274071,597959,-323888,asia,europe_central_asia,low_income,others,TRUE,landlocked,39,71,muslim
+TKL,Tokelau,1990,270,1684,-1414,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,1995,266,1810,-1544,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,2000,262,2061,-1799,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,2005,258,2090,-1832,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,2010,429,2168,-1739,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,2015,487,2171,-1684,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKL,Tokelau,2019,504,2242,-1738,asia,east_asia_pacific,NA,others,FALSE,coastline,-9.167,-171.83,christian
+TKM,Turkmenistan,1990,306500,259987,46513,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,1995,273565,243524,30041,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,2000,219067,223704,-4637,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,2005,213053,229249,-16196,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,2010,197979,236614,-38635,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,2015,196376,257988,-61612,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TKM,Turkmenistan,2019,195127,260832,-65705,asia,europe_central_asia,upper_middle_income,g77,TRUE,landlocked,39.75,59.66667,muslim
+TLS,Timor-Leste,1990,8954,11261,-2307,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,1995,9743,79050,-69307,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,2000,10602,148339,-137737,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,2005,11286,94966,-83680,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,2010,11540,35020,-23480,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,2015,8520,37423,-28903,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TLS,Timor-Leste,2019,8417,39202,-30785,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-8.83333,125.75,christian
+TON,Tonga,1990,2911,32666,-29755,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,1995,3274,38343,-35069,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,2000,3684,46714,-43030,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,2005,4301,48744,-44443,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,2010,4604,52049,-47445,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,2015,3954,70061,-66107,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TON,Tonga,2019,3752,74433,-70681,asia,east_asia_pacific,upper_middle_income,g77,TRUE,coastline,-20,-175,christian
+TTO,Trinidad and Tobago,1990,50666,197521,-146855,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,1995,45994,251244,-205250,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,2000,41753,307802,-266049,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,2005,44812,322944,-278132,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,2010,48226,350533,-302307,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,2015,50021,309211,-259190,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TTO,Trinidad and Tobago,2019,59249,334304,-275055,americas,america,high_income,g77,TRUE,coastline,11,-61,christian
+TUN,Tunisia,1990,37984,465576,-427592,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,1995,37867,476954,-439087,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,2000,36719,486980,-450261,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,2005,35040,579219,-544179,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,2010,43172,616386,-573214,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,2015,56532,759817,-703285,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUN,Tunisia,2019,57455,813213,-755758,africa,middle_east_north_africa,upper_middle_income,g77,TRUE,coastline,34,9,muslim
+TUR,Turkey,1990,1163686,2640033,-1476347,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,1995,1216173,2771722,-1555549,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,2000,1280963,2891893,-1610930,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,2005,1319236,2749962,-1430726,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,2010,1367034,2723385,-1356351,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,2015,4346197,3199215,1146982,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUR,Turkey,2019,5876829,3493071,2383758,europe,europe_central_asia,upper_middle_income,oecd,TRUE,coastline,39,35,muslim
+TUV,Tuvalu,1990,318,2350,-2032,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,1995,263,2738,-2475,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,2000,218,2611,-2393,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,2005,209,2917,-2708,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,2010,220,3011,-2791,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,2015,230,3208,-2978,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TUV,Tuvalu,2019,238,3276,-3038,asia,east_asia_pacific,upper_middle_income,others,TRUE,coastline,-8.51719,179.14478,christian
+TZA,Tanzania,1990,574025,203070,370955,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,1995,1106043,229169,876874,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,2000,949600,215469,734131,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,2005,771153,234991,536162,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,2010,309847,263122,46725,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,2015,384567,303920,80647,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+TZA,Tanzania,2019,509166,323173,185993,africa,sub_saharan_africa,low_income,g77,TRUE,coastline,-6,35,christian
+UGA,Uganda,1990,544273,311602,232671,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,1995,606987,361975,245012,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,2000,584280,517778,66502,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,2005,593308,557901,35407,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,2010,492930,700398,-207468,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,2015,851175,733524,117651,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UGA,Uganda,2019,1734166,734951,999215,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,1.25,32.5,christian
+UKR,Ukraine,1990,6892920,5545760,1347160,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,1995,6172338,5606432,565906,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,2000,5527087,5596883,-69796,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,2005,5050302,5567629,-517327,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,2010,4818767,5433315,-614548,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,2015,4915142,5740765,-825623,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+UKR,Ukraine,2019,4964293,5901067,-936774,europe,europe_central_asia,lower_middle_income,others,TRUE,coastline,49,32,christian
+URY,Uruguay,1990,98116,237486,-139370,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,1995,93428,233993,-140565,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,2000,88874,235641,-146767,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,2005,82317,299038,-216721,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,2010,76303,338334,-262031,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,2015,78799,598965,-520166,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+URY,Uruguay,2019,81482,633439,-551957,americas,america,high_income,g77,TRUE,coastline,-33,-56,christian
+USA,United States,1990,23251026,1739233,21511793,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,1995,28451053,1839745,26611308,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,2000,34814053,1991803,32822250,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,2005,39258293,2291218,36967075,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,2010,44183643,2669958,41513685,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,2015,48178877,2982435,45196442,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+USA,United States,2019,50661149,3167072,47494077,americas,america,high_income,oecd,TRUE,coastline,39.76,-98.5,christian
+UZB,Uzbekistan,1990,1653000,1428020,224980,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,1995,1512577,1515753,-3176,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,2000,1406498,1575969,-169471,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,2005,1329932,1730060,-400128,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,2010,1220149,1880557,-660408,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,2015,1170873,1951668,-780795,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+UZB,Uzbekistan,2019,1168384,1979523,-811139,asia,europe_central_asia,lower_middle_income,others,TRUE,landlocked,41.66667,63.83333,muslim
+VAT,Holy See,1990,768,31,737,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,1995,780,37,743,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,2000,785,43,742,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,2005,798,113,685,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,2010,794,178,616,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,2015,803,306,497,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VAT,Holy See,2019,799,217,582,europe,europe_central_asia,NA,others,TRUE,landlocked,41.90236,12.45332,christian
+VCT,St. Vincent and the Grenadines,1990,3970,37049,-33079,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,1995,4135,45751,-41616,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,2000,4307,53670,-49363,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,2005,4436,55762,-51326,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,2010,4569,55545,-50976,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,2015,4637,56165,-51528,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VCT,St. Vincent and the Grenadines,2019,4692,60655,-55963,americas,america,upper_middle_income,g77,TRUE,coastline,13.08333,-61.2,christian
+VEN,Venezuela,1990,1025009,185946,839063,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,1995,1019996,242811,777185,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,2000,1013738,319240,694498,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,2005,1076474,438692,637782,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,2010,1347347,558491,788856,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,2015,1404448,690683,713765,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VEN,Venezuela,2019,1375690,2519780,-1144090,americas,america,upper_middle_income,g77,TRUE,coastline,8,-66,christian
+VGB,British Virgin Islands,1990,8035,3094,4941,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,1995,10046,4242,5804,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,2000,12958,5431,7527,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,2005,15016,5872,9144,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,2010,17074,4961,12113,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,2015,19132,5207,13925,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VGB,British Virgin Islands,2019,20778,5417,15361,americas,america,NA,others,FALSE,coastline,18.5,-64.5,christian
+VIR,Virgin Islands (U.S.),1990,51970,2362,49608,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),1995,54241,3139,51102,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),2000,56611,3979,52632,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),2005,56647,3812,52835,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),2010,56684,3713,52971,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),2015,56721,24284,32437,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VIR,Virgin Islands (U.S.),2019,56745,25863,30882,americas,america,high_income,others,FALSE,coastline,18.34829,-64.98348,christian
+VNM,Vietnam,1990,28118,1237873,-1209755,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,1995,51262,1571732,-1520470,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,2000,56754,1885072,-1828318,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,2005,51768,2097784,-2046016,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,2010,61756,2356176,-2294420,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,2015,72793,2472986,-2400193,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VNM,Vietnam,2019,76104,2683954,-2607850,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,16.16667,107.83333,eastern_religions
+VUT,Vanuatu,1990,2308,5060,-2752,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,1995,2461,5797,-3336,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,2000,2626,6423,-3797,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,2005,2800,7437,-4637,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,2010,2991,7846,-4855,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,2015,3187,6887,-3700,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+VUT,Vanuatu,2019,3245,7346,-4101,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-16,167,christian
+WLF,Wallis et Futuna,1990,1402,6484,-5082,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,1995,1704,6943,-5239,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,2000,2015,7402,-5387,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,2005,2191,7437,-5246,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,2010,1624,7462,-5838,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,2015,1052,11225,-10173,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WLF,Wallis et Futuna,2019,1022,11820,-10798,asia,east_asia_pacific,NA,others,FALSE,coastline,-13.3,-176.2,christian
+WSM,Samoa,1990,3357,74861,-71504,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,1995,4694,81952,-77258,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,2000,5998,94541,-88543,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,2005,5746,99233,-93487,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,2010,5122,104817,-99695,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,2015,4252,116964,-112712,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+WSM,Samoa,2019,4035,124403,-120368,asia,east_asia_pacific,lower_middle_income,g77,TRUE,coastline,-13.8,-172.13333,christian
+YEM,Yemen,1990,118863,455492,-336629,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,1995,136515,486249,-349734,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,2000,144940,529396,-384456,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,2005,171871,630990,-459119,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,2010,288394,877385,-588991,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,2015,379882,1112079,-732197,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+YEM,Yemen,2019,385628,1267610,-881982,asia,middle_east_north_africa,lower_middle_income,g77,TRUE,coastline,15.5,47.5,muslim
+ZAF,South Africa,1990,1163883,308303,855580,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,1995,1003807,386225,617582,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,2000,1016963,501905,515058,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,2005,1351031,602433,748598,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,2010,2114801,745100,1369701,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,2015,3816695,754644,3062051,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZAF,South Africa,2019,4224256,824601,3399655,africa,sub_saharan_africa,upper_middle_income,g77,TRUE,coastline,-29,24,christian
+ZMB,Zambia,1990,279463,85203,194260,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,1995,244338,140898,103440,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,2000,343703,160206,183497,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,2005,252895,180995,71900,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,2010,149962,208307,-58345,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,2015,132107,425754,-293647,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZMB,Zambia,2019,170249,493087,-322838,africa,sub_saharan_africa,lower_middle_income,g77,TRUE,landlocked,-14.33333,28.5,christian
+ZWE,Zimbabwe,1990,634621,204365,430256,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,1995,431226,288001,143225,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,2000,410109,351996,58113,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,2005,402226,499882,-97656,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,2010,398307,715395,-317088,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,2015,400482,836920,-436438,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+ZWE,Zimbabwe,2019,411257,933654,-522397,africa,sub_saharan_africa,low_income,g77,TRUE,landlocked,-19,29.75,christian
+NA,NA,1990,38410,3206,35204,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,1990,61660,18726,42934,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,1995,42258,3739,38519,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,1995,60519,15626,44893,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,2000,46105,4395,41710,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,2000,64301,12825,51476,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,2005,49105,5162,43943,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,2005,70941,14846,56095,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,2010,11445,11379,66,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,2010,77581,15698,61883,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,2015,13002,11629,1373,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,2015,82307,19886,62421,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian
+NA,NA,2019,15484,12764,2720,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,Channel Islands,2019,83833,22545,61288,europe,europe_central_asia,high_income,others,FALSE,coastline,NA,NA,christian

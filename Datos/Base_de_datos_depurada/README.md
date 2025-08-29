@@ -1,37 +1,40 @@
- Datos depurados
+# Datos depurados
 
-Esta carpeta contiene los **datasets intermedios** y el **dataset final** generados a partir de los datos originales documentados en `Datos/Base_de_datos_original/`. Los archivos aquí presentes son el resultado directo del script de depuración (`depuracion_script.Rmd`).
+Esta carpeta contiene los **datasets intermedios** y el **dataset final** generados a partir de los datos originales documentados en [`Datos/Base_de_datos_original/`](../Base_de_datos_original/).  
+Los archivos aquÃ­ presentes son el resultado directo del script de depuraciÃ³n (`depuracion_script.Rmd`).
+
+---
 
 ## Contenido
 
-- **inmigrants.csv**  
-  Stock de inmigrantes por país y año (**dataset intermedio**).  
-  
+- **immigrants.csv**  
+  Stock de inmigrantes por paÃ­s y aÃ±o (**dataset intermedio**).  
+
   **Variables principales:**  
-  - `iso3` — código ISO Alpha-3 del país  
-  - `country_name` — nombre del país  
-  - `year` — año de referencia  
-  - `inmigrants` — stock de inmigrantes  
+  - `iso3` â†’ cÃ³digo ISO Alpha-3 del paÃ­s  
+  - `country_name` â†’ nombre del paÃ­s  
+  - `year` â†’ aÃ±o de referencia  
+  - `immigrants` â†’ stock de inmigrantes  
   - + metadatos auxiliares (regiones, ingresos, etc.)
 
 - **emigrants.csv**  
-  Stock de emigrantes por país y año (**dataset intermedio**).  
-  
+  Stock de emigrantes por paÃ­s y aÃ±o (**dataset intermedio**).  
+
   **Variables principales:**  
   - `iso3`, `country_name`, `year`  
-  - `emigrants` — stock de emigrantes  
+  - `emigrants` â†’ stock de emigrantes  
   - + metadatos auxiliares
 
 - **migracion_neta.csv**  
-  Dataset **intermedio** con la migración neta = `inmigrants – emigrants`.  
-  Incluye duplicados y columnas adicionales, por lo que **no debe usarse para análisis finales**.
+  Dataset **intermedio** con la migraciÃ³n neta = `immigrants - emigrants`.  
+  Incluye duplicados y columnas adicionales, por lo que **no debe usarse para anÃ¡lisis finales**.
 
 - **migracion_neta_limpio.csv**  
   **Dataset final del proyecto** (depurado y estandarizado).  
-  
+
   **Variables principales:**  
   - `iso3`, `country_name`, `year`  
-  - `inmigrants`, `emigrants`, `net_migration`  
+  - `immigrants`, `emigrants`, `net_migration`  
   - `region4`, `region6`  
   - `income_groups`  
   - `g77_ocde`  
@@ -40,7 +43,11 @@ Esta carpeta contiene los **datasets intermedios** y el **dataset final** genera
   - `latitude`, `longitude`  
   - `religion`
 
+---
+
 ## Notas
 
-- Estos archivos se generan **automáticamente** al ejecutar el script de depuración.  
-- **migracion_neta_limpio.csv** es la **base oficial** para todos los análisis, visualizaciones e informes del proyecto.  
+
+- Estos archivos se generan automÃ¡ticamente al ejecutar el script de depuraciÃ³n.  
+- En este repositorio acadÃ©mico se incluyen **tanto los datos originales como los datos depurados** para facilitar la revisiÃ³n.  
+- **migracion_neta_limpio.csv** es la base oficial para todos los anÃ¡lisis, visualizaciones e informes del proyecto.  
