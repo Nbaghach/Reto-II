@@ -1,22 +1,27 @@
 ---
-title: "Informe técnico - Migración neta internacional"
-author: "Nabel Baghach"
+title: "Informe técnico — Flujos migratorios internacionales"
+author: "Nabel Baghach Bouybaouen"
 date: "`r format(Sys.Date(), '%d de %B de %Y')`"
-lang: es
 output:
   pdf_document:
     toc: true
     toc_depth: 2
     number_sections: true
-    latex_engine: xelatex
-    keep_tex: false
+    latex_engine:  pdflatex
     fig_width: 7
     fig_height: 5
+  html_document:
+    toc: true
+    toc_depth: 2
+    df_print: paged
+lang: es
+encoding: "UTF-8"
 header-includes:
   - \usepackage{float}
   - \usepackage{booktabs}
 params:
   data_path: Datos/Base_de_datos_depurada/migracion_neta_limpio.csv
+  show_appendix: false
 ---
 
 ```{r setup, include=FALSE}
@@ -26,12 +31,89 @@ knitr::opts_chunk$set(
 )
 options(repos = c(CRAN = "https://cran.rstudio.com/"))
 if (knitr::is_latex_output()) options(knitr.table.format = "latex")
+
+suppressPackageStartupMessages({
+  library(here); library(readr); library(dplyr); library(janitor)
+  library(ggplot2); library(forcats); library(scales); library(knitr); library(tidyr)
+})
+
+# Ancla del proyecto
+here::i_am("Informe/Codigo/Migracion.Rmd")
+knitr::opts_knit$set(root.dir = here::here())
 ```
 
 ```{r}
-suppressPackageStartupMessages(library(here))
-here::i_am("Informe/Codigo/Migracion.Rmd")
-knitr::opts_knit$set(root.dir = here::here())
+# 1) CSV
+candidatos <- c(
+  params$data_path,
+  here::here("Datos","Base_de_datos_depurada","migracion_neta_limpio.csv"),
+  here::here("Datos","Final","migracion_neta_limpio.csv"),
+  here::here("migracion_neta_limpio.csv")
+)
+data_file <- candidatos[file.exists(candidatos)][1]
+if (is.na(data_file)) stop("No se encontró 'migracion_neta_limpio.csv' en rutas candidatas.")
+
+# 2) Carga + limpieza
+migr <- readr::read_csv(data_file, show_col_types = FALSE) |> janitor::clean_names()
+
+# 3) Armoniza nombres
+if ("immigrant_stock_value" %in% names(migr)) migr <- migr |> rename(inmigrants = immigrant_stock_value)
+if ("emigrant_stock_value"  %in% names(migr)) migr <- migr |> rename(emigrants  = emigrant_stock_value)
+
+# 4) Check de columnas mínimas
+req_cols <- c("iso3","country_name","year","inmigrants","emigrants","net_migration")
+faltan <- setdiff(req_cols, names(migr))
+if (length(faltan)) stop("Faltan columnas: ", paste(faltan, collapse = ", "))
+
+# 5) Resumen verificación
+resumen <- tibble::tibble(
+  Aspecto = c("Archivo usado","Filas","Columnas","Año mínimo","Año máximo","Países únicos"),
+  Valor   = c(
+    basename(data_file),
+    format(nrow(migr), big.mark = " "),
+    ncol(migr),
+    min(migr$year, na.rm = TRUE),
+    max(migr$year, na.rm = TRUE),
+    dplyr::n_distinct(migr$country_name)
+  )
+)
+kable(resumen, caption = "Comprobación de carga de datos", col.names = c("Aspecto","Valor"), booktabs = TRUE)
+
+# 6) Variables globales y métricas derivadas
+fmt_si      <- scales::label_number(accuracy = 1, scale_cut = scales::cut_short_scale())
+periodo_min <- min(migr$year, na.rm = TRUE)
+periodo_max <- max(migr$year, na.rm = TRUE)
+ultimo_anio <- periodo_max
+n_paises    <- dplyr::n_distinct(migr$country_name)
+
+glob_last <- migr |>
+  filter(year == ultimo_anio) |>
+  summarise(
+    inmigrantes = sum(inmigrants, na.rm = TRUE),
+    emigrantes  = sum(emigrants,  na.rm = TRUE),
+    neto        = sum(net_migration, na.rm = TRUE),
+    .groups = "drop"
+)
+global_ultimo <- glob_last$neto
+
+# Totales y CAGRs para lecturas
+totales_serie <- migr |>
+  group_by(year) |>
+  summarise(
+    inm = sum(inmigrants, na.rm = TRUE),
+    emi = sum(emigrants,  na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  arrange(year)
+
+inm_first <- totales_serie$inm[1]
+inm_last  <- totales_serie$inm[nrow(totales_serie)]
+emi_first <- totales_serie$emi[1]
+emi_last  <- totales_serie$emi[nrow(totales_serie)]
+n_years   <- periodo_max - periodo_min
+
+cagr_inm <- ifelse(inm_first>0 & n_years>0, (inm_last/inm_first)^(1/n_years)-1, NA_real_)
+cagr_emi <- ifelse(emi_first>0 & n_years>0, (emi_last/emi_first)^(1/n_years)-1, NA_real_)
 ```
 
 # Introducción
@@ -39,41 +121,6 @@ knitr::opts_knit$set(root.dir = here::here())
 Este informe presenta un análisis reproducible de la migración neta internacional por país y año a partir de datos abiertos.
 Se documenta la estructura del proyecto, los objetivos, la metodología y un primer resumen de resultados.
 
-```{r datos-verificacion, include=FALSE, message=FALSE, warning=FALSE}
-
-suppressPackageStartupMessages({
-  library(readr); library(dplyr); library(janitor); library(here); library(knitr); library(tidytext)
-})
-
-
-# Rutas candidatas
-candidatos <- c(
-  here::here("Datos","Final","migracion_neta_limpio.csv"),
-  here::here("Datos","Base_de_datos_depurada","migracion_neta_limpio.csv"),
-  here::here("migracion_neta_limpio.csv")
-)
-
-data_file <- candidatos[file.exists(candidatos)][1]
-if (is.na(data_file)) stop("No encontré 'migracion_neta_limpio.csv' en las rutas candidatas.")
-
-# Cargar datos y limpiar nombres
-migr <- readr::read_csv(data_file, show_col_types = FALSE) %>% janitor::clean_names()
-
-# Resumen rápido para comprobar
-resumen <- data.frame(
-  Aspecto = c("Archivo usado", "Filas", "Columnas", "Año mínimo", "Año máximo"),
-  Valor = c(
-    basename(data_file),
-    format(nrow(migr), big.mark = " "),
-    ncol(migr),
-    min(migr$year, na.rm = TRUE),
-    max(migr$year, na.rm = TRUE)
-  )
-)
-
-kable(resumen, caption = "Comprobación de carga de datos", 
-      col.names = c("Aspecto", "Valor"), booktabs = TRUE)
-```
 
 # Objetivos del proyecto 
 
@@ -91,233 +138,244 @@ Analizar la evolución y las diferencias en la inmigración, emigración y migra
 
 - Elaborar un informe y presentación técnica reproducibles que resuman los principales hallazgos y tendencias.
 
+# Métricas globales y tabla resumen
+
+**Cobertura temporal**: `r periodo_min`–`r periodo_max`.  
+
+**Número de países**: `r format(n_paises, big.mark = " ")`.  
+
+**Migración neta global** en `r ultimo_anio`: `r fmt_si(global_ultimo)`.  
 
 ```{r metricas-inline, message=FALSE, warning=FALSE}
-library(dplyr); library(scales)
 
-periodo_min <- min(migr$year, na.rm = TRUE)
-periodo_max <- max(migr$year, na.rm = TRUE)
-ultimo_anio <- periodo_max
-n_paises    <- dplyr::n_distinct(migr$country_name)
-
-global_ultimo <- migr %>%
-  filter(year == ultimo_anio) %>%
-  summarise(net_global = sum(net_migration, na.rm = TRUE), .groups = "drop") %>%
-  pull(net_global)
-
-fmt_si <- scales::label_number(accuracy = 1, scale_cut = scales::cut_short_scale())
+tabla_global <- tibble::tibble(
+  Indicador = c("Inmigrantes (total mundial)","Emigrantes (total mundial)","Migración neta (total mundial)"),
+  Valor = c(glob_last$inmigrantes, glob_last$emigrantes, glob_last$neto)
+) |>
+  mutate(Valor = scales::number(Valor, big.mark = " ", accuracy = 1))
+kable(tabla_global, booktabs = TRUE, caption = paste("Indicadores globales —", ultimo_anio))
 ```
 
-**Cobertura temporal:** `r periodo_min`–`r periodo_max`.  
-**Número de países:** `r format(n_paises, big.mark=' ')`.  
-**Migración neta global en `r ultimo_anio`:** `r fmt_si(global_ultimo)`.
+**Lectura.** En `r ultimo_anio`, el stock mundial de inmigrantes asciende a `r fmt_si(inm_last)` y el de emigrantes a `r fmt_si(emi_last)`.  
+Entre `r periodo_min` y `r periodo_max`, ambos crecen a tasas medias anuales de `r scales::percent(cagr_inm, accuracy=0.1)` y `r scales::percent(cagr_emi, accuracy=0.1)`, respectivamente.
+
+## Tabla top 10
 
 ```{r tabla-top10, message=FALSE, warning=FALSE}
 
-library(dplyr); library(knitr)
+anio_top <- migr |>
+  dplyr::filter(!is.na(year), !is.na(inmigrants), !is.na(emigrants)) |>
+  dplyr::summarise(max_year = max(year, na.rm = TRUE)) |>
+  dplyr::pull(max_year)
 
-tab_u <- migr %>%
-  filter(year == ultimo_anio) %>%
-  transmute(
-    País              = country_name,
-    Inmigrantes       = round(immigrant_stock_value, 0),
-    Emigrantes        = round(emigrant_stock_value, 0),
-    `Migración neta`  = round(net_migration, 0)
-  )
+# --- Top 10 inmigrantes ---
+top_inm <- migr %>%
+  dplyr::filter(year == anio_top) %>%
+  dplyr::arrange(desc(inmigrants)) %>%
+  dplyr::slice_head(n = 10)
 
-tab_top10 <- tab_u %>%
-  mutate(abs_neta = abs(`Migración neta`)) %>%
-  arrange(desc(abs_neta)) %>%
-  slice_head(n = 10) %>%
-  select(-abs_neta)
+p_inm <- ggplot(top_inm, aes(x = reorder(country_name, inmigrants), y = inmigrants)) +
+  geom_col(fill = "#2166ac") +
+  coord_flip() +
+  labs(
+    title = paste("Top 10 países con mayor número de inmigrantes en", anio_top),
+    x = "", y = "Número de inmigrantes"
+  ) +
+  scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(hjust = 0.5))
 
-# Formatear números con separadores de miles
-tab_top10$Inmigrantes <- format(tab_top10$Inmigrantes, big.mark = " ", decimal.mark = ",")
-tab_top10$Emigrantes <- format(tab_top10$Emigrantes, big.mark = " ", decimal.mark = ",")
-tab_top10$`Migración neta` <- format(tab_top10$`Migración neta`, big.mark = " ", decimal.mark = ",")
+# --- Top 10 emigrantes ---
+top_emi <- migr %>%
+  dplyr::filter(year == anio_top) %>%
+  dplyr::arrange(desc(emigrants)) %>%
+  dplyr::slice_head(n = 10)
 
-kable(tab_top10, align = "lrrr", booktabs = TRUE,
-      caption = paste("Top 10 países por magnitud de migración neta en", ultimo_anio))
+p_emi <- ggplot(top_emi, aes(x = reorder(country_name, emigrants), y = emigrants)) +
+  geom_col(fill = "#d73027") +
+  coord_flip() +
+  labs(
+    title = paste("Top 10 países con mayor número de emigrantes en", anio_top),
+    x = "", y = "Número de emigrantes"
+  ) +
+  scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  theme_minimal(base_size = 12) +
+  theme(plot.title = element_text(hjust = 0.5))
+
+if (requireNamespace("patchwork", quietly = TRUE)) {
+  library(patchwork)
+  p_inm / p_emi
+} else {
+  print(p_inm); print(p_emi)
+}
+
+# lectura
+top_inm_pais <- top_inm$country_name[1]
+top_inm_val  <- top_inm$inmigrants[1]
+top_emi_pais <- top_emi$country_name[1]
+top_emi_val  <- top_emi$emigrants[1]
 ```
+
+**Lectura.** En `r anio_top`, el mayor receptor es **`r top_inm_pais`** (`r scales::comma(top_inm_val, big.mark = " ")`) y el mayor emisor es **`r top_emi_pais`** (`r scales::comma(top_emi_val, big.mark = " ")`).  
+Las barras muestran una fuerte concentración: unos pocos países explican gran parte de la inmigración y de la emigración mundiales.
+
+## Barras divergentes
 
 ```{r barras-divergentes, message=FALSE, warning=FALSE, fig.height=6, fig.cap="Migración neta: países con mayores flujos positivos y negativos"}
 
-library(dplyr); library(ggplot2); library(forcats); library(scales)
+net_last <- migr %>% filter(year == ultimo_anio, !is.na(net_migration)) %>% arrange(desc(net_migration))
+top_pos  <- net_last %>% slice_head(n = 10)
+top_neg  <- net_last %>% slice_tail(n = 10) %>% arrange(net_migration)
 
-net_last <- migr %>%
-  filter(year == ultimo_anio, !is.na(net_migration)) %>%
-  arrange(desc(net_migration))
-
-top_pos <- net_last %>% slice_head(n = 10)
-top_neg <- net_last %>% slice_tail(n = 10) %>% arrange(net_migration)
-
-net_div <- bind_rows(top_neg, top_pos) %>%
-  mutate(country_name = fct_reorder(country_name, net_migration))
+net_div <- dplyr::bind_rows(top_neg, top_pos) %>%
+  mutate(country_name = forcats::fct_reorder(country_name, net_migration))
 
 ggplot(net_div, aes(x = country_name, y = net_migration)) +
-  geom_col(fill = ifelse(net_div$net_migration >= 0, "#2166ac", "#d73027"), alpha = 0.8) +
+  geom_col(fill = ifelse(net_div$net_migration >= 0, "#2166ac", "#d73027"), alpha = 0.9) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
   coord_flip() +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "black") +
   scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
-  labs(title = paste0("Migración neta (Top 10 positiva y negativa) en ", ultimo_anio),
-       x = "", y = "Saldo migratorio (neto)") +
+  labs(title = paste0("Migración neta (Top ±10) en ", ultimo_anio),
+       x = "", y = "Migración neta") +
   theme_minimal(base_size = 10) +
   theme(plot.title = element_text(hjust = 0.5, size = 11))
 ```
 
-**Lectura.** Se observan países con saldos fuertemente positivos (atracción) y negativos (expulsión) en `r ultimo_anio`, lo que complementa la tabla y ayuda a visualizar la asimetría.
+**Lectura.** El ranking revela fuertes asimetrías: países receptores concentran saldos positivos persistentes, mientras que emisores muestran pérdidas netas.  
+La visualización divergente hace visible la distancia entre extremos y ayuda a priorizar casos de estudio.
+
+
+## Evolución temporal global
+
+```{r grafico-global, message=FALSE, warning=FALSE, fig.cap="Evolución temporal de la migracion a nivel mundial"}
+
+serie_glob <- migr %>%
+  dplyr::group_by(year) %>%
+  dplyr::summarise(
+    inmigrantes_global = sum(inmigrants, na.rm = TRUE),
+    emigrantes_global  = sum(emigrants,  na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  tidyr::pivot_longer(-year, names_to = "serie", values_to = "valor")
+
+ggplot(serie_glob, aes(x = year, y = valor, color = serie)) +
+  geom_line(linewidth = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(
+    values = c("inmigrantes_global" = "#2166ac", "emigrantes_global" = "#d73027"),
+    labels = c("Inmigrantes (mundo)", "Emigrantes (mundo)")
+  ) +
+  labs(x = "Año", y = "Total mundial (stock)", color = "", title = "Evolución global de inmigrantes y emigrantes") +
+  scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  scale_x_continuous(breaks = seq(min(serie_glob$year), max(serie_glob$year), by = 5)) +
+  theme_minimal(base_size = 10) +
+  theme(legend.position = "bottom", plot.title = element_text(hjust = 0.5, size = 11))
+```
+
+**Lectura.** Tanto inmigrantes como emigrantes globales crecen de forma sostenida a lo largo del periodo.  
+La estabilidad de la pendiente sugiere consolidación de comunidades migrantes y redes transnacionales, más que picos coyunturales de corto plazo.
+
+
+## Relación inmigración–emigración
 
 ```{r dispersion-imm-emi, message=FALSE, warning=FALSE, fig.cap="Relación entre inmigración y emigración por país"}
+df_scatter <- migr %>% filter(inmigrants > 0, emigrants > 0)
 
-library(dplyr); library(ggplot2); library(scales)
-
-# Filtramos para evitar ceros (no se pueden logar)
-df_scatter <- migr %>% 
-  filter(immigrant_stock_value > 0, emigrant_stock_value > 0)
-
-ggplot(df_scatter, aes(x = immigrant_stock_value, y = emigrant_stock_value)) +
-  geom_point(alpha = 0.4, color = "steelblue", size = 0.8) +
-  scale_x_log10(labels = fmt_si) +
-  scale_y_log10(labels = fmt_si) +
-  labs(
-    title = "Relación inmigrantes vs emigrantes por país–año",
-    x = "Inmigrantes (log10)",
-    y = "Emigrantes (log10)"
-  ) +
+ggplot(df_scatter, aes(x = inmigrants, y = emigrants)) +
+  geom_point(alpha = 0.35, color = "steelblue", size = 0.9) +
+  scale_x_log10(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  scale_y_log10(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  labs(title = "Inmigrantes vs Emigrantes (log–log)", x = "Inmigrantes (log10)", y = "Emigrantes (log10)") +
   theme_minimal(base_size = 10) +
   theme(plot.title = element_text(hjust = 0.5, size = 11))
 ```
 
-**Lectura.** La relación entre inmigrantes y emigrantes sigue una tendencia positiva: los países con grandes volúmenes de inmigración suelen presentar también cifras elevadas de emigración. El uso de escala log–log permite comparar países muy diferentes en tamaño poblacional.
+**Lectura.** La nube de puntos sugiere proporcionalidad: países con grandes stocks de inmigrantes suelen tener también grandes stocks de emigrantes.  
+Esto es coherente con economías grandes y abiertas. El uso de escalas logarítmicas evita que los países pequeños queden “aplastados” por los valores altos.
+
+
+## Inmigrantes por nivel de ingresos
 
 ```{r boxplot-income, message=FALSE, warning=FALSE, fig.cap="Distribución de población inmigrante según nivel de ingresos del país"}
-
-library(dplyr); library(ggplot2); library(scales)
-
 df_income <- migr %>%
-  filter(!is.na(income_groups), immigrant_stock_value > 0)
+  filter(!is.na(income_groups), inmigrants > 0)
 
-ggplot(df_income, aes(x = income_groups, y = immigrant_stock_value)) +
-  geom_boxplot(outlier.alpha = 0.3, fill = "skyblue", alpha = 0.7) +
-  scale_y_log10(labels = fmt_si) +
-  labs(
-    title = "Distribución de inmigrantes por nivel de ingresos",
-    x = "Nivel de ingresos (Banco Mundial)",
-    y = "Inmigrantes (log10)"
-  ) +
+ggplot(df_income, aes(x = income_groups, y = inmigrants)) +
+  geom_boxplot(outlier.alpha = 0.25, fill = "skyblue", alpha = 0.8) +
+  scale_y_log10(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
+  labs(title = "Inmigrantes por nivel de ingresos", x = "Nivel de ingresos (Banco Mundial)", y = "Inmigrantes (log10)") +
   theme_minimal(base_size = 10) +
   theme(plot.title = element_text(hjust = 0.5, size = 11),
         axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-**Lectura.** Los países de ingresos altos concentran las mayores poblaciones inmigrantes, aunque existe variabilidad interna considerable. En contraste, los países de ingresos bajos presentan valores mucho menores y más homogéneos.
+**Lectura.** Los países de ingresos altos concentran mayores medianas de inmigrantes y presentan mayor dispersión, reflejo de su capacidad de atracción y de la heterogeneidad sectorial.  
+En cambio, los países de ingresos bajos muestran valores reducidos y variabilidad acotada.
 
-```{r grafico-global, message=FALSE, warning=FALSE, fig.cap="Evolución temporal de la migración neta a nivel mundial"}
 
-library(ggplot2); library(dplyr); library(scales)
-
-serie_global <- migr %>%
-  group_by(year) %>%
-  summarise(net_global = sum(net_migration, na.rm = TRUE), .groups = "drop")
-
-ggplot(serie_global, aes(x = year, y = net_global)) +
-  geom_line(color = "#2166ac", linewidth = 1.2) +
-  geom_point(color = "#2166ac", size = 2) +
-  labs(
-    x = "Año", y = "Migración neta (total mundial)",
-    title = "Evolución de la migración neta global"
-  ) +
-  scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale())) +
-  scale_x_continuous(breaks = seq(min(serie_global$year), max(serie_global$year), by = 5)) +
-  theme_minimal(base_size = 10) +
-  theme(plot.title = element_text(hjust = 0.5, size = 11))
-```
-
-**Lectura.** La migración neta global alcanzó `r fmt_si(global_ultimo)` en `r ultimo_anio`. Las variaciones interanuales podrían vincularse con factores económicos, políticos o sanitarios.
+## Mapa — Migración neta (2019)
 
 ```{r mapa-migracion, message=FALSE, warning=FALSE, fig.width=8, fig.height=5, fig.cap="Distribución espacial de la migración neta"}
 
-# Verificar e instalar paquetes de mapas si es necesario
-required_packages <- c("sf", "rnaturalearth", "rnaturalearthdata")
-missing_packages <- required_packages[!sapply(required_packages, requireNamespace, quietly = TRUE)]
-if (length(missing_packages) > 0) {
-  cat("Instalando paquetes necesarios para mapas:", paste(missing_packages, collapse = ", "), "\n")
-  install.packages(missing_packages, quiet = TRUE)
+pk_map <- c("sf","rnaturalearth","rnaturalearthdata")
+miss <- pk_map[!sapply(pk_map, requireNamespace, quietly = TRUE)]
+
+if (!length(miss)) {
+  suppressPackageStartupMessages({ library(sf); library(rnaturalearth); library(rnaturalearthdata) })
+  world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") %>%
+    mutate(geo = tolower(iso_a3)) %>%
+    select(geo, geometry)
+
+  dat_year <- migr %>% filter(year == ultimo_anio) %>%
+    mutate(geo = tolower(iso3)) %>%
+    select(geo, country_name, net_migration)
+
+  mapa_year <- world %>% left_join(dat_year, by = "geo")
+  q <- stats::quantile(abs(mapa_year$net_migration), 0.95, na.rm = TRUE)
+  q <- ifelse(is.finite(q) && q > 0, q, 1e3)
+
+  ggplot(mapa_year) +
+    geom_sf(aes(fill = pmax(pmin(net_migration, q), -q)), color = "white", linewidth = 0.1) +
+    scale_fill_gradient2(low = "#b2182b", mid = "white", high = "#2166ac",
+                         midpoint = 0, limits = c(-q, q),
+                         oob = scales::squish, labels = scales::label_number(scale_cut = scales::cut_short_scale()),
+                         name = "Migración neta") +
+    labs(title = paste("Migración neta en", ultimo_anio)) +
+    theme_void(base_size = 9) +
+    theme(plot.title = element_text(hjust = 0.5, size = 11),
+          legend.position = "bottom",
+          legend.key.width = grid::unit(1.5, "cm"))
+} else {
+  cat("No se pudieron cargar paquetes de mapas (", paste(miss, collapse=", "), "). Se muestra alternativa (barras).\n")
+  top_countries <- migr %>%
+    filter(year == ultimo_anio) %>%
+    arrange(desc(abs(net_migration))) %>% slice_head(n = 15)
+
+  ggplot(top_countries, aes(x = reorder(country_name, net_migration), y = net_migration)) +
+    geom_col(fill = ifelse(top_countries$net_migration >= 0, "#2166ac", "#d73027"), alpha = 0.9) +
+    coord_flip() +
+    labs(title = paste("Top 15 por |migración neta| en", ultimo_anio), x = "", y = "Migración neta") +
+    theme_minimal(base_size = 10) +
+    theme(plot.title = element_text(hjust = 0.5, size = 11)) +
+    scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale()))
 }
-
-tryCatch(
-  {
-    suppressPackageStartupMessages({
-      library(sf); library(rnaturalearth); library(rnaturalearthdata)
-      library(dplyr); library(ggplot2); library(scales)
-    })
-
-    # Mapa base
-    world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf") %>%
-      mutate(geo = tolower(iso_a3)) %>%
-      select(geo, geometry)
-
-    anio_map <- ultimo_anio
-
-    dat_year <- migr %>%
-      filter(year == anio_map) %>%
-      select(geo, country_name, net_migration)
-
-    mapa_year <- world %>% left_join(dat_year, by = "geo")
-
-    # Limitar extremos para la paleta
-    abs_val <- abs(mapa_year$net_migration)
-    q <- quantile(abs_val, 0.95, na.rm = TRUE)
-
-    ggplot(mapa_year) +
-      geom_sf(aes(fill = pmax(pmin(net_migration, q), -q)),
-              color = "white", linewidth = 0.1) +
-      scale_fill_gradient2(
-        low = "#b2182b", mid = "white", high = "#2166ac",
-        midpoint = 0, limits = c(-q, q),
-        oob = scales::squish, labels = fmt_si, name = "Migración\nneta"
-      ) +
-      labs(title = paste("Migración neta en", anio_map)) +
-      theme_void(base_size = 9) +
-      theme(
-        plot.title = element_text(hjust = 0.5, size = 11),
-        legend.position = "bottom",
-        legend.key.width = grid::unit(1.5, "cm")
-      )
-  },
-  error = function(e) {
-    cat("No se pudo generar el mapa. Error:", conditionMessage(e), "\n")
-    cat("Generando gráfico alternativo...\n")
-
-    top_countries <- migr %>%
-      filter(year == ultimo_anio) %>%
-      arrange(desc(abs(net_migration))) %>%
-      slice_head(n = 15)
-
-    ggplot(top_countries, aes(x = reorder(country_name, net_migration), y = net_migration)) +
-      geom_col(fill = ifelse(top_countries$net_migration >= 0, "#2166ac", "#d73027"), alpha = 0.8) +
-      coord_flip() +
-      labs(title = paste("Top 15 países por migración neta absoluta en", ultimo_anio),
-           x = "País", y = "Migración neta") +
-      theme_minimal(base_size = 10) +
-      theme(plot.title = element_text(hjust = 0.5, size = 11)) +
-      scale_y_continuous(labels = scales::label_number(scale_cut = scales::cut_short_scale()))
-  }
-)
 ```
 
-**Lectura.** La visualización espacial muestra la distribución de la migración neta en `r ultimo_anio`. Los países con saldos positivos se concentran en regiones de altos ingresos, mientras que las pérdidas netas más pronunciadas corresponden a economías en desarrollo y zonas de conflicto.
+**Lectura.** Los saldos positivos predominan en economías de ingresos altos, mientras que las pérdidas se concentran en países en desarrollo o afectados por conflictos.  
+El recorte al percentil 95 evita que valores extremos distorsionen la paleta y permite una mejor comparación regional.
 
 # Conclusiones principales
 
-Este análisis de migración neta internacional revela patrones importantes:
+Los resultados muestran una concentración de saldos positivos de migración neta en países de ingresos altos y regiones con mercados laborales dinámicos, mientras que los saldos negativos se concentran en economías en desarrollo y zonas afectadas por conflictos.
+La evolución temporal refleja cambios coyunturales (crisis económicas, pandemias, conflictos) sobre un patrón estructural de atracción hacia economías avanzadas.
 
-1. **Concentración geográfica**: Los flujos migratorios se concentran en países de ingresos altos como destino principal.
+## Conclusiones
 
-2. **Asimetrías regionales**: Existe una clara división entre países receptores (principalmente desarrollados) y países emisores (principalmente en desarrollo).
+**Patrones estructurales**: Las economías de ingresos altos concentran la inmigración y presentan saldos netos positivos de forma persistente.
 
-3. **Evolución temporal**: La migración neta global muestra variaciones significativas que reflejan cambios en las condiciones económicas y políticas mundiales.
+**Asimetrías**: Muchos países de ingresos bajos y medios registran saldos negativos, coherentes con brechas de ingreso y oportunidades.
 
-4. **Diversidad de experiencias**: Países con similar nivel de desarrollo pueden tener experiencias migratorias muy diferentes, sugiriendo la importancia de factores específicos del contexto nacional.
+**Heterogeneidad**: Países de similar nivel de ingresos pueden diferir sustancialmente según su contexto institucional, geopolítico y demográfico.
 
-Los resultados confirman que la migración internacional sigue siendo un fenómeno estructural relacionado con las desigualdades de desarrollo entre países, aunque también influido por factores coyunturales específicos de cada contexto nacional y regional.
+
+

@@ -1,0 +1,80 @@
+# Dashboard — Migración Internacional (1990–2019)
+
+Este dashboard interactivo (R Markdown + **flexdashboard** + **Shiny**) explora **inmigrantes, emigrantes y migración neta** por país, región e ingreso.  
+Fuente de datos: UN DESA (vía Gapminder / open-numbers).  
+Base usada: `Datos/Base_de_datos_depurada/migracion_neta_limpio.csv`.
+
+---
+
+## Contenido
+
+- **`dashboard_migracion.Rmd`**  
+  Archivo principal del dashboard (runtime: `shiny`).
+
+---
+
+## Requisitos
+
+- R y RStudio.  
+- Paquetes necesarios (se instalan automáticamente al abrir el documento):  
+  `shiny`, `flexdashboard`, `readr`, `dplyr`, `tidyr`, `ggplot2`,  
+  `scales`, `forcats`, `here`, `stringr`, `plotly`, `htmltools`.  
+
+---
+
+## Estructura del proyecto
+
+
+Datos/
+  Base_de_datos_depurada/
+    migracion_neta_limpio.csv
+Dashboard/
+  Codigo/
+    dashboard_migracion.Rmd
+    README.md
+
+---
+
+## ¿Qué muestra?
+
+- **Gráfico de líneas** (1990–2019): evolución global y por región.  
+- **Mapa choropleth**: distribución por país en el año elegido.  
+- **Rankings**: Top 5 en inmigrantes, emigrantes y migración neta.  
+- **Estadísticas globales**: totales en la vista activa.
+
+**Filtros disponibles:**
+- Año (`year`)  
+- Métrica (`inmigrants`, `emigrants`, `net`)  
+- Región (`region`)  
+- Grupo de ingreso (`income_groups`)  
+
+---
+
+## Variables esperadas en `migracion_neta_limpio.csv`
+
+- `iso3` (código ISO3)  
+- `country_name`  
+- `year`  
+- `inmigrants`  
+- `emigrants`  
+- `net_migration`  
+- `region4`, `region6`  
+- `income_groups`  
+
+El `.Rmd` armoniza los nombres a:  
+`iso3`, `country`, `year`, `inmigrants`, `emigrants`, `net`, `region`, `income`.
+
+---
+
+## Solución de problemas
+
+- **No aparece Knit** ??? es normal con `runtime: shiny`. Usa **Run Document**.  
+- **Error de archivo** ??? verifica que `migracion_neta_limpio.csv` esté en la ruta indicada y abre el proyecto con `Reto-II.Rproj`.  
+- **Datos vacíos en mapa/gráfico** ??? revisa los filtros activos (región, ingreso, año).  
+
+---
+
+## Cita de datos
+
+UN DESA – International Migrant Stock (vía Gapminder / open-numbers).  
+Repositorio DDF: https://github.com/open-numbers/ddf--unpop--international_migrant_stock
