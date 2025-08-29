@@ -6,33 +6,31 @@ El objetivo es analizar los **patrones de inmigración, emigración y migración
 ---
 
 ## Estructura del repositorio
-
-Datos/
-├─ Base_de_datos_original/ # CSV originales + README con la fuente oficial
-├─ Codigo_depuracion/ # depuracion_script.Rmd
-└─ Base_de_datos_depurada/ # migracion_neta_limpio.csv (dataset final)
-
-Dashboard/
-├─ Codigo/
-│ ├─ dashboard_migracion.Rmd # Dashboard dinámico (Shiny)
-│ └─ Dashboard_migracion_static.Rmd # Dashboard estático (HTML)
-└─ HTML/
-    └─ dashboard_migracion_static.html 
-
-Informe/
-├─ Codigo/
-│ └─ informe_migracion.Rmd # Informe técnico (RMarkdown/knitr)
-└─ PDF/
-   └─ informe_migracion.pdf
-
-Presentacion/
-├─ Codigo/
-│ └─ Presentacion.Rmd # ioslides
-└─ PDF_HTML/
-  └─ Presentacion.html 
-
-Reto-II.Rproj # Proyecto de RStudio
-README.md # Este archivo
+.
+├─ Datos/
+│  ├─ Base_de_datos_original/             # CSV originales + README con la fuente oficial
+│  ├─ Codigo_depuracion/
+│  │  └─ depuracion_script.Rmd            # depuración y unificación
+│  └─ Base_de_datos_depurada/
+│     └─ migracion_neta_limpio.csv        # dataset final
+├─ Dashboard/
+│  ├─ Codigo/
+│  │  ├─ dashboard_migracion.Rmd          # Dashboard dinámico (Shiny)
+│  │  └─ Dashboard_migracion_static.Rmd   # Dashboard estático (HTML)
+│  └─ HTML/
+│     └─ dashboard_migracion_static.html  # salida compilada
+├─ Informe/
+│  ├─ Codigo/
+│  │  └─ informe_migracion.Rmd            # Informe técnico (RMarkdown/knitr)
+│  └─ PDF/
+│     └─ informe_migracion.pdf            # salida compilada
+├─ Presentacion/
+│  ├─ Codigo/
+│  │  └─ Presentacion.Rmd                 # ioslides
+│  └─ PDF_HTML/
+│     └─ Presentacion.html                # salida compilada
+├─ Reto-II.Rproj                          # proyecto de RStudio
+└─ README.md                              # este archivo
 
 ---
 ## Reproducibilidad
